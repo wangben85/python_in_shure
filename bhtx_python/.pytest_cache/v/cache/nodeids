@@ -1,0 +1,5 @@
+[
+  "test_rfcal.py::test::testDefaultCal",
+  "test_rfcal.py::test::testDualCarrierCal",
+  "test_rfcal.py::test::testSingleCarrierCal"
+]

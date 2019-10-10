@@ -1,0 +1,34 @@
+cscope 15 C:\Work_Python\cscope_file_remove"               0000000283
+	@cpp_test1.cpp
+
+	@cpp_test1.hpp
+
+	@cpp_test1_mocks.cpp
+
+	@cpp_test2.cpp
+
+	@cpp_test2.hpp
+
+	@cpp_test2_tests.cpp
+
+	@subfolder1/sub_cpp_test1.cpp
+
+	@subfolder1/sub_cpp_test1.hpp
+
+	@subfolder2/sub_cpp_test2.cpp
+
+	@
+1
+.
+0
+9
+183
+cpp_test1.cpp
+cpp_test1.hpp
+cpp_test1_mocks.cpp
+cpp_test2.cpp
+cpp_test2.hpp
+cpp_test2_tests.cpp
+subfolder1/sub_cpp_test1.cpp
+subfolder1/sub_cpp_test1.hpp
+subfolder2/sub_cpp_test2.cpp

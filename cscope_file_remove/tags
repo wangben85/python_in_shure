@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+cscope_files_list	cscope_files_filter.py	/^cscope_files_list = []$/;"	v
+cscope_files_list	find_files.py	/^cscope_files_list = []$/;"	v
+cscope_files_path	find_files.py	/^cscope_files_path = "C:\\\\Work_Python\\\\cscope_file_remove\\\\source.files"$/;"	v
+del_array	cscope_files_filter.py	/^del_array = [$/;"	v
+del_array	unexpected_files_remove.py	/^del_array = [$/;"	v
+file_write	cscope_files_filter.py	/^def file_write(content):$/;"	f
+file_write	find_files.py	/^def file_write(content):$/;"	f
+files_list_append	cscope_files_filter.py	/^def files_list_append(obj):$/;"	f
+files_list_append	find_files.py	/^def files_list_append(obj):$/;"	f
+filter_cscope_files_path	cscope_files_filter.py	/^filter_cscope_files_path = "C:\\\\Work_Python\\\\cscope_file_remove\\\\cscope_filter.files"$/;"	v
+isInArray	cscope_files_filter.py	/^def isInArray (array, line):$/;"	f
+isInArray	unexpected_files_remove.py	/^def isInArray (array, line):$/;"	f
+os	cscope_files_filter.py	/^import os$/;"	i
+os	find_files.py	/^import os$/;"	i
+os	unexpected_files_remove.py	/^import shutil, sys, os$/;"	i
+search_dir	cscope_files_filter.py	/^def search_dir(dir_path):$/;"	f
+search_dir	find_files.py	/^def search_dir(dir_path):$/;"	f
+shutil	unexpected_files_remove.py	/^import shutil, sys, os$/;"	i
+source_cscope_files_path	cscope_files_filter.py	/^source_cscope_files_path = "C:\\\\Work_Python\\\\cscope_file_remove\\\\source.files"$/;"	v
+sys	cscope_files_filter.py	/^import sys$/;"	i
+sys	find_files.py	/^import sys$/;"	i
+sys	unexpected_files_remove.py	/^import shutil, sys, os$/;"	i
