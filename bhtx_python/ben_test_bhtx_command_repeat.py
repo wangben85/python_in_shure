@@ -28,12 +28,19 @@ if __name__ == "__main__":
     bhtx.send_cmd("verapp")
     bhtx.send_cmd("su dev dev")
 
-    for i in range(1,300): # run 300 times
+    for i in range(1,1000):
+       bhtx.send_cmd("factoryReset")
+       bhtx.send_cmd("reboot",expect_resp=False) # reboot the device 
+       time.sleep(3) # delay 3 seconds
+       bhtx.send_cmd("su mfr Rj1146uHCpsCHakrBKQ")
+       bhtx.send_cmd("serialnum")
+       bhtx.send_cmd("txtype")
+       bhtx.send_cmd("ateuid")
+       bhtx.send_cmd("verpkg")
+       bhtx.send_cmd("verboot")
+       bhtx.send_cmd("verapp")
+       bhtx.send_cmd("verfpga")
        bhtx.send_cmd("rebootfpga 2")
-       time.sleep(0.1)   # delay 100ms
-       bhtx.send_cmd("rebootfpga 1")
-       
-
-    
-
-
+       print('test ran %d times\n' %i )
+       if ( i == 1000 ):
+           print('Finished! test ran %d times\n' %i )
