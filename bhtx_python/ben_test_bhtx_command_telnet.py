@@ -10,9 +10,10 @@ if __name__ == "__main__":
 
     # @todo Arg parsing here could use some improvement...
     parser = argparse.ArgumentParser(description='Run BHTX integration tests')
-    parser.add_argument('-n', '--hostname', help='Hostname for CLI connection')
-    # Set default COM=6
-    parser.add_argument('-p', '--port', default='COM6', help='Port for CLI connection')
+    # Set default host is 192.168.1.101
+    parser.add_argument('-n', '--hostname',default='192.168.1.101', help='Hostname for CLI connection')
+    # Set default COM=8024
+    parser.add_argument('-p', '--port', default='8024', help='Port for CLI connection')
     # Set default baudrate=115200
     parser.add_argument('-b', '--baud', default=115200, help='Baud for CLI connection')
     # Set default IR = True
@@ -32,7 +33,7 @@ if __name__ == "__main__":
     bhtx.send_cmd("verapp")
     bhtx.send_cmd("su dev dev")
 
-    for i in range(1, 1000):
+    for i in range(1, 100):
         bhtx.send_cmd("factoryReset")
         bhtx.send_cmd("reboot", expect_resp=False)  # reboot the device
         time.sleep(4)  # delay 4 seconds
@@ -46,5 +47,5 @@ if __name__ == "__main__":
         bhtx.send_cmd("verfpga")
         bhtx.send_cmd("rebootfpga 2")
         print('test ran %d times\n' % i)
-        if i == 1000:
+        if i == 100:
             print('Finished! test ran %d times\n' % i)
