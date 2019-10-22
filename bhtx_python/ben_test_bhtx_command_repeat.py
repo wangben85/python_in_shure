@@ -3,6 +3,9 @@ import time
 from bhtx import BhTx
 import argparse
 
+"""
+Periodically run one or some CLI commands for auto test
+"""
 if __name__ == "__main__":
 
     # @todo Arg parsing here could use some improvement...
@@ -31,7 +34,7 @@ if __name__ == "__main__":
     for i in range(1,1000):
        bhtx.send_cmd("factoryReset")
        bhtx.send_cmd("reboot",expect_resp=False) # reboot the device 
-       time.sleep(3) # delay 3 seconds
+       time.sleep(4) # delay 4 seconds
        bhtx.send_cmd("su mfr Rj1146uHCpsCHakrBKQ")
        bhtx.send_cmd("serialnum")
        bhtx.send_cmd("txtype")
