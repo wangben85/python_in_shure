@@ -2,8 +2,8 @@
 import os
 import sys
 
-source_cscope_files_path = "C:\\Ben_Git_Repo\\python_in_shure\\bhtx_python\\cscope_source_test.files"
-filter_cscope_files_path = "C:\\Ben_Git_Repo\\python_in_shure\\bhtx_python\\cscope.files"
+source_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\bhtx_python\\cscope_source_test.files"
+filter_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\bhtx_python\\cscope.files"
 cscope_files_list = []
 
 # the unexpected files to be removed from the list
@@ -25,7 +25,7 @@ def isInArray (array, line):
 
 def files_list_append(obj):
     """
-    endswith() define the suffix files to be find
+    endswith() define the suffix files to be find, in this project folder it is looking for the .py Python source files
     """
     if obj.endswith(".py"):
        print(obj)
