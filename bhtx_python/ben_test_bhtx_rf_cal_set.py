@@ -1,3 +1,6 @@
+"""
+This test is to write the Calibration table for AD3 RF variant A
+"""
 from bhtx import *
 import sys
 import time
@@ -17,13 +20,18 @@ if __name__ == "__main__":
     parser.add_argument('-b','--baud', default = 115200, help='Baud for CLI connection')
     # Set default IR = True
     parser.add_argument('--noir', dest='ir', action='store_const', const=False, default=True, help='Specify that serial connection is NOT IR')
-    # Choose the calibration table
-    parser.add_argument('-f','--file', default = 'bandA_rf_cali.csv', help='Specify the calibration data csv file')
+   
+    #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Specify the calibration data csv file name
+    #variantA_rf_cali_data.csv is the file contain the calibration data
+    #default_clear_rf_data.csv is the file remove all the calibration data, back to default(0xFF)
+    parser.add_argument('-f','--file', default = 'variantA_rf_cali_data.csv', help='Specify the calibration data csv file')
+    
     args = parser.parse_args()
 
     # Establish connection to transmitter
     # CLI command line to input the parameters
-    # e.g.   python rf_cal_set.py -p com6
+    # e.g.   python rf_cal_set.py -p com6,  set the calibration table
+    # e.g.   python rf_cal_set.py -p com6 -f default_clear_rf_data.csv,  remove all the calibration data
     # note:  No input, hostname = None,  baud = 115200
     BhTx.connect(args.hostname, args.port, args.baud, args.ir)
 

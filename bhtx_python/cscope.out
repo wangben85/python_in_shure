@@ -1,4 +1,4 @@
-cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000064586
+cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000065362
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 
 2 
@@ -379,35 +379,7 @@ fe
 
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_repeat.py
 
-1 
-impÜt
- 
-os
-
-
-2 
-impÜt
- 
-time
-
-
 3 
-äom
- 
-bhtx
- 
-impÜt
- 
-BhTx
-
-
-4 
-impÜt
- 
-	g¬g·r£
-
-
-7 
 P”iodiÿÎy
  
 run
@@ -425,11 +397,43 @@ commªds
 	g‹¡
 
 
-9 
+6 
+impÜt
+ 
+os
+
+
+7 
+impÜt
+ 
+time
+
+
+8 
+äom
+ 
+bhtx
+ 
+impÜt
+ 
+BhTx
+
+
+9 
+impÜt
+ 
+¬g·r£
+
+
+11 
+	gşi_commªds_li¡
+ = [
+
+21 
 	g__Çme__
  == "__main__":
 
-11 #@
+23 #@
 todo
  
 Arg
@@ -447,7 +451,7 @@ some
 im´ovem’t
 ...
 
-12 
+24 
 ·r£r
  = 
 ¬g·r£
@@ -457,7 +461,7 @@ Argum’tP¬£r
 desütiÚ
 ='Run BHTX integrationests')
 
-13 
+25 
 ·r£r
 .
 add_¬gum’t
@@ -465,11 +469,11 @@ add_¬gum’t
 h–p
 ='Hostname for CLI connection')
 
-14 #S‘  
+26 #S‘  
 COM
 =6
 
-15 
+27 
 ·r£r
 .
 add_¬gum’t
@@ -477,11 +481,11 @@ add_¬gum’t
 h–p
 ='Port for CLI connection')
 
-16 #S‘  
+28 #S‘  
 baud¿‹
 =115200
 
-17 
+29 
 ·r£r
 .
 add_¬gum’t
@@ -489,13 +493,13 @@ add_¬gum’t
 h–p
 ='Baud for CLI connection')
 
-18 #S‘  
+30 #S‘  
 IR
  = 
 True
 
 
-19 
+31 
 ·r£r
 .
 add_¬gum’t
@@ -509,11 +513,11 @@ F®£
 True
 ,
 
-20 
+32 
 h–p
 ='Specifyhat serial connection is NOT IR')
 
-21 
+33 
 ¬gs
  = 
 ·r£r
@@ -521,7 +525,7 @@ h–p
 	$·r£_¬gs
 ()
 
-23 #E¡ablish 
+35 #E¡ablish 
 cÚÃùiÚ
  
 to
@@ -529,7 +533,7 @@ to
 Œªsm™‹r
 
 
-24 #CLI 
+36 #CLI 
 commªd
  
 lše
@@ -543,7 +547,7 @@ the
 ·¿m‘”s
 
 
-25 #e.
+37 #e.
 g
  
 pythÚ
@@ -563,7 +567,7 @@ the
 pÜt
 
 
-26 #e.
+38 #e.
 g
 . 
 pythÚ
@@ -583,7 +587,7 @@ the
 pÜt
 
 
-27 #nÙe: 
+39 #nÙe: 
 No
  
 šput
@@ -595,7 +599,7 @@ NÚe
 baud
  = 115200
 
-28 
+40 
 BhTx
 .
 	$cÚÃù
@@ -611,7 +615,7 @@ baud
 œ
 )
 
-30 #Pršˆ
+42 #Pršˆ
 sy¡em
  
 šfo
@@ -623,7 +627,7 @@ this
 run
 
 
-31 
+43 
 bhtx
  = 
 BhTx
@@ -631,19 +635,57 @@ BhTx
 	$g‘_š¡ªû
 ()
 
-32 
+44 
 bhtx
 .
 	`£nd_cmd
 ("verapp")
 
-33 
+45 
 bhtx
 .
 	`£nd_cmd
 ("su dev dev")
 
-35 
+47 
+i
+ 
+š
+ 
+	$¿nge
+(1,3): #loİ 2 
+times
+
+
+48 
+j
+ 
+š
+ 
+	`¿nge
+(
+	$Ën
+(
+şi_commªds_li¡
+)):
+
+49 
+bhtx
+.
+	$£nd_cmd
+(
+şi_commªds_li¡
+[
+j
+])
+
+51 
+	`´št
+('Fšished!e¡„ª %dimes\n' % 
+i
+)
+
+54 
 i
  
 š
@@ -651,13 +693,13 @@ i
 	$¿nge
 (1, 1000):
 
-36 
+55 
 bhtx
 .
 	`£nd_cmd
 ("factoryReset")
 
-37 
+56 
 bhtx
 .
 	`£nd_cmd
@@ -671,7 +713,7 @@ the
 deviû
 
 
-38 
+57 
 time
 .
 	$¦“p
@@ -679,107 +721,85 @@ time
 £cÚds
 
 
-39 
+58 
 bhtx
 .
 	`£nd_cmd
 ("su mfr Rj1146uHCpsCHakrBKQ")
 
-40 
+59 
 bhtx
 .
 	`£nd_cmd
 ("serialnum")
 
-41 
+60 
 bhtx
 .
 	`£nd_cmd
 ("txtype")
 
-42 
+61 
 bhtx
 .
 	`£nd_cmd
 ("ateuid")
 
-43 
+62 
 bhtx
 .
 	`£nd_cmd
 ("verpkg")
 
-44 
+63 
 bhtx
 .
 	`£nd_cmd
 ("verboot")
 
-45 
+64 
 bhtx
 .
 	`£nd_cmd
 ("verapp")
 
-46 
+65 
 bhtx
 .
 	`£nd_cmd
 ("verfpga")
 
-47 
+66 
 bhtx
 .
 	`£nd_cmd
 ("rebootfpga 2")
 
-48 
+67 
 	`´št
 ('‹¡„ª %dimes\n' % 
 i
 )
 
-49 
+68 
 i
  == 1000:
 
-50 
+69 
 	`´št
 ('Fšished!e¡„ª %dimes\n' % 
 i
 )
 
+70 
+bhtx
+.
+	`£nd_cmd
+("verfpga")
+
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_telnet.py
 
-1 
-impÜt
- 
-os
-
-
 2 
-impÜt
- 
-time
-
-
-3 
-äom
- 
-bhtx
- 
-impÜt
- 
-BhTx
-
-
-4 
-impÜt
- 
-	g¬g·r£
-
-
-7 
 P”iodiÿÎy
  
 run
@@ -794,14 +814,64 @@ CLI
  
 commªds
  autØ
-	g‹¡
+‹¡
 
 
-9 
+3 
+This
+ 
+Ca£
+ 
+is
+ 
+£t
+ 
+the
+  
+ho¡
+ 
+to
+ 
+‹Ê‘
+ 
+ov”
+ 
+	gAD4
+
+
+6 
+impÜt
+ 
+os
+
+
+7 
+impÜt
+ 
+time
+
+
+8 
+äom
+ 
+bhtx
+ 
+impÜt
+ 
+BhTx
+
+
+9 
+impÜt
+ 
+¬g·r£
+
+
+11 
 	g__Çme__
  == "__main__":
 
-11 #@
+13 #@
 todo
  
 Arg
@@ -819,7 +889,7 @@ some
 im´ovem’t
 ...
 
-12 
+14 
 ·r£r
  = 
 ¬g·r£
@@ -829,13 +899,13 @@ Argum’tP¬£r
 desütiÚ
 ='Run BHTX integrationests')
 
-13 #S‘  
+15 #S‘  
 ho¡
  
 is
  192.168.1.101
 
-14 
+16 
 ·r£r
 .
 add_¬gum’t
@@ -843,11 +913,11 @@ add_¬gum’t
 h–p
 ='Hostname for CLI connection')
 
-15 #S‘  
+17 #S‘  
 COM
 =8024
 
-16 
+18 
 ·r£r
 .
 add_¬gum’t
@@ -855,11 +925,11 @@ add_¬gum’t
 h–p
 ='Port for CLI connection')
 
-17 #S‘  
+19 #S‘  
 baud¿‹
 =115200
 
-18 
+20 
 ·r£r
 .
 add_¬gum’t
@@ -867,13 +937,13 @@ add_¬gum’t
 h–p
 ='Baud for CLI connection')
 
-19 #S‘  
+21 #S‘  
 IR
  = 
 True
 
 
-20 
+22 
 ·r£r
 .
 add_¬gum’t
@@ -887,11 +957,11 @@ F®£
 True
 ,
 
-21 
+23 
 h–p
 ='Specifyhat serial connection is NOT IR')
 
-22 
+24 
 ¬gs
  = 
 ·r£r
@@ -899,7 +969,7 @@ h–p
 	$·r£_¬gs
 ()
 
-24 #E¡ablish 
+26 #E¡ablish 
 cÚÃùiÚ
  
 to
@@ -907,7 +977,7 @@ to
 Œªsm™‹r
 
 
-25 #CLI 
+27 #CLI 
 commªd
  
 lše
@@ -921,7 +991,7 @@ the
 ·¿m‘”s
 
 
-26 #e.
+28 #e.
 g
  
 pythÚ
@@ -941,7 +1011,7 @@ the
 pÜt
 
 
-27 #e.
+29 #e.
 g
 . 
 pythÚ
@@ -961,7 +1031,7 @@ the
 pÜt
 
 
-28 #nÙe: 
+30 #nÙe: 
 No
  
 šput
@@ -973,7 +1043,7 @@ NÚe
 baud
  = 115200
 
-29 
+31 
 BhTx
 .
 	$cÚÃù
@@ -989,7 +1059,7 @@ baud
 œ
 )
 
-31 #Pršˆ
+33 #Pršˆ
 sy¡em
  
 šfo
@@ -1001,7 +1071,7 @@ this
 run
 
 
-32 
+34 
 bhtx
  = 
 BhTx
@@ -1009,19 +1079,19 @@ BhTx
 	$g‘_š¡ªû
 ()
 
-33 
+35 
 bhtx
 .
 	`£nd_cmd
 ("verapp")
 
-34 
+36 
 bhtx
 .
 	`£nd_cmd
 ("su dev dev")
 
-36 
+38 
 i
  
 š
@@ -1029,13 +1099,13 @@ i
 	$¿nge
 (1, 100):
 
-37 
+39 
 bhtx
 .
 	`£nd_cmd
 ("factoryReset")
 
-38 
+40 
 bhtx
 .
 	`£nd_cmd
@@ -1049,7 +1119,7 @@ the
 deviû
 
 
-39 
+41 
 time
 .
 	$¦“p
@@ -1057,75 +1127,677 @@ time
 £cÚds
 
 
-40 
+42 
 bhtx
 .
 	`£nd_cmd
 ("su mfr Rj1146uHCpsCHakrBKQ")
 
-41 
+43 
 bhtx
 .
 	`£nd_cmd
 ("serialnum")
 
-42 
+44 
 bhtx
 .
 	`£nd_cmd
 ("txtype")
 
-43 
+45 
 bhtx
 .
 	`£nd_cmd
 ("ateuid")
 
-44 
+46 
 bhtx
 .
 	`£nd_cmd
 ("verpkg")
 
-45 
+47 
 bhtx
 .
 	`£nd_cmd
 ("verboot")
 
-46 
+48 
 bhtx
 .
 	`£nd_cmd
 ("verapp")
 
-47 
+49 
 bhtx
 .
 	`£nd_cmd
 ("verfpga")
 
-48 
+50 
 bhtx
 .
 	`£nd_cmd
 ("rebootfpga 2")
 
-49 
+51 
 	`´št
 ('‹¡„ª %dimes\n' % 
 i
 )
 
-50 
+52 
 i
  == 100:
 
-51 
+53 
 	`´št
 ('Fšished!e¡„ª %dimes\n' % 
 i
 )
+
+	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_rf_cal_set.py
+
+2 
+This
+ 
+‹¡
+ 
+is
+ 
+to
+ 
+wr™e
+ 
+the
+ 
+C®ib¿tiÚ
+ 
+bË
+ 
+AD3
+ 
+RF
+ 
+v¬ŸÁ
+ 
+	gA
+
+
+4 
+äom
+ 
+bhtx
+ 
+impÜt
+ *
+
+5 
+impÜt
+ 
+sys
+
+
+6 
+impÜt
+ 
+time
+
+
+7 
+impÜt
+ 
+
+8 
+impÜt
+ 
+csv
+
+
+9 
+impÜt
+ 
+¬g·r£
+
+
+11 
+	g__Çme__
+ == "__main__":
+
+13 
+This
+ 
+süt
+ 
+is
+ 
+to
+ 
+£t
+ 
+the
+ 
+RF
+ 
+ÿlib¿tiÚ
+ 
+d©a
+ 
+š
+ 
+AD3
+
+
+15 
+·r£r
+ = 
+¬g·r£
+.
+Argum’tP¬£r
+(
+desütiÚ
+='Run BHTX integrationests')
+
+16 
+·r£r
+.
+add_¬gum’t
+('-n','--ho¡Çme', 
+h–p
+='Hostname for CLI connection')
+
+17 #S‘  
+COM
+=6
+
+18 
+·r£r
+.
+add_¬gum’t
+('-p','--pÜt',  = 'COM6', 
+h–p
+='Port for CLI connection')
+
+19 #S‘  
+baud¿‹
+=115200
+
+20 
+·r£r
+.
+add_¬gum’t
+('-b','--baud',  = 115200, 
+h–p
+='Baud for CLI connection')
+
+21 #S‘  
+IR
+ = 
+True
+
+
+22 
+·r£r
+.
+add_¬gum’t
+('--noœ', 
+de¡
+='œ', 
+aùiÚ
+='¡Üe_cÚ¡', cÚ¡=
+F®£
+, =
+True
+, 
+h–p
+='Specifyhat serial connection is NOT IR')
+
+24 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+S³cify
+ 
+the
+ 
+ÿlib¿tiÚ
+ 
+d©a
+ 
+csv
+ 
+fe
+ 
+Çme
+
+
+25 #v¬ŸÁA_rf_ÿli_d©a.
+csv
+ 
+is
+ 
+the
+ 
+fe
+ 
+cÚš
+h
+ÿlib¿tiÚ
+ 
+d©a
+
+
+26 #deçuÉ_ş—r_rf_d©a.
+csv
+ 
+is
+ 
+the
+ 
+fe
+ 
+»move
+ 
+®l
+h
+ÿlib¿tiÚ
+ 
+d©a
+, 
+back
+ 
+to
+ (0xFF)
+
+27 
+	g·r£r
+.
+add_¬gum’t
+('-f','--fe',  = 'v¬ŸÁA_rf_ÿli_d©a.csv', 
+h–p
+='Specifyhe calibration data csv file')
+
+29 
+¬gs
+ = 
+·r£r
+.
+	$·r£_¬gs
+()
+
+31 #E¡ablish 
+cÚÃùiÚ
+ 
+to
+ 
+Œªsm™‹r
+
+
+32 #CLI 
+commªd
+ 
+lše
+ 
+to
+ 
+šput
+ 
+the
+ 
+·¿m‘”s
+
+
+33 #e.
+g
+. 
+pythÚ
+ 
+rf_ÿl_£t
+.
+py
+ -
+p
+ 
+com6
+, 
+£t
+ 
+the
+ 
+ÿlib¿tiÚ
+ 
+bË
+
+
+34 #e.
+g
+. 
+pythÚ
+ 
+rf_ÿl_£t
+.
+py
+ -
+p
+ 
+com6
+ -
+f
+ 
+deçuÉ_ş—r_rf_d©a
+.
+csv
+, 
+»move
+ 
+®l
+ 
+the
+ 
+ÿlib¿tiÚ
+ 
+d©a
+
+
+35 #nÙe: 
+No
+ 
+šput
+, 
+ho¡Çme
+ = 
+NÚe
+, 
+baud
+ = 115200
+
+36 
+BhTx
+.
+	$cÚÃù
+(
+¬gs
+.
+ho¡Çme
+,‡rgs.
+pÜt
+,‡rgs.
+baud
+,‡rgs.
+œ
+)
+
+38 
+tx
+ = 
+BhTx
+.
+	$g‘_š¡ªû
+()
+
+40 
+tx
+.
+	$uÆock
+(è#sw™ch 
+to
+ 
+dev
+ 
+´ivege
+ 
+mode
+
+
+41 
+tx
+.
+	`£nd_cmd
+("ls"è#tØ
+check
+ 
+the
+ 
+mode
+ 
+sucûss
+
+
+43 
+tx
+.
+	$g‘_ÿl
+(
+C®TabË
+.
+PRIMARY
+è#lßd 
+cu¼’t
+ 
+ÿlib¿tiÚ
+ 
+v®ue
+ 
+äom
+ 
+the
+ 
+deviû
+
+
+45 #exam¶
+of
+ 
+£‰šg
+ oà
+RF
+ 
+ÿlib¿tiÚ
+
+
+46 #rfÿÈ1 
+low
+,0 0x0b,0x59
+
+47 #¬gv[0] = 1: 
+FÜ
+ 
+´im¬y
+ 
+Ü
+ 
+£cÚd¬y
+
+
+48 #¬gv[1] = 
+low
+,0 : 
+Th”e
+ 
+¬e
+ 
+two
+ 
+sub¬gs
+, 
+sub¬g
+[0] = 'low' 
+pow”
+ 
+Ëv–
+
+
+49 #sub¬g[1] = '0' 
+äequ’cy
+ 
+idx
+
+
+50 #nÙe: 
+The
+ ',' 
+¬gum’t
+ 
+b‘w“n
+ <
+pow”
+>,<
+fidx
+> 
+wl
+ 
+be
+ 
+om™
+
+
+51 #¬gv[2] = 0xb,0x59 : 
+Th”e
+ 
+¬e
+ 
+two
+ 
+sub¬gs
+, 
+sub¬g
+[0] = '0xb' 
+asic
+ 
+v®ue
+
+
+52 #sub¬g[1] = '0x59' 
+FPGA
+ 
+v®ue
+
+
+53 #nÙe: 
+The
+ ',' 
+¬gum’t
+ 
+b‘w“n
+ <
+asic
+>,<
+åga
+> 
+wl
+ 
+be
+ 
+om™
+
+
+54 
+w™h
+ 
+	`İ’
+(
+¬gs
+.
+fe
+,
+’codšg
+ = 'utf-8'è
+as
+ 
+csvfe
+:
+
+55 
+»ad”
+ = 
+csv
+.
+	$»ad”
+(
+csvfe
+)
+
+56 
+rows
+ 
+š
+ 
+	$’um”©e
+(
+»ad”
+):
+
+57 
+row
+ = 
+rows
+
+
+58 #´št(
+row
+è#´šˆ
+—ch
+ 
+lše
+ 
+of
+ 
+the
+ 
+ÿlib¿tiÚ
+ 
+bË
+
+
+59 #´št(
+row
+[1][0]) #arg[1]
+
+60 #´št(
+row
+[1][1]) #arg[2]
+
+61 
+tx
+.
+	`£nd_cmd
+("rfÿÈ1 {} {}".
+	$fÜm©
+(
+row
+[1][0],row[1][1]))
+
+62 
+time
+.
+	$¦“p
+(0.1è#d–ay 100
+ms
+
+
+64 
+tx
+.
+	`£nd_cmd
+("rfcal finish")
+
+65 
+tx
+.
+	$g‘_ÿl
+(
+C®TabË
+.
+PRIMARY
+è#»lßd 
+the
+ 
+ÿlib¿tiÚ
+ 
+v®ue
+ 
+aá”
+ 
+£‰šg
+
 
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_template.py
 
@@ -5940,498 +6612,6 @@ wr™”ow
 (
 d©a
 )
-
-	@C:\Other_Code_Repo\python_in_shure\bhtx_python\rf_cal_set.py
-
-1 
-äom
- 
-bhtx
- 
-impÜt
- *
-
-2 
-impÜt
- 
-sys
-
-
-3 
-impÜt
- 
-time
-
-
-4 
-impÜt
- 
-
-5 
-impÜt
- 
-csv
-
-
-6 
-impÜt
- 
-¬g·r£
-
-
-8 
-	g__Çme__
- == "__main__":
-
-10 
-This
- 
-süt
- 
-is
- 
-to
- 
-£t
- 
-the
- 
-RF
- 
-ÿlib¿tiÚ
- 
-d©a
- 
-š
- 
-AD3
-
-
-12 
-·r£r
- = 
-¬g·r£
-.
-Argum’tP¬£r
-(
-desütiÚ
-='Run BHTX integrationests')
-
-13 
-·r£r
-.
-add_¬gum’t
-('-n','--ho¡Çme', 
-h–p
-='Hostname for CLI connection')
-
-14 #S‘  
-COM
-=6
-
-15 
-·r£r
-.
-add_¬gum’t
-('-p','--pÜt',  = 'COM6', 
-h–p
-='Port for CLI connection')
-
-16 #S‘  
-baud¿‹
-=115200
-
-17 
-·r£r
-.
-add_¬gum’t
-('-b','--baud',  = 115200, 
-h–p
-='Baud for CLI connection')
-
-18 #S‘  
-IR
- = 
-True
-
-
-19 
-·r£r
-.
-add_¬gum’t
-('--noœ', 
-de¡
-='œ', 
-aùiÚ
-='¡Üe_cÚ¡', cÚ¡=
-F®£
-, =
-True
-, 
-h–p
-='Specifyhat serial connection is NOT IR')
-
-20 #Choo£ 
-the
- 
-ÿlib¿tiÚ
- 
-bË
-
-
-21 
-·r£r
-.
-add_¬gum’t
-('-f','--fe',  = 'bªdA_rf_ÿli.csv', 
-h–p
-='Specifyhe calibration data csv file')
-
-22 
-¬gs
- = 
-·r£r
-.
-	$·r£_¬gs
-()
-
-24 #E¡ablish 
-cÚÃùiÚ
- 
-to
- 
-Œªsm™‹r
-
-
-25 #CLI 
-commªd
- 
-lše
- 
-to
- 
-šput
- 
-the
- 
-·¿m‘”s
-
-
-26 #e.
-g
-. 
-pythÚ
- 
-rf_ÿl_£t
-.
-py
- -
-p
- 
-com6
-
-
-27 #nÙe: 
-No
- 
-šput
-, 
-ho¡Çme
- = 
-NÚe
-, 
-baud
- = 115200
-
-28 
-BhTx
-.
-	$cÚÃù
-(
-¬gs
-.
-ho¡Çme
-,‡rgs.
-pÜt
-,‡rgs.
-baud
-,‡rgs.
-œ
-)
-
-30 
-tx
- = 
-BhTx
-.
-	$g‘_š¡ªû
-()
-
-32 
-tx
-.
-	$uÆock
-(è#sw™ch 
-to
- 
-dev
- 
-´ivege
- 
-mode
-
-
-33 
-tx
-.
-	`£nd_cmd
-("ls"è#tØ
-check
- 
-the
- 
-mode
- 
-sucûss
-
-
-35 
-tx
-.
-	$g‘_ÿl
-(
-C®TabË
-.
-PRIMARY
-è#lßd 
-cu¼’t
- 
-ÿlib¿tiÚ
- 
-v®ue
- 
-äom
- 
-the
- 
-deviû
-
-
-37 #exam¶
-of
- 
-£‰šg
- oà
-RF
- 
-ÿlib¿tiÚ
-
-
-38 #rfÿÈ1 
-low
-,0 0x0b,0x59
-
-39 #¬gv[0] = 1: 
-FÜ
- 
-´im¬y
- 
-Ü
- 
-£cÚd¬y
-
-
-40 #¬gv[1] = 
-low
-,0 : 
-Th”e
- 
-¬e
- 
-two
- 
-sub¬gs
-, 
-sub¬g
-[0] = 'low' 
-pow”
- 
-Ëv–
-
-
-41 #sub¬g[1] = '0' 
-äequ’cy
- 
-idx
-
-
-42 #nÙe: 
-The
- ',' 
-¬gum’t
- 
-b‘w“n
- <
-pow”
->,<
-fidx
-> 
-wl
- 
-be
- 
-om™
-
-
-43 #¬gv[2] = 0xb,0x59 : 
-Th”e
- 
-¬e
- 
-two
- 
-sub¬gs
-, 
-sub¬g
-[0] = '0xb' 
-asic
- 
-v®ue
-
-
-44 #sub¬g[1] = '0x59' 
-FPGA
- 
-v®ue
-
-
-45 #nÙe: 
-The
- ',' 
-¬gum’t
- 
-b‘w“n
- <
-asic
->,<
-åga
-> 
-wl
- 
-be
- 
-om™
-
-
-46 
-w™h
- 
-	`İ’
-(
-¬gs
-.
-fe
-,
-’codšg
- = 'utf-8'è
-as
- 
-csvfe
-:
-
-47 
-»ad”
- = 
-csv
-.
-	$»ad”
-(
-csvfe
-)
-
-48 
-rows
- 
-š
- 
-	$’um”©e
-(
-»ad”
-):
-
-49 
-row
- = 
-rows
-
-
-50 #´št(
-row
-è#´šˆ
-—ch
- 
-lše
- 
-of
- 
-the
- 
-ÿlib¿tiÚ
- 
-bË
-
-
-51 #´št(
-row
-[1][0]) #arg[1]
-
-52 #´št(
-row
-[1][1]) #arg[2]
-
-53 
-tx
-.
-	`£nd_cmd
-("rfÿÈ1 {} {}".
-	$fÜm©
-(
-row
-[1][0],row[1][1]))
-
-54 
-time
-.
-	$¦“p
-(0.1è#d–ay 100
-ms
-
-
-56 
-tx
-.
-	`£nd_cmd
-("rfcal finish")
-
-57 
-tx
-.
-	$g‘_ÿl
-(
-C®TabË
-.
-PRIMARY
-è#»lßd 
-the
- 
-ÿlib¿tiÚ
- 
-v®ue
- 
-aá”
- 
-£‰šg
-
 
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\telnetlibCallback3.py
 
@@ -14540,16 +14720,16 @@ bhtx
 .
 0
 12
-805
+819
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_repeat.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_telnet.py
+C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_rf_cal_set.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_template.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\bhtx.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\cliconn.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\py_cscope_files_filter.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\rfMute_offset.py
-C:\Other_Code_Repo\python_in_shure\bhtx_python\rf_cal_set.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\telnetlibCallback3.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\test_demo.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\test_rf.py
