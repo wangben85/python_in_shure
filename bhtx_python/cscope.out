@@ -1,250 +1,4 @@
-cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000063789
-	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx.py
-
-1 
-imp‹t
- 
-unôã°
-
-
-2 
-imp‹t
- 
-os
-
-
-3 
-‰om
- 
-bhtx
- 
-imp‹t
- 
-BhTx
-
-
-4 
-imp‹t
- 
-¨g∑r£
-
-
-6 
-	g__«me__
- == "__main__":
-
-8 #@
-todo
- 
-Arg
- 
-∑rsög
- 
-hîe
- 
-could
- 
-u£
- 
-some
- 
-im¥ovemít
-...
-
-9 
-∑r£r
- = 
-¨g∑r£
-.
-ArgumítP¨£r
-(
-des¸ùti⁄
-='Run BHTX integrationÅests')
-
-10 
-∑r£r
-.
-add_¨gumít
-('-n','--ho°«me', 
-hñp
-='Hostname for CLI connection')
-
-11 #Së  
-COM
-=6
-
-12 
-∑r£r
-.
-add_¨gumít
-('-p','--p‹t',  = 'COM6', 
-hñp
-='Port for CLI connection')
-
-13 #Së  
-baudøã
-=115200
-
-14 
-∑r£r
-.
-add_¨gumít
-('-b','--baud',  = 115200, 
-hñp
-='Baud for CLI connection')
-
-15 #Së  
-IR
- = 
-True
-
-
-16 
-∑r£r
-.
-add_¨gumít
-('--noú', 
-de°
-='ú', 
-a˘i⁄
-='°‹e_c⁄°', c⁄°=
-FÆ£
-, =
-True
-, 
-hñp
-='SpecifyÅhat serial connection is NOT IR')
-
-17 
-¨gs
- = 
-∑r£r
-.
-	$∑r£_¨gs
-()
-
-19 #E°ablish 
-c⁄√˘i⁄
- 
-to
- 
-å™smôãr
-
-
-20 #CLI 
-comm™d
- 
-löe
- 
-to
- 
-öput
- 
-the
- 
-∑ømëîs
-
-
-21 #e.
-g
- 
-pyth⁄
- 
-bí_ã°_bhtx
-.
-py
- -
-p
- 
-com6
- #u£ 
-the
- 
-£rül
- 
-p‹t
-
-
-22 #e.
-g
-. 
-pyth⁄
- 
-bí_ã°_bhtx
-.
-py
- -
-n
- 192.168.1.103 -
-p
- 8024 #u£ 
-the
- 
-ã ë
- 8024 
-p‹t
-
-
-23 #nŸe: 
-No
- 
-öput
-, 
-ho°«me
- = 
-N⁄e
-, 
-baud
- = 115200
-
-24 
-BhTx
-.
-	$c⁄√˘
-(
-¨gs
-.
-ho°«me
-,árgs.
-p‹t
-,árgs.
-baud
-,árgs.
-ú
-)
-
-26 #Pröà
-sy°em
- 
-öfo
- 
-this
- 
-ã°
- 
-run
-
-
-27 
-bhtx
- = 
-BhTx
-.
-	$gë_ö°™˚
-()
-
-28 
-bhtx
-.
-	`£nd_cmd
-("verfpga")
-
-29 
-bhtx
-.
-	`£nd_cmd
-("verapp")
-
+cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000064151
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 
 1 
@@ -1358,6 +1112,322 @@ i
 ('Föished!Åe°Ñ™ %dÅimes\n' % 
 i
 )
+
+	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_template.py
+
+2 
+This
+ 
+is
+ 
+the
+ 
+AD3
+ 
+pyth⁄
+ 
+s¸ùt
+ 
+ã°
+ 
+ãm∂©e
+
+
+3 
+pyth⁄
+ 
+	gbí_ã°_bhtx
+.
+	gpy
+ -
+p
+ 
+	gcom6
+ #u£ 
+the
+ 
+IR
+ 
+£rül
+ 
+p‹t
+
+
+4 
+pyth⁄
+ 
+	gbí_ã°_bhtx
+.
+	gpy
+ -
+	gn
+ 192.168.1.101 -
+	gp
+ 8024 #u£ 
+the
+ 
+	gã ë
+ 8024 
+p‹t
+ 
+ovî
+ 
+AD4Q
+ 
+	gunô
+
+
+6 
+imp‹t
+ 
+unôã°
+
+
+7 
+imp‹t
+ 
+os
+
+
+8 
+‰om
+ 
+bhtx
+ 
+imp‹t
+ 
+BhTx
+
+
+9 
+imp‹t
+ 
+¨g∑r£
+
+
+11 
+	g__«me__
+ == "__main__":
+
+13 #@
+todo
+ 
+Arg
+ 
+∑rsög
+ 
+hîe
+ 
+could
+ 
+u£
+ 
+some
+ 
+im¥ovemít
+...
+
+14 
+∑r£r
+ = 
+¨g∑r£
+.
+ArgumítP¨£r
+(
+des¸ùti⁄
+='Run BHTX integrationÅests')
+
+15 
+∑r£r
+.
+add_¨gumít
+('-n','--ho°«me', 
+hñp
+='Hostname for CLI connection')
+
+16 #Së  
+COM
+=6
+
+17 
+∑r£r
+.
+add_¨gumít
+('-p','--p‹t',  = 'COM6', 
+hñp
+='Port for CLI connection')
+
+18 #Së  
+baudøã
+=115200
+
+19 
+∑r£r
+.
+add_¨gumít
+('-b','--baud',  = 115200, 
+hñp
+='Baud for CLI connection')
+
+20 #Së  
+IR
+ = 
+True
+
+
+21 
+∑r£r
+.
+add_¨gumít
+('--noú', 
+de°
+='ú', 
+a˘i⁄
+='°‹e_c⁄°', c⁄°=
+FÆ£
+, =
+True
+, 
+hñp
+='SpecifyÅhat serial connection is NOT IR')
+
+22 
+¨gs
+ = 
+∑r£r
+.
+	$∑r£_¨gs
+()
+
+24 #E°ablish 
+c⁄√˘i⁄
+ 
+to
+ 
+å™smôãr
+
+
+25 #CLI 
+comm™d
+ 
+löe
+ 
+to
+ 
+öput
+ 
+the
+ 
+∑ømëîs
+
+
+26 #e.
+g
+ 
+pyth⁄
+ 
+bí_ã°_bhtx
+.
+py
+ -
+p
+ 
+com6
+ #u£ 
+the
+ 
+IR
+ 
+£rül
+ 
+p‹t
+
+
+27 #e.
+g
+. 
+pyth⁄
+ 
+bí_ã°_bhtx
+.
+py
+ -
+n
+ 192.168.1.101 -
+p
+ 8024 #u£ 
+the
+ 
+ã ë
+ 8024 
+p‹t
+ 
+ovî
+ 
+AD4Q
+ 
+unô
+
+
+28 #nŸe: 
+No
+ 
+öput
+, 
+ho°«me
+ = 
+N⁄e
+, 
+baud
+ = 115200
+
+29 
+BhTx
+.
+	$c⁄√˘
+(
+¨gs
+.
+ho°«me
+,árgs.
+p‹t
+,árgs.
+baud
+,árgs.
+ú
+)
+
+31 #Pröà
+sy°em
+ 
+öfo
+ 
+this
+ 
+ã°
+ 
+run
+
+
+32 
+bhtx
+ = 
+BhTx
+.
+	$gë_ö°™˚
+()
+
+33 
+bhtx
+.
+	`£nd_cmd
+("verfpga")
+
+34 
+bhtx
+.
+	`£nd_cmd
+("verapp")
 
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\bhtx.py
 
@@ -4635,7 +4705,7 @@ b
 N⁄e
 , '')
 
-	@C:\Other_Code_Repo\python_in_shure\bhtx_python\cscope_files_filter.py
+	@C:\Other_Code_Repo\python_in_shure\bhtx_python\py_cscope_files_filter.py
 
 1 #ícodög: 
 utf
@@ -4757,7 +4827,27 @@ to
 be
  
 föd
-
+, 
+ö
+ 
+this
+ 
+¥oje˘
+ 
+fﬁdî
+ 
+ô
+ 
+is
+ 
+lookög
+ thê.
+py
+ 
+Pyth⁄
+ 
+sour˚
+ files
 
 30 
 obj
@@ -14344,14 +14434,14 @@ bhtx
 .
 0
 12
-793
-C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx.py
+805
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_repeat.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_telnet.py
+C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_template.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\bhtx.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\cliconn.py
-C:\Other_Code_Repo\python_in_shure\bhtx_python\cscope_files_filter.py
+C:\Other_Code_Repo\python_in_shure\bhtx_python\py_cscope_files_filter.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\rfMute_offset.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\rf_cal_set.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\telnetlibCallback3.py

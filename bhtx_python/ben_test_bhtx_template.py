@@ -1,3 +1,8 @@
+"""
+This is the AD3 python script test template
+python ben_test_bhtx.py -p com6                   # use the IR serial port
+python ben_test_bhtx.py -n 192.168.1.101 -p 8024  # use the telnet 8024 port over AD4Q unit
+"""
 import unittest
 import os
 from bhtx import BhTx
@@ -18,8 +23,8 @@ if __name__ == "__main__":
 
     # Establish connection to transmitter
     # CLI command line to input the parameters
-    # e.g    python ben_test_bhtx.py -p com6                   # use the serial port
-    # e.g.   python ben_test_bhtx.py -n 192.168.1.103 -p 8024  # use the telnet 8024 port
+    # e.g    python ben_test_bhtx.py -p com6                   # use the IR serial port
+    # e.g.   python ben_test_bhtx.py -n 192.168.1.101 -p 8024  # use the telnet 8024 port over AD4Q unit
     # note:  No input, hostname = None,  baud = 115200
     BhTx.connect(args.hostname, args.port, args.baud, args.ir)
 
