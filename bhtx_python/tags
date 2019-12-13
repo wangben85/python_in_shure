@@ -63,7 +63,10 @@ IP	telnetlibCallback3.py	/^IP  = bytes([244])  # Interrupt process$/;"	v
 KERMIT	telnetlibCallback3.py	/^KERMIT = bytes([47]) # KERMIT$/;"	v
 LFLOW	telnetlibCallback3.py	/^LFLOW = bytes([33]) # remote flow control$/;"	v
 LINEMODE	telnetlibCallback3.py	/^LINEMODE = bytes([34]) # Linemode option$/;"	v
+LOG	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 LOGOUT	telnetlibCallback3.py	/^LOGOUT = bytes([18]) # force logout$/;"	v
+LOG_FILE_PATH	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+LOG_FILE_PATH	bhtx.py	/^LOG_FILE_PATH = 'Cli_Log_File.txt'   # it is the CLI command LOG file path name$/;"	v
 LOW	bhtx.py	/^    LOW        = 2$/;"	v	class:RfPowerControlMode
 LOW	bhtx.py	/^    LOW = 2$/;"	v	class:RfPower
 MICRO_BP	bhtx.py	/^    MICRO_BP    = 8$/;"	v	class:TxType
@@ -190,9 +193,10 @@ expect	telnetlibCallback3.py	/^    def expect(self, list, timeout=None):$/;"	m	c
 expect_serial	cliconn.py	/^    def expect_serial(self, lst, timeout=None):$/;"	m	class:CliConn
 expect_telnet	cliconn.py	/^    def expect_telnet(self, lst, timeout=None):$/;"	m	class:CliConn
 expectedPowerCtrlMode	test_rf.py	/^    def expectedPowerCtrlMode(self, txtype, power=RfPower.NORM, scEn=True, rfmute=False):$/;"	m	class:test
-fLog	ben_test_bhtx_command_log.py	/^      fLog = open('.\/LogFile.txt', 'a')$/;"	v
-fLog	ben_test_bhtx_command_log.py	/^    fLog = open('.\/LogFile.txt', 'w')$/;"	v
+fLog	ben_test_bhtx_command_log.py	/^    fLog = open(LOG_FILE_PATH, 'a')$/;"	v
+fLog	ben_test_bhtx_command_log.py	/^    fLog = open(LOG_FILE_PATH, 'w')$/;"	v
 fieldnames	rfMute_offset.py	/^        fieldnames = ['cmd', 'pow', 'offset']$/;"	v
+file	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 file_write	py_cscope_files_filter.py	/^def file_write(content):$/;"	f
 filename	rfMute_offset.py	/^    filename = 'muteoffsets-{}.csv'.format(txtype)$/;"	v
 fileno	telnetlibCallback3.py	/^    def fileno(self):$/;"	m	class:Telnet
@@ -215,6 +219,7 @@ get_type	bhtx.py	/^    def get_type(self):$/;"	m	class:BhTx
 get_variant	bhtx.py	/^    def get_variant(self):$/;"	m	class:BhTx
 help	ben_test_bhtx_command_repeat.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
 help	ben_test_bhtx_command_telnet.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
+import	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 instance	bhtx.py	/^    instance = None$/;"	v	class:BhTx
 interact	telnetlibCallback3.py	/^    def interact(self):$/;"	m	class:Telnet
 isCalValid	test_rf.py	/^    def isCalValid(self, txtype):  # Check if Calibration table is valid, data could be read$/;"	m	class:test
@@ -241,6 +246,7 @@ parser	ben_test_bhtx_command_telnet.py	/^    parser = argparse.ArgumentParser(de
 parser	ben_test_bhtx_template.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	rf_cal_set.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	run_tests.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+path	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 process_rawq	telnetlibCallback3.py	/^    def process_rawq(self):$/;"	m	class:Telnet
 rawq_getchar	telnetlibCallback3.py	/^    def rawq_getchar(self):$/;"	m	class:Telnet
 re	bhtx.py	/^import re$/;"	i
@@ -301,6 +307,7 @@ testSingleCarrierCal	test_rf.py	/^    def testSingleCarrierCal(self):  # test ca
 testTxRfVariant	test_demo.py	/^    def testTxRfVariant(self): # example : test case 2$/;"	m	class:test
 testTxtype	test_demo.py	/^    def testTxtype(self):  # example: test case 1$/;"	m	class:test
 tests	run_tests.py	/^    tests = loader.discover(start_dir=os.path.dirname(__file__))$/;"	v
+the	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 theNULL	telnetlibCallback3.py	/^theNULL = bytes([0])$/;"	v
 time	ben_test_bhtx_command_log.py	/^import time$/;"	i
 time	ben_test_bhtx_command_repeat.py	/^import time$/;"	i

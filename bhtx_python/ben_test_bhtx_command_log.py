@@ -1,7 +1,13 @@
+"""
+Periodically run one or some CLI commands for auto test, and also record the CLI logs into txt file
+"""
+
 import os
 import time
 from bhtx import BhTx
+from bhtx import LOG_FILE_PATH   # import the LOG file path
 import argparse
+
 
 cli_commands_list = [
     "verapp",
@@ -9,17 +15,13 @@ cli_commands_list = [
     "verboot",
 ]
 
-"""
-Periodically run one or some CLI commands for auto test, and also record the CLI logs into txt file
-"""
-
 if __name__ == "__main__":
 
     # @todo Arg parsing here could use some improvement...
     parser = argparse.ArgumentParser(description='Run BHTX integration tests')
     parser.add_argument('-n','--hostname', help='Hostname for CLI connection')
     # Set default COM=6
-    parser.add_argument('-p','--port', default = 'COM5', help='Port for CLI connection')
+    parser.add_argument('-p','--port', default = 'COM6', help='Port for CLI connection')
     # Set default baudrate=115200
     parser.add_argument('-b','--baud', default = 115200, help='Baud for CLI connection')
     # Set default IR = True
@@ -37,15 +39,13 @@ if __name__ == "__main__":
     bhtx = BhTx.get_instance()
 
     # send command and record the feedback into log file
-    fLog = open('./LogFile.txt', 'w')
+    fLog = open(LOG_FILE_PATH, 'w')
+    fLog.close()
+    for j in range(len(cli_commands_list)):
+      bhtx.send_cmd_log(cli_commands_list[j])
+    fLog = open(LOG_FILE_PATH, 'a')
+    fLog.write("\n\n")
+    fLog.close()
 
-    for i in range(1,6):
-      fLog = open('./LogFile.txt', 'a')
-      fLog.write("This is the %d Log\n" %i)
-      fLog.close()
-      for j in range(len(cli_commands_list)):
-        bhtx.send_cmd_log(cli_commands_list[j])
-      fLog = open('./LogFile.txt', 'a')
-      fLog.write("\n\n")
-      fLog.close()
+    os.system('notepad %s' % LOG_FILE_PATH)  # Open the Log file 
 

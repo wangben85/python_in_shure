@@ -1,39 +1,7 @@
-cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000064151
+cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000064586
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 
-1 
-imp‹t
- 
-os
-
-
 2 
-imp‹t
- 
-time
-
-
-3 
-‰om
- 
-bhtx
- 
-imp‹t
- 
-BhTx
-
-
-4 
-imp‹t
- 
-¨g∑r£
-
-
-6 
-	g˛i_comm™ds_li°
- = [
-
-13 
 PîiodiˇŒy
  
 run
@@ -67,11 +35,61 @@ txt
 	gfûe
 
 
-16 
+5 
+imp‹t
+ 
+os
+
+
+6 
+imp‹t
+ 
+time
+
+
+7 
+‰om
+ 
+bhtx
+ 
+imp‹t
+ 
+BhTx
+
+
+8 
+‰om
+ 
+bhtx
+ 
+imp‹t
+ 
+	gLOG_FILE_PATH
+ #imp‹à
+the
+ 
+LOG
+ 
+fûe
+ 
+∑th
+
+
+9 
+imp‹t
+ 
+¨g∑r£
+
+
+12 
+	g˛i_comm™ds_li°
+ = [
+
+18 
 	g__«me__
  == "__main__":
 
-18 #@
+20 #@
 todo
  
 Arg
@@ -89,7 +107,7 @@ some
 im¥ovemít
 ...
 
-19 
+21 
 ∑r£r
  = 
 ¨g∑r£
@@ -99,7 +117,7 @@ ArgumítP¨£r
 des¸ùti⁄
 ='Run BHTX integrationÅests')
 
-20 
+22 
 ∑r£r
 .
 add_¨gumít
@@ -107,23 +125,23 @@ add_¨gumít
 hñp
 ='Hostname for CLI connection')
 
-21 #Së  
+23 #Së  
 COM
 =6
 
-22 
+24 
 ∑r£r
 .
 add_¨gumít
-('-p','--p‹t',  = 'COM5', 
+('-p','--p‹t',  = 'COM6', 
 hñp
 ='Port for CLI connection')
 
-23 #Së  
+25 #Së  
 baudøã
 =115200
 
-24 
+26 
 ∑r£r
 .
 add_¨gumít
@@ -131,13 +149,13 @@ add_¨gumít
 hñp
 ='Baud for CLI connection')
 
-25 #Së  
+27 #Së  
 IR
  = 
 True
 
 
-26 
+28 
 ∑r£r
 .
 add_¨gumít
@@ -153,7 +171,7 @@ True
 hñp
 ='SpecifyÅhat serial connection is NOT IR')
 
-27 
+29 
 ¨gs
  = 
 ∑r£r
@@ -161,7 +179,7 @@ hñp
 	$∑r£_¨gs
 ()
 
-29 #E°ablish 
+31 #E°ablish 
 c⁄√˘i⁄
  
 to
@@ -169,7 +187,7 @@ to
 å™smôãr
 
 
-30 #CLI 
+32 #CLI 
 comm™d
  
 löe
@@ -183,7 +201,7 @@ the
 ∑ømëîs
 
 
-31 #e.
+33 #e.
 g
  
 pyth⁄
@@ -203,7 +221,7 @@ the
 p‹t
 
 
-32 #e.
+34 #e.
 g
 . 
 pyth⁄
@@ -223,7 +241,7 @@ the
 p‹t
 
 
-33 #nŸe: 
+35 #nŸe: 
 No
  
 öput
@@ -235,7 +253,7 @@ N⁄e
 baud
  = 115200
 
-34 
+36 
 BhTx
 .
 	$c⁄√˘
@@ -251,7 +269,7 @@ baud
 ú
 )
 
-36 #Pröà
+38 #Pröà
 sy°em
  
 öfo
@@ -263,7 +281,7 @@ this
 run
 
 
-37 
+39 
 bhtx
  = 
 BhTx
@@ -271,7 +289,7 @@ BhTx
 	$gë_ö°™˚
 ()
 
-39 #£nd 
+41 #£nd 
 comm™d
  
 ™d
@@ -289,41 +307,21 @@ log
 fûe
 
 
-40 
+42 
 fLog
  = 
 	`›í
-('./LogFile.txt', 'w')
-
-42 
-i
- 
-ö
- 
-	$ønge
-(1,6):
+(
+LOG_FILE_PATH
+, 'w')
 
 43 
-fLog
- = 
-	`›í
-('./LogFile.txt', 'a')
-
-44 
-fLog
-.
-	`wrôe
-("Thi†i†thê%d Log\n" %
-i
-)
-
-45 
 fLog
 .
 	$˛o£
 ()
 
-46 
+44 
 j
  
 ö
@@ -335,7 +333,7 @@ j
 ˛i_comm™ds_li°
 )):
 
-47 
+45 
 bhtx
 .
 	$£nd_cmd_log
@@ -345,23 +343,39 @@ bhtx
 j
 ])
 
-48 
+46 
 fLog
  = 
 	`›í
-('./LogFile.txt', 'a')
+(
+LOG_FILE_PATH
+, 'a')
 
-49 
+47 
 fLog
 .
 	`wrôe
 ("\n\n")
 
-50 
+48 
 fLog
 .
-	`˛o£
+	$˛o£
 ()
+
+50 
+os
+.
+	`sy°em
+('nŸïad %s' % 
+LOG_FILE_PATH
+Ë#O≥¿
+the
+ 
+Log
+ 
+fûe
+
 
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_repeat.py
 
@@ -1455,7 +1469,7 @@ imp‹t
 ª
 
 
-5 
+6 
 ˛ass
  
 	$TxTy≥
@@ -1463,39 +1477,39 @@ imp‹t
 Enum
 ):
 
-6 
+7 
 BASIC_BP
  = 1
 
-7 
+8 
 ENHANCED_BP
  = 2
 
-8 
+9 
 BASIC_PLUGON
  = 3
 
-9 
+10 
 BASIC_HH
  = 4
 
-10 
+11 
 ENHANCED_HH
  = 6
 
-11 
+12 
 FD_HH
  = 7
 
-12 
+13 
 MICRO_BP
  = 8
 
-13 
+14 
 UNKNOWN
  = -1
 
-15 
+16 
 ˛ass
  
 	$RfV¨ü¡
@@ -1503,23 +1517,23 @@ UNKNOWN
 Enum
 ):
 
-16 
+17 
 A
  = 0
 
-17 
+18 
 B
  = 1
 
-18 
+19 
 C
  = 2
 
-19 
+20 
 UNKNOWN
  = -1
 
-21 
+22 
 ˛ass
  
 	$CÆTabÀ
@@ -1527,19 +1541,19 @@ UNKNOWN
 Enum
 ):
 
-22 
+23 
 PRIMARY
  = 0
 
-23 
+24 
 SECONDARY
  = 1
 
-24 
+25 
 COMBINED
  = 2
 
-26 
+27 
 ˛ass
  
 	$RfPowîC⁄åﬁMode
@@ -1547,27 +1561,27 @@ COMBINED
 Enum
 ):
 
-27 
+28 
 MUTE
  = 0
 
-28 
+29 
 STANDBY
  = 1
 
-29 
+30 
 LOW
  = 2
 
-30 
+31 
 NORM
  = 3
 
-31 
+32 
 HIGH
  = 4
 
-32 
+33 
 CC_MUTE
  = 5 #CC_MODES 
 ¨e
@@ -1581,27 +1595,27 @@ FD_HH
 å™smôãr
 
 
-33 
+34 
 CC_STANDBY
  = 6
 
-34 
+35 
 CC_LOW
  = 7
 
-35 
+36 
 CC_NORM
  = 8
 
-36 
+37 
 CC_HIGH
  = 9
 
-37 
+38 
 UNKNOWN
  = 10
 
-39 
+40 
 ˛ass
  
 	$RfPowî
@@ -1609,23 +1623,23 @@ UNKNOWN
 Enum
 ):
 
-40 
+41 
 LOW
  = 2
 
-41 
+42 
 NORM
  = 0
 
-42 
+43 
 HIGH
  = 1
 
-43 
+44 
 UNKNOWN
  = 3
 
-45 
+46 
 def
  
 	$__°r__
@@ -1633,7 +1647,7 @@ def
 £lf
 ):
 
-46  {2:'low', 0:'n‹m', 1:'hi', 3:'unknown'
+47  {2:'low', 0:'n‹m', 1:'hi', 3:'unknown'
 	}
 }[
 £lf
@@ -1641,7 +1655,7 @@ def
 vÆue
 ]
 
-48 
+49 
 ˛ass
  
 	$ModemMode
@@ -1649,19 +1663,19 @@ vÆue
 Enum
 ):
 
-49 
+50 
 STD
  = 0
 
-50 
+51 
 HD
  = 1
 
-51 
+52 
 UNKNOWN
  = 2
 
-53 
+54 
 def
  
 	$__°r__
@@ -1669,7 +1683,7 @@ def
 £lf
 ):
 
-54  {0:'°d', 1:'hd', 2:'UNKNOWN'
+55  {0:'°d', 1:'hd', 2:'UNKNOWN'
 	}
 }[
 £lf
@@ -1677,15 +1691,35 @@ def
 vÆue
 ]
 
-56 
+57 
 PRIMARY_CARRIER
  = 1
 
-57 
+58 
 SECONDARY_CARRIER
  = 2
 
-59 
+60 
+LOG_FILE_PATH
+ = 'Cli_Log_Fûe.txt' #ô 
+is
+ 
+the
+ 
+CLI
+ 
+comm™d
+ 
+LOG
+ 
+fûe
+ 
+∑th
+ 
+«me
+
+
+62 
 ˛ass
  
 	$BhTx
@@ -1693,17 +1727,17 @@ SECONDARY_CARRIER
 obje˘
 ):
 
-61 
+64 
 DEFAULT_TIMEOUT
  = 3.0
 
-62 
+65 
 ö°™˚
  = 
 N⁄e
 
 
-64 
+67 
 def
  
 	$__öô__
@@ -1719,13 +1753,13 @@ baud
 ú
 ):
 
-65 
+68 
 £lf
 .
 ú
  = ir
 
-66 
+69 
 £lf
 .
 ˛i
@@ -1739,7 +1773,7 @@ p‹t
 baud
 )
 
-67 
+70 
 £lf
 .
 ˛i
@@ -1747,11 +1781,11 @@ baud
 	`c⁄√˘
 ()
 
-69 @
+72 @
 ˛assmëhod
 
 
-70 
+73 
 def
  
 	$gë_ö°™˚
@@ -1759,7 +1793,7 @@ def
 ˛s
 ):
 
-71 
+74 
 ˛s
 .
 ö°™˚
@@ -1769,23 +1803,23 @@ is
 N⁄e
 :
 
-72 
+75 
 øi£
  
 	`Ex˚±i⁄
 ('Instance must be created with "connect"')
 
-74  
+77  
 ˛s
 .
 ö°™˚
 
 
-76 @
+79 @
 ˛assmëhod
 
 
-77 
+80 
 def
  
 	$c⁄√˘
@@ -1805,7 +1839,7 @@ baud
 True
 ):
 
-78 
+81 
 ˛s
 .
 ö°™˚
@@ -1817,7 +1851,7 @@ nŸ
 N⁄e
 :
 
-79 
+82 
 dñ
  
 ˛s
@@ -1825,7 +1859,7 @@ dñ
 ö°™˚
 
 
-81 #˛s.
+84 #˛s.
 ö°™˚
  = 
 	`˛s
@@ -1839,7 +1873,7 @@ baud
 ú
 )
 
-82 #They 
+85 #They 
 ¨e
  
 the
@@ -1847,7 +1881,7 @@ the
 ßme
 
 
-83 
+86 
 ˛s
 .
 ö°™˚
@@ -1863,7 +1897,7 @@ baud
 ú
 )
 
-84 
+87 
 ˛s
 .
 ö°™˚
@@ -1871,7 +1905,7 @@ baud
 	$u∆ock
 ()
 
-86 
+89 
 def
  
 	$u∆ock
@@ -1879,17 +1913,17 @@ def
 £lf
 ):
 
-87 
+90 
 £lf
 .
 	`£nd_cmd
 ("su dev dev"):
 
-88 
+91 
 	`¥öt
 ("Transmitter unlocked")
 
-90 
+93 
 def
  
 	$£nd_cmd
@@ -1907,7 +1941,7 @@ ex≥˘_ª•
 True
 ):
 
-92 
+95 
 Síd
  
 CLI
@@ -1921,7 +1955,7 @@ wôh
 timeout
 .
 
-94 
+97 
 A
  
 suc˚ssful
@@ -1943,7 +1977,7 @@ wôh
 no
 
 
-95 [
+98 [
 Faûed
 ] 
 mesßge
@@ -1951,7 +1985,7 @@ mesßge
 ≠≥¨ög
 .
 
-97 
+100 
 Rëu∫s
  
 ∑ú
@@ -1971,7 +2005,7 @@ of
 comm™d
 
 
-98 
+101 
 suc˚ss
  
 ™d
@@ -1987,7 +2021,7 @@ is
 ãxt
 .
 
-100 
+103 
 timeout
  
 is
@@ -1995,7 +2029,7 @@ is
 N⁄e
 :
 
-101 
+104 
 timeout
  = 
 £lf
@@ -2003,7 +2037,7 @@ timeout
 DEFAULT_TIMEOUT
 
 
-103 
+106 
 	`¥öt
 ("CLI> " + 
 cmd
@@ -2023,7 +2057,7 @@ be
 £¡
 
 
-105 
+108 
 £lf
 .
 ˛i
@@ -2033,7 +2067,7 @@ be
 cmd
 )
 
-107 #Waô 
+110 #Waô 
 comm™d
  
 ª•⁄£
@@ -2051,7 +2085,7 @@ Faûed
 ö
 
 
-108 #thê
+111 #thê
 ª•⁄£
  
 thí
@@ -2063,11 +2097,11 @@ comm™d
 Áûed
 
 
-109 
+112 
 ex≥˘_ª•
 :
 
-110 
+113 
 ª•
  = 
 £lf
@@ -2079,7 +2113,7 @@ ex≥˘_ª•
 timeout
 )
 
-111 
+114 
 suc˚ss
  = ((
 ª•
@@ -2087,7 +2121,7 @@ suc˚ss
 ™d
 
 
-112 (
+115 (
 N⁄e
  =
 ª
@@ -2099,7 +2133,7 @@ N⁄e
 MULTILINE
 )))
 
-114 #IR 
+117 #IR 
 d⁄gÀ
  
 echos
@@ -2119,7 +2153,7 @@ so
 ª•⁄£
 
 
-115 #F‹ 
+118 #F‹ 
 some
  
 ªas⁄
@@ -2127,7 +2161,7 @@ some
 we
 're havingÅo doá doubleÅrim...
 
-116 
+119 
 £lf
 .
 ˛i
@@ -2135,7 +2169,7 @@ we
 	$is_£rül
 ():
 
-117 
+120 
 ª•
 [2] = 
 ª
@@ -2147,13 +2181,13 @@ we
 cmd
 ), '',Ñesp[2])
 
-118 
+121 
 £lf
 .
 ú
 :
 
-119 
+122 
 ª•
 [2] = 
 ª
@@ -2165,7 +2199,7 @@ cmd
 cmd
 ), '',Ñesp[2])
 
-121 #S∂ô 
+124 #S∂ô 
 ⁄
  
 √wlöes
@@ -2181,7 +2215,7 @@ cmd
 ¥om±
 
 
-122 
+125 
 löes
  = 
 ª•
@@ -2189,17 +2223,17 @@ löes
 	$•lôlöes
 ()
 
-123 
+126 
 löes
  =Üines[:-1]
 
-124 
+127 
 	$Àn
 (
 löes
 ):
 
-125 
+128 
 	`¥öt
 ("\n".
 	$joö
@@ -2207,23 +2241,23 @@ löes
 löes
 ))
 
-127 
+130 
 suc˚ss
  = 
 True
 
 
-128 
+131 
 löes
  = ['']
 
-130  [
+133  [
 suc˚ss
 , 
 löes
 ]
 
-132 
+135 
 def
  
 	$£nd_cmd_log
@@ -2243,7 +2277,7 @@ True
 ex≥˘_ªc‹d
 =True):
 
-134 
+137 
 Síd
  
 CLI
@@ -2271,7 +2305,7 @@ log
 fûe
 .
 
-136 
+139 
 A
  
 suc˚ssful
@@ -2293,7 +2327,7 @@ wôh
 no
 
 
-137 [
+140 [
 Faûed
 ] 
 mesßge
@@ -2301,7 +2335,7 @@ mesßge
 ≠≥¨ög
 .
 
-139 
+142 
 Rëu∫s
  
 ∑ú
@@ -2319,25 +2353,19 @@ boﬁón
 of
  
 comm™d
-
-
-140 
+ 
 suc˚ss
  
 ™d
  
 £c⁄d
- 
-ñemít
- 
-is
- 
+ÉÀmíài†
 ª•⁄£
  
 ãxt
 .
 
-142 
+144 
 timeout
  
 is
@@ -2345,7 +2373,7 @@ is
 N⁄e
 :
 
-143 
+145 
 timeout
  = 
 £lf
@@ -2353,7 +2381,7 @@ timeout
 DEFAULT_TIMEOUT
 
 
-145 
+147 
 	`¥öt
 ("CLI> " + 
 cmd
@@ -2373,7 +2401,7 @@ be
 £¡
 
 
-147 
+149 
 £lf
 .
 ˛i
@@ -2383,7 +2411,7 @@ be
 cmd
 )
 
-149 #Waô 
+151 #Waô 
 comm™d
  
 ª•⁄£
@@ -2401,7 +2429,7 @@ Faûed
 ö
 
 
-150 #thê
+152 #thê
 ª•⁄£
  
 thí
@@ -2413,11 +2441,11 @@ comm™d
 Áûed
 
 
-151 
+153 
 ex≥˘_ª•
 :
 
-152 
+154 
 ª•
  = 
 £lf
@@ -2429,7 +2457,7 @@ ex≥˘_ª•
 timeout
 )
 
-153 
+155 
 suc˚ss
  = ((
 ª•
@@ -2437,7 +2465,7 @@ suc˚ss
 ™d
 
 
-154 (
+156 (
 N⁄e
  =
 ª
@@ -2449,7 +2477,7 @@ N⁄e
 MULTILINE
 )))
 
-156 #IR 
+158 #IR 
 d⁄gÀ
  
 echos
@@ -2469,7 +2497,7 @@ so
 ª•⁄£
 
 
-157 #F‹ 
+159 #F‹ 
 some
  
 ªas⁄
@@ -2477,31 +2505,13 @@ some
 we
 're havingÅo doá doubleÅrim...
 
-158 
+160 
 £lf
 .
 ˛i
 .
 	$is_£rül
 ():
-
-159 
-ª•
-[2] = 
-ª
-.
-	`sub
-('^\s*{}\s*'.
-	`f‹m©
-(
-cmd
-), '',Ñesp[2])
-
-160 
-£lf
-.
-ú
-:
 
 161 
 ª•
@@ -2515,7 +2525,25 @@ cmd
 cmd
 ), '',Ñesp[2])
 
-163 #S∂ô 
+162 
+£lf
+.
+ú
+:
+
+163 
+ª•
+[2] = 
+ª
+.
+	`sub
+('^\s*{}\s*'.
+	`f‹m©
+(
+cmd
+), '',Ñesp[2])
+
+165 #S∂ô 
 ⁄
  
 √wlöes
@@ -2531,7 +2559,7 @@ cmd
 ¥om±
 
 
-164 
+166 
 löes
  = 
 ª•
@@ -2539,17 +2567,17 @@ löes
 	$•lôlöes
 ()
 
-165 
+167 
 löes
  =Üines[:-1]
 
-166 
+168 
 	$Àn
 (
 löes
 ):
 
-167 
+169 
 	`¥öt
 ("\n".
 	$joö
@@ -2557,27 +2585,87 @@ löes
 löes
 ))
 
-169 
+171 
 suc˚ss
  = 
 True
 
 
-170 
+172 
 löes
  = ['']
 
-172 
+174 #i‡
+ex≥˘_ªc‹d
+ = 
+åue
+, 
+móns
+ 
+we
+ 
+√ed
+ 
+to
+ 
+ªc‹d
+ 
+the
+ 
+CLI
+ 
+comm™d
+ 
+„edback
+, 
+wrôe
+ 
+them
+Åÿ
+Log
+ 
+fûe
+
+
+175 
 ex≥˘_ªc‹d
 :
 
-173 
+176 
 fLog
  = 
 	`›í
-('./LogFile.txt', 'a')
+(
+LOG_FILE_PATH
+, 'a+'Ë#'
+a
++' means it will overwrite original file
 
-174 
+177 
+fLog
+.
+	$wrôe
+(
+cmd
+Ë#wrôê
+comm™d
+ 
+to
+ 
+Log
+ 
+fûe
+ 
+fú°
+
+
+178 
+fLog
+.
+	`wrôe
+('\n')
+
+179 
 fLog
 .
 	`wrôe
@@ -2585,27 +2673,45 @@ fLog
 	$joö
 (
 löes
-))
+)Ë#wrôê
+comm™d
+ 
+ª•⁄£
+ 
+to
+ 
+Log
+ 
+fûe
+ 
+œãr
 
-175 
+
+180 
 fLog
 .
 	`wrôe
 ('\n')
 
-176 
+181 
+fLog
+.
+	`wrôe
+('\n')
+
+182 
 fLog
 .
 	$˛o£
 ()
 
-178  [
+184  [
 suc˚ss
 , 
 löes
 ]
 
-180 
+186 
 def
  
 	$£t_‰eq
@@ -2617,7 +2723,7 @@ def
 ‰eq
 ):
 
-182 
+188 
 Së
  
 ‰equícy
@@ -2631,7 +2737,7 @@ so
 ô
 'sÇot impacted by bandÑeqs
 
-184  
+190  
 £lf
 .
 	`£nd_cmd
@@ -2643,7 +2749,7 @@ so
 ‰eq
  / 1000.0))
 
-186 
+192 
 def
  
 	$£t_powî
@@ -2653,7 +2759,7 @@ def
 powî
 ):
 
-188 
+194 
 Së
  
 powî
@@ -2661,7 +2767,7 @@ powî
 tx
 Öower.
 
-190  
+196  
 £lf
 .
 	`£nd_cmd
@@ -2671,7 +2777,7 @@ tx
 powî
 ))
 
-192 
+198 
 def
  
 	$gë_powî
@@ -2679,7 +2785,7 @@ def
 £lf
 ):
 
-194 
+200 
 Rëu∫
  
 å™smôãr
@@ -2693,7 +2799,7 @@ powî
 mode
 
 
-196 
+202 
 ªt
  = 
 RfPowî
@@ -2701,7 +2807,7 @@ RfPowî
 UNKNOWN
 
 
-197 
+203 
 ª•
  = 
 £lf
@@ -2709,21 +2815,21 @@ UNKNOWN
 	`£nd_cmd
 ('rfpow')
 
-198 
+204 
 ª•
 :
 
-199 
+205 
 ªt
  = 
 ª•
 [1][0] #working
 
-200  
+206  
 ªt
 
 
-202 
+208 
 def
  
 	$£t_rfˇr2
@@ -2733,7 +2839,7 @@ def
 íabÀ
 ):
 
-204 
+210 
 Së
  
 £c⁄d¨y
@@ -2745,7 +2851,7 @@ RF
 íabÀ
 
 
-206  
+212  
 £lf
 .
 	`£nd_cmd
@@ -2755,7 +2861,7 @@ RF
 íabÀ
  "off"))
 
-208 
+214 
 def
  
 	$gë_ty≥
@@ -2763,7 +2869,7 @@ def
 £lf
 ):
 
-210 
+216 
 Rëu∫
  
 å™smôãr
@@ -2771,7 +2877,7 @@ Rëu∫
 ty≥
 
 
-212 
+218 
 ªt
  = 
 TxTy≥
@@ -2779,7 +2885,7 @@ TxTy≥
 UNKNOWN
 
 
-213 
+219 
 ª•
  = 
 £lf
@@ -2787,11 +2893,11 @@ UNKNOWN
 	`£nd_cmd
 ('txtype')
 
-214 
+220 
 ª•
 :
 
-215 
+221 
 ªt
  = 
 	`TxTy≥
@@ -2801,17 +2907,17 @@ UNKNOWN
 	`•lô
 (' ')[0])) #working
 
-216 #ªà
+222 #ªà
 ª•
 [1][0].
 	`•lô
 (' ')[0] #working
 
-217  
+223  
 ªt
 
 
-219 
+225 
 def
  
 	$gë_b™d
@@ -2819,7 +2925,7 @@ def
 £lf
 ):
 
-221 
+227 
 Rëu∫
  
 å™smôãr
@@ -2827,11 +2933,11 @@ Rëu∫
 ty≥
 
 
-223 
+229 
 ªt
  = ""
 
-224 
+230 
 ª•
  = 
 £lf
@@ -2839,11 +2945,11 @@ ty≥
 	`£nd_cmd
 ('band')
 
-225 
+231 
 ª•
 :
 
-226 
+232 
 ªt
  = 
 ª•
@@ -2851,11 +2957,11 @@ ty≥
 	`•lô
 (' ')[0]
 
-227  
+233  
 ªt
 
 
-229 
+235 
 def
  
 	$gë_v¨ü¡
@@ -2863,7 +2969,7 @@ def
 £lf
 ):
 
-231 
+237 
 Rëu∫
  
 å™smôãr
@@ -2871,7 +2977,7 @@ Rëu∫
 v¨ü¡
 
 
-233 
+239 
 ªt
  = 
 RfV¨ü¡
@@ -2879,7 +2985,7 @@ RfV¨ü¡
 UNKNOWN
 
 
-234 
+240 
 ª•
  = 
 £lf
@@ -2887,11 +2993,11 @@ UNKNOWN
 	`£nd_cmd
 ('rfvariant')
 
-235 
+241 
 ª•
 :
 
-236 
+242 
 ªt
  = 
 RfV¨ü¡
@@ -2901,11 +3007,11 @@ RfV¨ü¡
 	`•lô
 (' ')[0]]
 
-237  
+243  
 ªt
 
 
-239 
+245 
 def
  
 	$£t_modem
@@ -2915,7 +3021,7 @@ def
 modem
 ):
 
-241 
+247 
 Së
  
 å™smôãr
@@ -2925,7 +3031,7 @@ modem
 mode
 
 
-243  
+249  
 £lf
 .
 	`£nd_cmd
@@ -2935,7 +3041,7 @@ mode
 modem
 ))
 
-245 
+251 
 def
  
 	$gë_modem
@@ -2943,7 +3049,7 @@ def
 £lf
 ):
 
-247 
+253 
 Rëu∫
  
 å™smôãr
@@ -2953,7 +3059,7 @@ modem
 mode
 
 
-249 
+255 
 ªt
  = 
 ModemMode
@@ -2961,7 +3067,7 @@ ModemMode
 UNKNOWN
 
 
-250 
+256 
 ª•
  = 
 £lf
@@ -2969,27 +3075,27 @@ UNKNOWN
 	`£nd_cmd
 ('modem')
 
-251 
+257 
 ª•
 :
 
-252 #ªà
+258 #ªà
 ModemMode
 [
 ª•
 [1][0]]
 
-253 
+259 
 ªt
  = 
 ª•
 [1][0]
 
-254  
+260  
 ªt
 
 
-256 
+262 
 def
  
 	$∑r£_ˇl_löe
@@ -2999,7 +3105,7 @@ def
 löe
 ):
 
-258 
+264 
 P¨£
  
 löe
@@ -3011,11 +3117,11 @@ löe
 èbÀ
 
 
-260 
+266 
 ∑t
  = '\d+:\s+(?P<lbl>\w+)?\s+(?P<values>.*)'
 
-262 
+268 
 pwr
  = 
 RfPowî
@@ -3023,13 +3129,13 @@ RfPowî
 UNKNOWN
 
 
-263 
+269 
 ˇlvÆs
  = {
 	}
 }
 
-265 
+271 
 m
  = 
 ª
@@ -3041,11 +3147,11 @@ m
 löe
 )
 
-266 
+272 
 m
 :
 
-267 
+273 
 ª_di˘
  = 
 m
@@ -3053,13 +3159,13 @@ m
 	$groupdi˘
 ()
 
-268 
+274 
 lbl
  = 
 ª_di˘
 ['lbl']
 
-269 
+275 
 lbl
  ='low': 
 pwr
@@ -3069,7 +3175,7 @@ RfPowî
 LOW
 
 
-270 
+276 
 ñif
  
 lbl
@@ -3081,7 +3187,7 @@ RfPowî
 NORM
 
 
-271 
+277 
 ñif
  
 lbl
@@ -3093,7 +3199,7 @@ RfPowî
 HIGH
 
 
-272 
+278 
 pwr
  !
 RfPowî
@@ -3101,7 +3207,7 @@ RfPowî
 UNKNOWN
 :
 
-273 
+279 
 fidx
 , 
 ∑ú
@@ -3115,7 +3221,7 @@ fidx
 	`•lô
 (' ')):
 
-274 
+280 
 ˇl_vÆ
  = [(
 sˇÀ
@@ -3127,7 +3233,7 @@ sˇÀ
 	`•lô
 (',')]
 
-275 
+281 
 ˇlvÆs
 [
 fidx
@@ -3135,13 +3241,13 @@ fidx
 ˇl_vÆ
 
 
-277  [
+283  [
 pwr
 , 
 ˇlvÆs
 ]
 
-279 
+285 
 def
  
 	$gë_ˇl
@@ -3151,7 +3257,7 @@ def
 èbÀ
 ):
 
-281 
+287 
 Rëu∫
  
 ˇlibøti⁄
@@ -3161,11 +3267,11 @@ Rëu∫
 èbÀ
 
 
-283 
+289 
 cmd
  = ''
 
-284 
+290 
 èbÀ
  =
 CÆTabÀ
@@ -3173,11 +3279,11 @@ CÆTabÀ
 COMBINED
 :
 
-285 
+291 
 cmd
  = 'scrfcal'
 
-286 
+292 
 ñif
  
 èbÀ
@@ -3187,15 +3293,15 @@ CÆTabÀ
 PRIMARY
 :
 
-287 #ñi‡
+293 #ñi‡
 èbÀ
  == 0:
 
-288 
+294 
 cmd
  = 'rfcal 1'
 
-289 
+295 
 ñif
  
 èbÀ
@@ -3205,17 +3311,17 @@ CÆTabÀ
 SECONDARY
 :
 
-290 
+296 
 cmd
  = 'rfcal 2'
 
-292 
+298 
 ˇl
  = {
 	}
 }
 
-293 
+299 
 ª•
  = 
 £lf
@@ -3225,17 +3331,17 @@ cmd
 cmd
 )
 
-294 
+300 
 ª•
 :
 
-295 
+301 
 löes
  = 
 ª•
 [1][2:]
 
-296 
+302 
 löe
  
 ö
@@ -3243,7 +3349,7 @@ löe
 löes
 :
 
-297 
+303 
 ªt
  = 
 £lf
@@ -3253,17 +3359,17 @@ löes
 löe
 )
 
-298 
+304 
 ˇl
 [
 ªt
 [0]] =Ñet[1]
 
-300  
+306  
 ˇl
 
 
-302 
+308 
 def
  
 	$gë_cuºít_rf_ˇl
@@ -3273,7 +3379,7 @@ def
 ˇºõr
 ):
 
-304 
+310 
 Rëu∫
  
 cuºít
@@ -3295,7 +3401,7 @@ of
 öãgî
 
 
-305 
+311 
 	`sˇÀs
  (
 asic
@@ -3303,17 +3409,17 @@ asic
 Âga
 ).
 
-307 
+313 
 ˇl
  = []
 
-308 
+314 
 dev
  
 ö
  ['asic', 'fpga']:
 
-309 
+315 
 ª•
  = 
 £lf
@@ -3327,11 +3433,11 @@ dev
 ˇºõr
 ))
 
-310 
+316 
 ª•
 :
 
-311 
+317 
 ˇl
 .
 	`≠≥nd
@@ -3339,11 +3445,11 @@ dev
 ª•
 [1][0], 16))
 
-312  
+318  
 ˇl
 
 
-314 
+320 
 def
  
 	$Âga_≥ek
@@ -3353,7 +3459,7 @@ def
 addr
 ):
 
-316 
+322 
 Rëu∫
  
 Âga
@@ -3361,11 +3467,11 @@ Rëu∫
 c⁄ã¡s
 
 
-318 
+324 
 ªt
  = 0
 
-319 
+325 
 ª•
  = 
 £lf
@@ -3377,11 +3483,11 @@ c⁄ã¡s
 addr
 ))
 
-320 
+326 
 ª•
 :
 
-321 
+327 
 ªt
  = (
 ª•
@@ -3389,11 +3495,11 @@ addr
 	`•lô
 (' ')[1], 16)
 
-322  
+328  
 ªt
 
 
-324 #Cœs†
+330 #Cœs†
 öô
  
 Æso
@@ -3403,7 +3509,7 @@ w‹ks
 bñow
 
 
-326 
+332 
 	`BhTx
 (
 N⁄e
@@ -3411,7 +3517,7 @@ N⁄e
 True
 )
 
-327 
+333 
 BhTx
 .
 	`c⁄√˘
@@ -3421,7 +3527,7 @@ N⁄e
 True
 )
 
-328 
+334 
 bhtx
  = 
 BhTx
@@ -3429,13 +3535,13 @@ BhTx
 	$gë_ö°™˚
 ()
 
-329 
+335 
 bhtx
 .
 	`£nd_cmd
 ("verfpga")
 
-332 ##############
+338 ##############
 OvîÆ
  
 comm™ds
@@ -3443,7 +3549,7 @@ comm™ds
 ã°
 ####################
 
-333 
+339 
 ã°bh
  = 
 	`BhTx
@@ -3453,27 +3559,27 @@ N⁄e
 True
 )
 
-334 #ã°bh.
+340 #ã°bh.
 	`£nd_cmd
 ("ls")
 
-335 
+341 
 ã°bh
 .
 	$u∆ock
 ()
 
-336 #ã°bh.
+342 #ã°bh.
 	`£nd_cmd
 ("ls")
 
-337 #CLI 
+343 #CLI 
 comm™ds
  
 ã°
 
 
-338 
+344 
 ã°bh
 .
 	$£t_‰eq
@@ -3491,7 +3597,7 @@ to
 Mhz
 
 
-339 
+345 
 ã°bh
 .
 	`£t_powî
@@ -3507,7 +3613,7 @@ hi
 Àvñ
 
 
-340 
+346 
 ã°bh
 .
 	$gë_ty≥
@@ -3519,7 +3625,7 @@ Tx
 ty≥
 
 
-341 
+347 
 ã°bh
 .
 	$gë_b™d
@@ -3531,7 +3637,7 @@ Tx
 b™d
 
 
-342 
+348 
 ã°bh
 .
 	$gë_v¨ü¡
@@ -3545,7 +3651,7 @@ RF
 v¨ü¡
 :
 
-343 
+349 
 ã°bh
 .
 	`£t_powî
@@ -3561,7 +3667,7 @@ n‹m
 Àvñ
 
 
-344 
+350 
 ã°bh
 .
 	$gë_ˇl
@@ -3577,25 +3683,25 @@ the
 vÆue
 
 
-345 
+351 
 ã°bh
 .
 	$gë_cuºít_rf_ˇl
 (1)
 
-346 
+352 
 ã°bh
 .
 	`Âga_≥ek
 (0x0)
 
-349 ##########
+355 ##########
 Modem
  
 ã°
 
 
-350 
+356 
 ã°bh
  = 
 	`BhTx
@@ -3605,13 +3711,13 @@ N⁄e
 True
 )
 
-351 
+357 
 ã°bh
 .
 	$u∆ock
 ()
 
-352 
+358 
 ã°bh
 .
 	$gë_modem
@@ -3631,7 +3737,7 @@ STD
 HD
 
 
-353 
+359 
 ã°bh
 .
 	$£t_modem
@@ -3653,7 +3759,7 @@ STD
 ‹
  HD
 
-354 
+360 
 ã°bh
 .
 	$gë_modem
@@ -3673,7 +3779,7 @@ STD
 HD
 
 
-355 
+361 
 ã°bh
 .
 	$£t_modem
@@ -3695,7 +3801,7 @@ mode
 HD
 
 
-356 
+362 
 ã°bh
 .
 	$gë_modem
@@ -3715,13 +3821,13 @@ STD
 HD
 
 
-359 ##########
+365 ##########
 RÂowî
  
 ã°
 
 
-360 
+366 
 ã°bh
  = 
 	`BhTx
@@ -3731,19 +3837,19 @@ N⁄e
 True
 )
 
-361 
+367 
 ã°bh
 .
 	$u∆ock
 ()
 
-362 
+368 
 ã°bh
 .
 	`£nd_cmd
 ("oledvcc on 255")
 
-363 
+369 
 ã°bh
 .
 	$£t_powî
@@ -3769,7 +3875,7 @@ n‹m
 high
 
 
-364 
+370 
 ã°bh
 .
 	$gë_powî
@@ -3791,7 +3897,7 @@ n‹m
 high
 
 
-365 
+371 
 ã°bh
 .
 	$£t_powî
@@ -3817,7 +3923,7 @@ n‹m
 high
 
 
-366 
+372 
 ã°bh
 .
 	$gë_powî
@@ -3839,7 +3945,7 @@ n‹m
 high
 
 
-367 
+373 
 ã°bh
 .
 	$£t_powî
@@ -3865,7 +3971,7 @@ n‹m
 high
 
 
-368 
+374 
 ã°bh
 .
 	$gë_powî

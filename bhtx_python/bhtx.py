@@ -2,6 +2,7 @@ from cliconn import CliConn
 from enum import Enum
 import re
 
+
 class TxType(Enum):
     BASIC_BP    = 1
     ENHANCED_BP = 2
@@ -55,6 +56,8 @@ class ModemMode(Enum):
 
 PRIMARY_CARRIER = 1
 SECONDARY_CARRIER = 2
+
+LOG_FILE_PATH = 'Cli_Log_File.txt'   # it is the CLI command LOG file path name
 
 class BhTx(object):
 
@@ -136,8 +139,7 @@ class BhTx(object):
         A successful command will result in a prompt with no
         [Failed] message appearing.
 
-        Returns pair where first element is boolean of command
-        success and second element is response text.
+        Returns pair where first element is boolean of command success and second element is response text.
         """
         if timeout is None:
             timeout = self.DEFAULT_TIMEOUT
@@ -169,9 +171,13 @@ class BhTx(object):
             success = True
             lines = ['']
 
+        # if expect_record = true, means we need to record the CLI command feedback, write them to Log file
         if expect_record:
-            fLog = open('./LogFile.txt', 'a')
-            fLog.write(' '.join(lines))
+            fLog = open(LOG_FILE_PATH, 'a+')  # 'a+' means it will overwrite original file
+            fLog.write(cmd)   # write command to Log file first
+            fLog.write('\n')
+            fLog.write(' '.join(lines))  # write command response to Log file later
+            fLog.write('\n')
             fLog.write('\n')
             fLog.close()
 
