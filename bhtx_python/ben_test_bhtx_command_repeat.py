@@ -1,11 +1,23 @@
+
+"""
+Periodically run one or some CLI commands for auto test
+"""
+
 import os
 import time
 from bhtx import BhTx
 import argparse
 
-"""
-Periodically run one or some CLI commands for auto test
-"""
+cli_commands_list = [
+    "verapp",
+    "verfpga",
+    "serialnum",
+    "txtype",
+    "ateuid",
+    "verpkg",
+    "verboot",
+]
+
 if __name__ == "__main__":
 
     # @todo Arg parsing here could use some improvement...
@@ -32,7 +44,14 @@ if __name__ == "__main__":
     bhtx.send_cmd("verapp")
     bhtx.send_cmd("su dev dev")
 
-    for i in range(1, 1000):
+    for i in range(1,3):   # loop 2 times
+      for j in range(len(cli_commands_list)):
+        bhtx.send_cmd(cli_commands_list[j])
+    
+    print('Finished! test ran %d times\n' % i)
+
+"""
+   for i in range(1, 1000):
         bhtx.send_cmd("factoryReset")
         bhtx.send_cmd("reboot", expect_resp=False)  # reboot the device
         time.sleep(4)  # delay 4 seconds
@@ -48,3 +67,5 @@ if __name__ == "__main__":
         print('test ran %d times\n' % i)
         if i == 1000:
             print('Finished! test ran %d times\n' % i)
+        bhtx.send_cmd("verfpga")
+"""

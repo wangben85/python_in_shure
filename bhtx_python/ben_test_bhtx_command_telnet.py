@@ -1,11 +1,13 @@
+"""
+Periodically run one or some CLI commands for auto test
+This Case is set the default host to telnet over AD4
+"""
+
 import os
 import time
 from bhtx import BhTx
 import argparse
 
-"""
-Periodically run one or some CLI commands for auto test
-"""
 if __name__ == "__main__":
 
     # @todo Arg parsing here could use some improvement...
