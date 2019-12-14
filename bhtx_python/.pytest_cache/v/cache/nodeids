@@ -1,5 +1,10 @@
 [
-  "test_rfcal.py::test::testDefaultCal",
-  "test_rfcal.py::test::testDualCarrierCal",
-  "test_rfcal.py::test::testSingleCarrierCal"
+  "test_demo.py::test::testTxRfVariant",
+  "test_demo.py::test::testTxtype",
+  "test_rf.py::test::testAdjustedCal",
+  "test_rf.py::test::testDefaultCal",
+  "test_rf.py::test::testDualCarrierCal",
+  "test_rf.py::test::testHdPowerLimit",
+  "test_rf.py::test::testMute",
+  "test_rf.py::test::testSingleCarrierCal"
 ]

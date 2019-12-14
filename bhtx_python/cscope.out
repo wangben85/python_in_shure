@@ -1,4 +1,4 @@
-cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000065362
+cscope 15 C:\Other_Code_Repo\python_in_shure\bhtx_python"               0000068076
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 
 2 
@@ -1197,6 +1197,564 @@ i
 i
 )
 
+	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_helpall_cli.py
+
+2 
+This
+ 
+‹¡
+ 
+is
+ 
+execu‹
+ 
+CLI
+ 
+	gcommmªd
+ "h–°®l" 
+©
+ 
+´ivege
+ 
+mode
+ 
+to
+ 
+g‘
+ 
+®l
+ 
+the
+ 
+suµÜ‹d
+ CLI 
+commªds
+ 
+ªd
+ 
+put
+ 
+them
+ 
+¡Üed
+ 
+š
+ 
+csv
+ 
+	gfe
+
+
+5 
+impÜt
+ 
+os
+
+
+6 
+impÜt
+ 
+time
+
+
+7 
+äom
+ 
+bhtx
+ 
+impÜt
+ 
+BhTx
+
+
+8 
+äom
+ 
+bhtx
+ 
+impÜt
+ 
+	gLOG_FILE_PATH
+ #impÜˆ
+the
+ 
+LOG
+ 
+fe
+ 
+·th
+
+
+9 
+impÜt
+ 
+¬g·r£
+
+
+10 
+impÜt
+ 
+csv
+
+
+12 
+	g__Çme__
+ == "__main__":
+
+14 #@
+todo
+ 
+Arg
+ 
+·rsšg
+ 
+h”e
+ 
+could
+ 
+u£
+ 
+some
+ 
+im´ovem’t
+...
+
+15 
+·r£r
+ = 
+¬g·r£
+.
+Argum’tP¬£r
+(
+desütiÚ
+='Run BHTX integrationests')
+
+16 
+·r£r
+.
+add_¬gum’t
+('-n','--ho¡Çme', 
+h–p
+='Hostname for CLI connection')
+
+17 #S‘  
+COM
+=6
+
+18 
+·r£r
+.
+add_¬gum’t
+('-p','--pÜt',  = 'COM6', 
+h–p
+='Port for CLI connection')
+
+19 #S‘  
+baud¿‹
+=115200
+
+20 
+·r£r
+.
+add_¬gum’t
+('-b','--baud',  = 115200, 
+h–p
+='Baud for CLI connection')
+
+21 #S‘  
+IR
+ = 
+True
+
+
+22 
+·r£r
+.
+add_¬gum’t
+('--noœ', 
+de¡
+='œ', 
+aùiÚ
+='¡Üe_cÚ¡', cÚ¡=
+F®£
+, =
+True
+, 
+h–p
+='Specifyhat serial connection is NOT IR')
+
+24 
+·r£r
+.
+add_¬gum’t
+('-f','--fe',  = 'AD3_CLI_Commªd_Li¡s_AÎ.csv', 
+h–p
+='AD3‡llhe CLI Commands List')
+
+26 
+¬gs
+ = 
+·r£r
+.
+	$·r£_¬gs
+()
+
+28 #E¡ablish 
+cÚÃùiÚ
+ 
+to
+ 
+Œªsm™‹r
+
+
+29 #CLI 
+commªd
+ 
+lše
+ 
+to
+ 
+šput
+ 
+the
+ 
+·¿m‘”s
+
+
+30 #e.
+g
+ 
+pythÚ
+ 
+b’_‹¡_bhtx
+.
+py
+ -
+p
+ 
+com6
+ #u£ 
+the
+ 
+£rŸl
+ 
+pÜt
+
+
+31 #e.
+g
+. 
+pythÚ
+ 
+b’_‹¡_bhtx
+.
+py
+ -
+n
+ 192.168.1.103 -
+p
+ 8024 #u£ 
+the
+ 
+‹Ê‘
+ 8024 
+pÜt
+
+
+32 #nÙe: 
+No
+ 
+šput
+, 
+ho¡Çme
+ = 
+NÚe
+, 
+baud
+ = 115200
+
+33 
+BhTx
+.
+	$cÚÃù
+(
+¬gs
+.
+ho¡Çme
+,‡rgs.
+pÜt
+,‡rgs.
+baud
+,‡rgs.
+œ
+)
+
+35 #Pršˆ
+sy¡em
+ 
+šfo
+ 
+this
+ 
+‹¡
+ 
+run
+
+
+36 
+bhtx
+ = 
+BhTx
+.
+	$g‘_š¡ªû
+()
+
+38 
+bhtx
+.
+	$uÆock
+(è#sw™ch 
+to
+ 
+dev
+ 
+´ivege
+ 
+mode
+, 
+put
+ 
+™
+ 
+što
+ dev mod
+wl
+ 
+g‘
+ 
+®l
+ 
+the
+ 
+CLI
+ 
+commªds
+ 
+li¡
+ 
+š¡—d
+ 
+of
+ 
+gue¡
+ mode
+
+39 
+bhtx
+.
+	`£nd_cmd
+("ls"è#tØ
+check
+ 
+the
+ 
+mode
+ 
+sucûss
+
+
+41 #£ˆ
+the
+ 
+csv
+ 
+fe
+ 
+h—d”
+
+
+42 
+csv_h—d”s
+ = ['CLI Command','Description']
+
+44 
+w™h
+ 
+	`İ’
+(
+¬gs
+.
+fe
+,'w+',
+’codšg
+ = 'utf-8', 
+Ãwlše
+=''è
+as
+ 
+csvfe
+:
+
+45 
+f_csv
+ = 
+csv
+.
+	$wr™”
+(
+csvfe
+)
+
+46 
+f_csv
+.
+	$wr™”ow
+(
+csv_h—d”s
+è#wr™
+h—d”
+ 
+fœ¡
+
+
+47 
+li¡s
+ = 
+bhtx
+.
+	`£nd_cmd
+("h–°®l"è#£nd_cmd  
+v®ue
+ 
+is
+ [
+sucûss
+, 
+lšes
+]
+
+48 #´št(
+li¡s
+[1]è#´šˆ
+®l
+ 
+the
+ 
+CLI
+ 
+commªds
+
+
+49 
+row
+ 
+š
+ 
+li¡s
+[1]: #Úly 
+ÿ»
+ 
+about
+†i¡s[1] 
+beÿu£
+ 
+which
+ 
+is
+ 
+the
+ 
+CLI
+ 
+»¥Ú£
+ 
+¡ršg
+ ,
+nÙ
+h
+boŞ—n
+ 
+of
+ 
+sucûss
+ 
+Ü
+‚ot
+
+50 #´št(
+row
+è#´šˆ
+commªd
+ 
+li¡s
+ 
+ªd
+ 
+desütiÚ
+
+
+51 
+cmd_tb
+ = 
+row
+.
+	`¥l™
+(' ', 1è#¥l™ 
+the
+ 
+»¥Ú£
+ 
+što
+ 
+two
+ 
+·¹s
+: 
+	$commªd
+(
+cmd_tb
+[0]è
+ªd
+ 
+	$desütiÚ
+(
+cmd_tb
+[1])
+
+52 
+cmd_tb
+[1] = cmd_tb[1].
+	$l¡r
+(è#»mov
+the
+ 
+desütiÚ
+ 
+·¹
+'s space inhe beginning
+
+53 
+	$´št
+(
+cmd_tb
+)
+
+54 
+f_csv
+.
+	$wr™”ow
+(
+cmd_tb
+è#wr™
+to
+ 
+the
+ 
+csv
+ 
+fe
+
+
 	@C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_rf_cal_set.py
 
 2 
@@ -1208,17 +1766,17 @@ is
  
 to
  
-wr™e
+£t
  
 the
  
-C®ib¿tiÚ
- 
-bË
- 
-AD3
- 
 RF
+ 
+ÿlib¿tiÚ
+ 
+d©a
+Ø
+AD3
  
 v¬ŸÁ
  
@@ -14719,11 +15277,12 @@ bhtx
 1
 .
 0
-12
-819
+13
+895
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_log.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_repeat.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_command_telnet.py
+C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_helpall_cli.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_rf_cal_set.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\ben_test_bhtx_template.py
 C:\Other_Code_Repo\python_in_shure\bhtx_python\bhtx.py

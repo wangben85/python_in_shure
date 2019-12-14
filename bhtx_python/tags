@@ -18,6 +18,7 @@ BRK	telnetlibCallback3.py	/^BRK = bytes([243])  # Break$/;"	v
 BhTx	ben_test_bhtx_command_log.py	/^from bhtx import BhTx$/;"	i
 BhTx	ben_test_bhtx_command_repeat.py	/^from bhtx import BhTx$/;"	i
 BhTx	ben_test_bhtx_command_telnet.py	/^from bhtx import BhTx$/;"	i
+BhTx	ben_test_bhtx_helpall_cli.py	/^from bhtx import BhTx$/;"	i
 BhTx	ben_test_bhtx_template.py	/^from bhtx import BhTx$/;"	i
 BhTx	bhtx.py	/^class BhTx(object):$/;"	c
 BhTx	run_tests.py	/^from bhtx import BhTx$/;"	i
@@ -64,8 +65,10 @@ KERMIT	telnetlibCallback3.py	/^KERMIT = bytes([47]) # KERMIT$/;"	v
 LFLOW	telnetlibCallback3.py	/^LFLOW = bytes([33]) # remote flow control$/;"	v
 LINEMODE	telnetlibCallback3.py	/^LINEMODE = bytes([34]) # Linemode option$/;"	v
 LOG	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+LOG	ben_test_bhtx_helpall_cli.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 LOGOUT	telnetlibCallback3.py	/^LOGOUT = bytes([18]) # force logout$/;"	v
 LOG_FILE_PATH	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+LOG_FILE_PATH	ben_test_bhtx_helpall_cli.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 LOG_FILE_PATH	bhtx.py	/^LOG_FILE_PATH = 'Cli_Log_File.txt'   # it is the CLI command LOG file path name$/;"	v
 LOW	bhtx.py	/^    LOW        = 2$/;"	v	class:RfPowerControlMode
 LOW	bhtx.py	/^    LOW = 2$/;"	v	class:RfPower
@@ -156,18 +159,21 @@ _time	telnetlibCallback3.py	/^from time import monotonic as _time$/;"	i
 argparse	ben_test_bhtx_command_log.py	/^import argparse$/;"	i
 argparse	ben_test_bhtx_command_repeat.py	/^import argparse$/;"	i
 argparse	ben_test_bhtx_command_telnet.py	/^import argparse$/;"	i
+argparse	ben_test_bhtx_helpall_cli.py	/^import argparse$/;"	i
 argparse	ben_test_bhtx_rf_cal_set.py	/^import argparse$/;"	i
 argparse	ben_test_bhtx_template.py	/^import argparse$/;"	i
 argparse	run_tests.py	/^import argparse$/;"	i
 args	ben_test_bhtx_command_log.py	/^    args = parser.parse_args()$/;"	v
 args	ben_test_bhtx_command_repeat.py	/^    args = parser.parse_args()$/;"	v
 args	ben_test_bhtx_command_telnet.py	/^    args = parser.parse_args()$/;"	v
+args	ben_test_bhtx_helpall_cli.py	/^    args = parser.parse_args()$/;"	v
 args	ben_test_bhtx_rf_cal_set.py	/^    args = parser.parse_args()$/;"	v
 args	ben_test_bhtx_template.py	/^    args = parser.parse_args()$/;"	v
 args	run_tests.py	/^    args = parser.parse_args()$/;"	v
 bhtx	ben_test_bhtx_command_log.py	/^    bhtx = BhTx.get_instance()$/;"	v
 bhtx	ben_test_bhtx_command_repeat.py	/^    bhtx = BhTx.get_instance()$/;"	v
 bhtx	ben_test_bhtx_command_telnet.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	ben_test_bhtx_helpall_cli.py	/^    bhtx = BhTx.get_instance()$/;"	v
 bhtx	ben_test_bhtx_template.py	/^    bhtx = BhTx.get_instance()$/;"	v
 bhtx	run_tests.py	/^    bhtx = BhTx.get_instance()$/;"	v
 bhtx	test_demo.py	/^    bhtx = None$/;"	v	class:test
@@ -178,12 +184,15 @@ cal_powers	test_rf.py	/^    cal_powers = [RfPower.LOW, RfPower.NORM, RfPower.HIG
 cli_commands_list	ben_test_bhtx_command_log.py	/^cli_commands_list = [$/;"	v
 cli_commands_list	ben_test_bhtx_command_repeat.py	/^cli_commands_list = [$/;"	v
 close	telnetlibCallback3.py	/^    def close(self):$/;"	m	class:Telnet
+cmd_tb	ben_test_bhtx_helpall_cli.py	/^         cmd_tb = row.split(' ', 1)           # split the response into two parts: command(cmd_tb[0]) and description(cmd_tb[1])$/;"	v
 cmds	rfMute_offset.py	/^    cmds = [ 'rfpow low', 'rfpow norm', 'rfpow hi' ]$/;"	v
 connect	bhtx.py	/^    def connect(cls, hostname=None, port=None, baud=115200, ir= True):$/;"	m	class:BhTx
 connect	cliconn.py	/^    def connect(self):  #Serial init and Connect to it$/;"	m	class:CliConn
 cscope_files_list	py_cscope_files_filter.py	/^cscope_files_list = []$/;"	v
+csv	ben_test_bhtx_helpall_cli.py	/^import csv$/;"	i
 csv	ben_test_bhtx_rf_cal_set.py	/^import csv$/;"	i
 csv	rfMute_offset.py	/^import csv$/;"	i
+csv_headers	ben_test_bhtx_helpall_cli.py	/^    csv_headers = ['CLI Command','Description']$/;"	v
 data	rfMute_offset.py	/^                data = {}$/;"	v
 del_array	py_cscope_files_filter.py	/^del_array = [$/;"	v
 enum	ben_test_bhtx_rf_cal_set.py	/^import enum$/;"	i
@@ -196,8 +205,10 @@ expect_telnet	cliconn.py	/^    def expect_telnet(self, lst, timeout=None):$/;"	m
 expectedPowerCtrlMode	test_rf.py	/^    def expectedPowerCtrlMode(self, txtype, power=RfPower.NORM, scEn=True, rfmute=False):$/;"	m	class:test
 fLog	ben_test_bhtx_command_log.py	/^    fLog = open(LOG_FILE_PATH, 'a')$/;"	v
 fLog	ben_test_bhtx_command_log.py	/^    fLog = open(LOG_FILE_PATH, 'w')$/;"	v
+f_csv	ben_test_bhtx_helpall_cli.py	/^      f_csv = csv.writer(csvfile)$/;"	v
 fieldnames	rfMute_offset.py	/^        fieldnames = ['cmd', 'pow', 'offset']$/;"	v
 file	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+file	ben_test_bhtx_helpall_cli.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 file_write	py_cscope_files_filter.py	/^def file_write(content):$/;"	f
 filename	rfMute_offset.py	/^    filename = 'muteoffsets-{}.csv'.format(txtype)$/;"	v
 fileno	telnetlibCallback3.py	/^    def fileno(self):$/;"	m	class:Telnet
@@ -221,6 +232,7 @@ get_variant	bhtx.py	/^    def get_variant(self):$/;"	m	class:BhTx
 help	ben_test_bhtx_command_repeat.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
 help	ben_test_bhtx_command_telnet.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
 import	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+import	ben_test_bhtx_helpall_cli.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 instance	bhtx.py	/^    instance = None$/;"	v	class:BhTx
 interact	telnetlibCallback3.py	/^    def interact(self):$/;"	m	class:Telnet
 isCalValid	test_rf.py	/^    def isCalValid(self, txtype):  # Check if Calibration table is valid, data could be read$/;"	m	class:test
@@ -228,6 +240,7 @@ isInArray	py_cscope_files_filter.py	/^def isInArray (array, line):$/;"	f
 is_asic_enabled	test_rf.py	/^    def is_asic_enabled(self, carrier):  # check if the primary or secondary RF ASIC is enabled through FPAG peek$/;"	m	class:test
 is_serial	cliconn.py	/^    def is_serial(self):$/;"	m	class:CliConn
 listener	telnetlibCallback3.py	/^    def listener(self):$/;"	m	class:Telnet
+lists	ben_test_bhtx_helpall_cli.py	/^      lists = bhtx.send_cmd("help all")       # send_cmd return value is [success, lines]$/;"	v
 loader	run_tests.py	/^    loader = unittest.defaultTestLoader$/;"	v
 msg	telnetlibCallback3.py	/^    def msg(self, msg, *args):$/;"	m	class:Telnet
 mt_interact	telnetlibCallback3.py	/^    def mt_interact(self):$/;"	m	class:Telnet
@@ -236,6 +249,7 @@ open	telnetlibCallback3.py	/^    def open(self, host, port=0, timeout=socket._GL
 os	ben_test_bhtx_command_log.py	/^import os$/;"	i
 os	ben_test_bhtx_command_repeat.py	/^import os$/;"	i
 os	ben_test_bhtx_command_telnet.py	/^import os$/;"	i
+os	ben_test_bhtx_helpall_cli.py	/^import os$/;"	i
 os	ben_test_bhtx_template.py	/^import os$/;"	i
 os	py_cscope_files_filter.py	/^import os$/;"	i
 os	run_tests.py	/^import os$/;"	i
@@ -244,10 +258,12 @@ parse_cal_line	bhtx.py	/^    def parse_cal_line(self, line):$/;"	m	class:BhTx
 parser	ben_test_bhtx_command_log.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	ben_test_bhtx_command_repeat.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	ben_test_bhtx_command_telnet.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	ben_test_bhtx_helpall_cli.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	ben_test_bhtx_rf_cal_set.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	ben_test_bhtx_template.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 parser	run_tests.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
 path	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+path	ben_test_bhtx_helpall_cli.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 process_rawq	telnetlibCallback3.py	/^    def process_rawq(self):$/;"	m	class:Telnet
 rawq_getchar	telnetlibCallback3.py	/^    def rawq_getchar(self):$/;"	m	class:Telnet
 re	bhtx.py	/^import re$/;"	i
@@ -309,10 +325,12 @@ testTxRfVariant	test_demo.py	/^    def testTxRfVariant(self): # example : test c
 testTxtype	test_demo.py	/^    def testTxtype(self):  # example: test case 1$/;"	m	class:test
 tests	run_tests.py	/^    tests = loader.discover(start_dir=os.path.dirname(__file__))$/;"	v
 the	ben_test_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+the	ben_test_bhtx_helpall_cli.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
 theNULL	telnetlibCallback3.py	/^theNULL = bytes([0])$/;"	v
 time	ben_test_bhtx_command_log.py	/^import time$/;"	i
 time	ben_test_bhtx_command_repeat.py	/^import time$/;"	i
 time	ben_test_bhtx_command_telnet.py	/^import time$/;"	i
+time	ben_test_bhtx_helpall_cli.py	/^import time$/;"	i
 time	ben_test_bhtx_rf_cal_set.py	/^import time$/;"	i
 time	cliconn.py	/^import time$/;"	i
 time	rfMute_offset.py	/^import time$/;"	i

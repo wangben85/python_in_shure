@@ -1,5 +1,5 @@
 """
-This test is to write the Calibration table for AD3 RF variant A
+This test is to set the RF calibration data to AD3 variant A
 """
 from bhtx import *
 import sys

@@ -1,0 +1,150 @@
+CLI Command,Description
+?,List the available commands or show help for a specific command.
+adc,Read specified sample/voltage from ADC.
+again,Get/set audio gain.
+amicbst,Get/set the Audio mic boost.
+amute,Get/set audio mute.
+amutemode,Get/set audio mute mode.
+antcal,Set antenna calibration. No args prints cal table
+anttune,todo
+anttunediag,todo
+apad,Get/set audio pad.
+apol,Get/set audio polarity
+asicpeek,Display a register value from ASIC.
+asicpeekdbg,Display a debug register value from ASIC.
+asicpoke,Set an ASIC register value.
+asicpuke,Display all ASIC registers.
+asserts,Enable/disable assert printing for release builds
+ateled,Enable or Disable ATE control of the LEDs w/o interference from MCU
+ateuid,Get/set ATE UID as alphanumeric string. Max 26 characters.
+audioled,Control audio clip led on/off brightness
+audiopwr,Enable/disable audio power.
+avgpow,Display average power. Poll gauge directly.
+band,Get/set band. 'list' will list all supported bands
+bandfilesize,Set/Get band file size.
+bandlimit,Get/set bandlimits.
+battinfo,Display battery information.
+battpoll,Enable/disable battery polling.
+bgtaskstats,Display background task run-time stats.
+blenable,enable/disable bandlimits.
+btndebug,Enable/disable button event messages.
+btnstatus,Display button status.
+button,Simulate a button event.
+channame,Get/set channel name. Max 8 characters.
+charger,Get/Set the battery charging status and register values.
+chargerpoll,Enable/disable charger polling.
+cid,Return CID as hex-string
+clkout,Turn on ClkOut to PTC6
+combcal,Save FD combiner calibration to eeprom. Only valid for FD devices.
+custgroup,Manage custom group frequencies.
+dcid,Return DCID as hex-string
+deviceflash,Perform device flash.
+devname,Get/set device name. Max 8 characters.
+display,Display the LCD screen
+dm,Dump memory.
+dtc,Set current dtc settings (NOTE: DTC2 only valid on Enhanced HH).
+dumpmfst,Print official manifest
+echo,Echo command-line arguments
+eeerase,Erase sections of eeprom.
+eepeek,Display byte from eeprom.
+eepoke,Edit byte in eeprom.
+eepuke,Display bytes from eeprom.
+eui,Get/set EUI-64 number.
+eventlog,Print event log which records reboot and shutdown events.
+factoryreset,Reset all user settings to factory defaults
+flasherase,Erase sector that contains given address.
+flashpeek,Display byte from flash.
+flashpoke,Edit byte in flash.
+flashpuke,Display bytes from flash.
+fpgapeek,Display a register value from the FPGA.
+fpgapoke,Set a FPGA register value.
+fpgapuke,Display many FPGA registers.
+fpgasuspend,Assert/deassert the FPGA SUSPEND pin
+free,Print the dlmalloc memory stats using stdout.
+freq,Get/set frequency in MHz.
+grch,Get/set device group channel.
+hdq,Manually control hdq line.
+hdqpeek,Read 16-bit value from battery register.
+hdqpoke,Write 16-bit value to battery register.
+hdqpuke,Print all standard data battery registers.
+help,List the available commands or show help for a specific command.
+hist,Print the command history list.
+hpfil,Get/set the Audio high pass filter
+hwver,Dispaly HW version
+iqtrim,Set the IQ trim value to override default value
+irdastats,Display error counters for irda port.
+keytag,Display key tag
+lcd,Draw test patterns to lcd to enable ate tests.
+led,Control led on/off status and brightness
+llfreq,Low-level frequency get and set. Does not use marketing limits and does
+llrfpow,Low-level get/set RF power. Does not use marketing limits and does
+lpchargermode,Enable/disable low power charger mode.
+ls,List files and sizes
+maxpow,Get/set max power.
+maxpowhd,Get/set max power for HD.
+menulock,Get/set menu lock
+mfstsize,Set/Get manifest size.
+mm,Modify memory.
+model,Get/set model number as alphanumeric string. Max 26 characters.
+modem,Get/set modem modulation.
+oledvcc,Turn on/off the 10V Vcc power rail for OLED and set Contrast
+phpwr,Get/set system phantom power
+pindiode,Get/Set RF PIN diode settings if microbodypack.
+powlock,Get/set power lock
+progb,Set/get programB logic level. Use to hold FPGA in reset.
+pswitchstatus,Display power switch status
+readsnr,Calculate and print statistics for snr.
+reboot,Software reboot MCU.
+rebootfpga,Software reboot FPGA to specified image.
+regrw32,read or write 32-bit value to MCU KW2x register
+regrw8,read or write 8-bit value to MCU KW2x register
+repeat,Repeatedly run a command
+rfcal,Save rf power calibration value to eeprom
+rfcar2,Get/set secondary RF carrier enable.
+rfdet,Display RF detect value if microbodypack.
+rfdetatten,Get/Set RF detect attenuation if microbodypack.
+rfmute,Get/set RF mute.
+rfpow,Get/set RF power.
+rfscale,Get/set asic and fpga rf scale values
+rfstandby,Enable/disable rf standby.
+rfvariant,Display RF variant. Variant retrieved from FPGA if running
+rm,Erase files.
+rtcdate,Set or Get the rtc date
+rtcday,Set or Get the rtc Day
+rtcof,Get or Clear the 'of' flag
+rtcreg,Set or Get a rtc register
+rtctime,Set or Get the rtc time
+scrfcal,Save combined carrier rf power calibration value to eeprom
+serialnum,Get/set serial number as alphanumeric string. Max 26 characters.
+setcw,"Enable cw test mode, turn off it will reboot device"
+setlcdpins,Manually control state of lcd pins
+sidechan,Enable/disable side channel and diagnostics.
+slcli,Enable's Showlink CLI (one-shot)
+sleep,Sleep for the specified duration
+spare2,Read current logic value of spare2 pin
+spitristate,Tristate control for MCU SPI interface.
+spiwrite,Send data byte to fpga spi slave at specified address.
+syncdiag,Enable/disable dmp diagnostics for ir sync.
+systeminfo,Display system info.
+talksw,Simulate talk switch for rx development support
+td,Print the OpenRTOS task list.
+temperature,Display MCU temperature.
+tonefreq,Get/Set frequency of test tone.
+tonegain,Get/Set gain of test tone. Gain ranges from -60 to 0
+tsListen,Enter TS listening mode - times out after 3 seconds
+tsPer,Start or stop the TS PER test (for the currently registered TS)
+tsPkt,Print talk switch packets
+tsPktShort,Print talk switch packets (short version)
+tsPowSwitch,Enable or disable the talk switch function of the power switch
+tsUnreg,Unregister a registered talk switch
+tunesetting,todo
+txtype,Display tx type as determined by model.
+uitest,Enable/disable ate ui test mode
+uptime,get current uptime (in hours:minutes:seconds)
+urgsc,Send urgent sidechannel messages.
+verapp,Display application version.
+verband,Display bandfile version.
+verboard,Display board version.
+verboot,Display bootloader version.
+verfpga,Display FPGA version.
+verpkg,Display package version.
