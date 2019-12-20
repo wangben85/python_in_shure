@@ -1,11 +1,11 @@
 """
 This test case is execute CLI commmand "help all" at privilege mode to get all the supported CLI commands and put them stored in csv file
+We have to create the folder AD3_Supported_CLI first !!
 """
 
 import os
 import time
 from bhtx import BhTx
-from bhtx import LOG_FILE_PATH   # import the LOG file path
 import argparse
 import csv
 
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # Set default IR = True
     parser.add_argument('--noir', dest='ir', action='store_const', const=False, default=True, help='Specify that serial connection is NOT IR')
 
-    parser.add_argument('-f','--file', default = 'AD3_CLI_Command_Lists_All.csv', help='AD3 all the CLI Commands List')
+    parser.add_argument('-f','--file', default = './AD3_Supported_CLI/AD3_CLI_Command_Lists_All.csv', help='AD3 all the CLI Commands List')
 
     args = parser.parse_args()
 
