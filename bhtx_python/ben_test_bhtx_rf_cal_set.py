@@ -24,7 +24,7 @@ if __name__ == "__main__":
     #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Specify the calibration data csv file name
     #variantA_rf_cali_data.csv is the file contain the calibration data
     #default_clear_rf_data.csv is the file remove all the calibration data, back to default(0xFF)
-    parser.add_argument('-f','--file', default = 'variantA_rf_cali_data.csv', help='Specify the calibration data csv file')
+    parser.add_argument('-f','--file', default = './rf_calibration_table/variantA_rf_cali_data.csv', help='Specify the calibration data csv file')
     
     args = parser.parse_args()
 
