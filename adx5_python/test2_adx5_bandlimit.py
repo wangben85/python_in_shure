@@ -1,5 +1,5 @@
 """
-This test is to set the band limit frequency for ADX5 variant B R52 band as a example
+This test is to set/get the band limit frequency for ADX5 variant B R52 band as an example
 """
 from bhtx import *
 import sys
@@ -55,9 +55,9 @@ if __name__ == "__main__":
     time.sleep(0.5)                           # delay 500ms
     tx.send_cmd("setfreq 1 800000")           # set freq in the band limit range, ok
     time.sleep(0.5)                           # delay 500ms
-    tx.send_cmd("setfreq 1 801000 blenable")     # more than two arguments, so set channel 1 freq with respect of band limit, will return fail
+    tx.send_cmd("setfreq 1 801000 blenable")  # more than two arguments, so set channel 1 freq with respect of band limit, will return fail
     tx.send_cmd("setfreq 1 801000")           # only two arguments, set channel 1 freq not respect of band limit, will return ok
-    tx.send_cmd("setfreq 1 801100 blenable")     # more than two arguments, so set channel 1 freq with respect of band limit, will return fail
+    tx.send_cmd("setfreq 1 801100 blenable")  # more than two arguments, so set channel 1 freq with respect of band limit, will return fail
     tx.send_cmd("setfreq 1 801100")           # only two arguments, set channel 1 freq not respect of band limit, will return ok
     tx.send_cmd("setfreq 1 80200")            # set freq in the band limit range, ok
   
