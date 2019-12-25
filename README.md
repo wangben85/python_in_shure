@@ -1,6 +1,9 @@
 # python_in_shure
 This repository contains some python scripts used during my work in Shure
 
+adx5_python:
+It is used for test Axient Digital ADX5 receiver
+
 bhtx_python:
 It is used for test Axient Digital Transmitter
 
