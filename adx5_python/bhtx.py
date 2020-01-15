@@ -184,6 +184,49 @@ class BhTx(object):
 
         return [success, lines]
 
+    def send_cmd_special_resp(self, cmd, special_resp, timeout=None):
+        """
+        Send CLI command with specified timeout.
+
+        A successful command will result in a prompt with no
+        [Failed] message appearing.
+
+        Returns pair where first element is boolean of command
+        success and second element is response text.
+        """
+        if timeout is None:
+            timeout = self.DEFAULT_TIMEOUT
+
+        print("---> " + cmd)   # print out the CLI command to be sent
+
+        self.cli.send(cmd)
+
+        # Wait for command response by waiting for prompt. If [Failed] in
+        # the response then the command failed
+        if special_resp:
+            resp =  self.cli.expect([special_resp], timeout)
+
+            success = ((resp[0] != -1) and
+                (None == re.search('\[Failed\]', resp[2], re.MULTILINE)))
+
+            # IR dongle echos cmd back, so strip it from response
+            # For some reason, we're having to do a double trim...
+            if self.cli.is_serial():
+                resp[2] = re.sub('^\s*{}\s*'.format(cmd), '', resp[2])
+                if self.ir:
+                    resp[2] = re.sub('^\s*{}\s*'.format(cmd), '', resp[2])
+
+            # Split on newlines and remove last terminating prompt
+            lines = resp[2].splitlines()
+            lines = lines[:-1]
+            if len(lines):
+                print("\n".join(lines))
+        else:
+            success = True
+            lines = ['']
+
+        return [success, lines]
+
     def set_freq(self, carrier, freq):
         """
         Set frequency via llfreq, so it's not impacted by band reqs
