@@ -12,3 +12,6 @@ This repository contains some python scripts used during my work in Shure
 
 4.green_blacklight:
   It is general use purpose to make your windows 10 back light to green to protect your eyes.
+
+5.code_memory_cost:
+  It is used to import the IAR map file to calculate current project memory cost size
