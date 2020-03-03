@@ -15,3 +15,7 @@ This repository contains some python scripts used during my work in Shure
 
 5.code_memory_cost:
   It is used to import the IAR map file to calculate current project memory cost size
+
+# Note
+This repository has another copy in gitree 
+url = https://gitee.com/wangben85/python_in_shure.git
