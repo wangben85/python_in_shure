@@ -2,16 +2,21 @@
 import os
 import sys
 
-source_cscope_files_path = "C:\\Work_Python\\cscope_file_remove\\source.files"
-filter_cscope_files_path = "C:\\Work_Python\\cscope_file_remove\\cscope_filter.files"
+source_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\cscope_file_remove\\source.files"
+filter_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\cscope_file_remove\\cscope_filter.files"
 cscope_files_list = []
 
-# the unexpected files to be removed from the list
-del_array = [
+# the unexpected files to be removed from the cscope list
+cscope_del_array = [
   "mocks",
   "fake",
   "fsl_",
-  "tests"
+  "subfolder1"
+]
+
+# the unexpected files to be removed from the ctags list
+ctags_del_folder = [
+  "subfolder1"
 ]
 
 # check items in array if exist in line
@@ -59,8 +64,9 @@ if __name__ == '__main__':
     with open(fname, 'r') as f:
        with open(ffilter, 'w') as g:
           for line in f.readlines():  # read each line from the input file
-            if not isInArray(del_array, line):
+            if not isInArray(cscope_del_array, line):
                g.write(line)
 
     os.system("cscope -Rb")
-    os.system("ctags -R *")
+    #os.system("ctags -R *")
+    os.system("ctags -R --exclude=%s" % ctags_del_folder[0])
