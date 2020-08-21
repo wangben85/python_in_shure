@@ -16,6 +16,12 @@ This repository contains some python scripts used during my work in Shure
 5.code_memory_cost:
   It is used to import the IAR map file to calculate current project memory cost size
 
+6.imageToarray:
+  Convert the BMP picture file into code array
+
+7.batteryBarTable
+  Convert the battery voltage bars from ADC channel values to real battery voltage
+
 # Note
 This repository has another copy in gitree 
 url = https://gitee.com/wangben85/python_in_shure.git
