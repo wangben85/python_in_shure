@@ -8,7 +8,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Run the test to calculate memory code size')
 # Set default map file name to BHTX_App.map
-parser.add_argument('-f', '--file', default='./BHTX_App.map', help='Specify the memory cose map file')
+parser.add_argument('-f', '--file', default='./BHTX_ADX3_App.map', help='Specify the memory cose map file')
 
 args = parser.parse_args()
 fname = args.file                                     # we can also specify other map file name in the command line by '-f'
