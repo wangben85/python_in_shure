@@ -29,19 +29,27 @@ if __name__ == "__main__":
     print(len(L))                           # print how many items there, which is all the lines of the input excel file
 
     # Set the output excel file header
-
+    # Put the default header here
     csv_headers = ['Frequency','PowerLevel = -100', 'PowerLevel = -99', 'PowerLevel = -98', 'PowerLevel = -97']
     with open(args.fw, 'w+', encoding='utf-8', newline='') as fw:   # open the output excel file
         f_csvW = csv.writer(fw)
+        # Update the header according to the power level reader
+        pwrlvl = float(L[0][1][1])
+        csv_headers[1] = 'PowerLevel = %s' % pwrlvl
+        csv_headers[2] = 'PowerLevel = %s' % (pwrlvl + 1)
+        csv_headers[3] = 'PowerLevel = %s' % (pwrlvl + 2)
+        csv_headers[4] = 'PowerLevel = %s' % (pwrlvl + 3)
         f_csvW.writerow(csv_headers)
+
         no4lines = int(len(L) / 4)           # get every four lines data from input as one row to output file
         print(no4lines)                      # calculate how many four lines of the original file
         col = 0
-        j = 471                              # start frequency
+        j = int(L[0][1][0])                  # start frequency
+        print(j)
         for i in range(0, no4lines):
             newL.clear()                     # only input four lines into newL, then clear it, to get next four lines
             for number in range(0,4):
-                newL.append(L[col][1][2])    # get the FPGA status data from one line
+                newL.append(L[col][1][3])    # get the FPGA status data from one line
                 col = col + 1                # go to the next line to get data until four is reached
                 # print(newL)
             if number == 3:
@@ -49,4 +57,5 @@ if __name__ == "__main__":
                 print(newL)
                 j = j + 1                    # next frequency
                 f_csvW.writerow(newL)        # write the updated data to output file
+
 
