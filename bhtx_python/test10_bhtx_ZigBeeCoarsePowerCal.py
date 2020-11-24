@@ -1,5 +1,5 @@
 """
-This command is to set the ZigBee Coarse power calibration values
+This command is to set the ZigBee Channels(16 channels) Coarse power calibration values
 Note:
 1.We need to set the ZigBee power mode first, different power mode have different calibration values, e.g. ZigBee power
   mode low and Mid ...
