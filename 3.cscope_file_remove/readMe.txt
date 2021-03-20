@@ -1,0 +1,1 @@
+This script is used to generate the cscope files in the code repo

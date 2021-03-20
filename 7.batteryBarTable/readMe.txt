@@ -1,0 +1,1 @@
+This script is used in SLXD3 for the battery bar table

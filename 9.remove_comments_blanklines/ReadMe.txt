@@ -1,0 +1,1 @@
+This script is used in commit copyright when we need to remove all the comments and blanklines.

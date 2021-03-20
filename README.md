@@ -22,6 +22,12 @@ This repository contains some python scripts used during my work in Shure
 7.batteryBarTable
   Convert the battery voltage bars from ADC channel values to real battery voltage
 
+8.excel_format_update
+  Design for Tracy in RF test, which needs to convert the excel(*.csv) file.
+
+9.remove_comments_blanklines
+  Remove all the source fils(*.c, *.cpp, etc.) comments and blanklines before summit a software copyright
+
 # Note
 This repository has another copy in gitree 
 url = https://gitee.com/wangben85/python_in_shure.git
