@@ -1,0 +1,399 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	bhtx.py	/^    A       = 0$/;"	v	class:RfVariant
+AO	telnetlibCallback3.py	/^AO  = bytes([245])  # Abort output$/;"	v
+AUTHENTICATION	telnetlibCallback3.py	/^AUTHENTICATION = bytes([37]) # Authenticate$/;"	v
+AYT	telnetlibCallback3.py	/^AYT = bytes([246])  # Are You There$/;"	v
+B	bhtx.py	/^    B       = 1$/;"	v	class:RfVariant
+BASIC_BP	bhtx.py	/^    BASIC_BP    = 1$/;"	v	class:TxType
+BASIC_HH	bhtx.py	/^    BASIC_HH    = 4$/;"	v	class:TxType
+BASIC_PLUGON	bhtx.py	/^    BASIC_PLUGON = 3$/;"	v	class:TxType
+BINARY	telnetlibCallback3.py	/^BINARY = bytes([0]) # 8-bit data path$/;"	v
+BM	telnetlibCallback3.py	/^BM = bytes([19]) # byte macro$/;"	v
+BRK	telnetlibCallback3.py	/^BRK = bytes([243])  # Break$/;"	v
+BhTx	bhtx.py	/^class BhTx(object):$/;"	c
+BhTx	run_tests.py	/^from bhtx import BhTx$/;"	i
+BhTx	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^from bhtx import BhTx$/;"	i
+BhTx	test11_bhtx_ZigBeeDevicePowerCal.py	/^from bhtx import BhTx$/;"	i
+BhTx	test1_bhtx_template.py	/^from bhtx import BhTx$/;"	i
+BhTx	test3_bhtx_helpall_cli.py	/^from bhtx import BhTx$/;"	i
+BhTx	test4_bhtx_command_telnet.py	/^from bhtx import BhTx$/;"	i
+BhTx	test5_bhtx_command_repeat.py	/^from bhtx import BhTx$/;"	i
+BhTx	test6_bhtx_command_log.py	/^from bhtx import BhTx$/;"	i
+BhTx	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^from bhtx import BhTx$/;"	i
+C	bhtx.py	/^    C       = 2$/;"	v	class:RfVariant
+CC_HIGH	bhtx.py	/^    CC_HIGH    = 9$/;"	v	class:RfPowerControlMode
+CC_LOW	bhtx.py	/^    CC_LOW     = 7$/;"	v	class:RfPowerControlMode
+CC_MUTE	bhtx.py	/^    CC_MUTE    = 5  #CC_MODES are only used for FD_HH transmitter$/;"	v	class:RfPowerControlMode
+CC_NORM	bhtx.py	/^    CC_NORM    = 8$/;"	v	class:RfPowerControlMode
+CC_STANDBY	bhtx.py	/^    CC_STANDBY = 6$/;"	v	class:RfPowerControlMode
+CHARGE	rfMute_offset.py	/^    CHARGE       = 0x2C$/;"	v	class:HdqCmds
+CHARSET	telnetlibCallback3.py	/^CHARSET = bytes([42]) # CHARSET$/;"	v
+COMBINED	bhtx.py	/^    COMBINED = 2$/;"	v	class:CalTable
+COM_PORT_OPTION	telnetlibCallback3.py	/^COM_PORT_OPTION = bytes([44]) # Com Port Control Option$/;"	v
+CalTable	bhtx.py	/^class CalTable(Enum):$/;"	c
+CliConn	bhtx.py	/^from cliconn import CliConn$/;"	i
+CliConn	cliconn.py	/^class CliConn(object):$/;"	c
+CliConn	test_rf.py	/^from cliconn import CliConn$/;"	i
+DEBUGLEVEL	telnetlibCallback3.py	/^DEBUGLEVEL = 0$/;"	v
+DEFAULT_TIMEOUT	bhtx.py	/^    DEFAULT_TIMEOUT = 3.0$/;"	v	class:BhTx
+DEFAULT_TIMEOUT	cliconn.py	/^    DEFAULT_TIMEOUT = 3.0$/;"	v	class:CliConn
+DET	telnetlibCallback3.py	/^DET = bytes([20]) # data entry terminal$/;"	v
+DM	telnetlibCallback3.py	/^DM  = bytes([242])  # Data Mark$/;"	v
+DO	telnetlibCallback3.py	/^DO   = bytes([253])$/;"	v
+DONT	telnetlibCallback3.py	/^DONT = bytes([254])$/;"	v
+EC	telnetlibCallback3.py	/^EC  = bytes([247])  # Erase Character$/;"	v
+ECHO	telnetlibCallback3.py	/^ECHO = bytes([1]) # echo$/;"	v
+EL	telnetlibCallback3.py	/^EL  = bytes([248])  # Erase Line$/;"	v
+ENCRYPT	telnetlibCallback3.py	/^ENCRYPT = bytes([38]) # Encryption option$/;"	v
+ENHANCED_BP	bhtx.py	/^    ENHANCED_BP = 2$/;"	v	class:TxType
+ENHANCED_HH	bhtx.py	/^    ENHANCED_HH = 6$/;"	v	class:TxType
+EOR	telnetlibCallback3.py	/^EOR = bytes([25]) # end or record$/;"	v
+EXOPL	telnetlibCallback3.py	/^EXOPL = bytes([255]) # Extended-Options-List$/;"	v
+Enum	bhtx.py	/^from enum import Enum$/;"	i
+ExternalFlashSectorSize	test8_bhtx_FreqTableWriteToFlash.py	/^    ExternalFlashSectorSize = 4 * 1024     # external flash sector size is 4K Bytes$/;"	v
+ExternalFlashStartAddr	test8_bhtx_FreqTableWriteToFlash.py	/^        ExternalFlashStartAddr = ExternalFlashStartAddr + ExternalFlashSectorSize$/;"	v
+ExternalFlashStartAddr	test8_bhtx_FreqTableWriteToFlash.py	/^    ExternalFlashStartAddr  = 0x00100000   # FreqBand file location start addr in external flash$/;"	v
+FD_HH	bhtx.py	/^    FD_HH       = 7$/;"	v	class:TxType
+FORWARD_X	telnetlibCallback3.py	/^FORWARD_X = bytes([49]) # FORWARD_X$/;"	v
+FlashAddrIndex	test8_bhtx_FreqTableWriteToFlash.py	/^        FlashAddrIndex = FlashAddrIndex + 1     # Address index increaments$/;"	v
+FlashAddrIndex	test8_bhtx_FreqTableWriteToFlash.py	/^    FlashAddrIndex = ExternalFlashStartAddr   # Address index starts from ExternalFlashStartAddr$/;"	v
+GA	telnetlibCallback3.py	/^GA  = bytes([249])  # Go Ahead$/;"	v
+HD	bhtx.py	/^    HD = 1$/;"	v	class:ModemMode
+HIGH	bhtx.py	/^    HIGH       = 4$/;"	v	class:RfPowerControlMode
+HIGH	bhtx.py	/^    HIGH = 1$/;"	v	class:RfPower
+HdqCmds	rfMute_offset.py	/^class HdqCmds(enum.IntEnum):$/;"	c
+IAC	telnetlibCallback3.py	/^IAC  = bytes([255]) # "Interpret As Command"$/;"	v
+IP	telnetlibCallback3.py	/^IP  = bytes([244])  # Interrupt process$/;"	v
+KERMIT	telnetlibCallback3.py	/^KERMIT = bytes([47]) # KERMIT$/;"	v
+LFLOW	telnetlibCallback3.py	/^LFLOW = bytes([33]) # remote flow control$/;"	v
+LINEMODE	telnetlibCallback3.py	/^LINEMODE = bytes([34]) # Linemode option$/;"	v
+LOG	test6_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+LOGOUT	telnetlibCallback3.py	/^LOGOUT = bytes([18]) # force logout$/;"	v
+LOG_FILE_PATH	bhtx.py	/^LOG_FILE_PATH = 'Cli_Log_File.txt'   # it is the CLI command LOG file path name$/;"	v
+LOG_FILE_PATH	test6_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+LOW	bhtx.py	/^    LOW        = 2$/;"	v	class:RfPowerControlMode
+LOW	bhtx.py	/^    LOW = 2$/;"	v	class:RfPower
+MICRO_BP	bhtx.py	/^    MICRO_BP    = 8$/;"	v	class:TxType
+MUTE	bhtx.py	/^    MUTE       = 0$/;"	v	class:RfPowerControlMode
+ModemMode	bhtx.py	/^class ModemMode(Enum):$/;"	c
+NAMS	telnetlibCallback3.py	/^NAMS = bytes([4]) # approximate message size$/;"	v
+NAOCRD	telnetlibCallback3.py	/^NAOCRD = bytes([10]) # negotiate about CR disposition$/;"	v
+NAOFFD	telnetlibCallback3.py	/^NAOFFD = bytes([13]) # negotiate about formfeed disposition$/;"	v
+NAOHTD	telnetlibCallback3.py	/^NAOHTD = bytes([12]) # negotiate about horizontal tab disposition$/;"	v
+NAOHTS	telnetlibCallback3.py	/^NAOHTS = bytes([11]) # negotiate about horizontal tabstops$/;"	v
+NAOL	telnetlibCallback3.py	/^NAOL = bytes([8]) # negotiate about output line width$/;"	v
+NAOLFD	telnetlibCallback3.py	/^NAOLFD = bytes([16]) # negotiate about output LF disposition$/;"	v
+NAOP	telnetlibCallback3.py	/^NAOP = bytes([9]) # negotiate about output page size$/;"	v
+NAOVTD	telnetlibCallback3.py	/^NAOVTD = bytes([15]) # negotiate about vertical tab disposition$/;"	v
+NAOVTS	telnetlibCallback3.py	/^NAOVTS = bytes([14]) # negotiate about vertical tab stops$/;"	v
+NAWS	telnetlibCallback3.py	/^NAWS = bytes([31]) # window size$/;"	v
+NEW_ENVIRON	telnetlibCallback3.py	/^NEW_ENVIRON = bytes([39]) # New - Environment variables$/;"	v
+NOOPT	telnetlibCallback3.py	/^NOOPT = bytes([0])$/;"	v
+NOP	telnetlibCallback3.py	/^NOP = bytes([241])  # No Operation$/;"	v
+NORM	bhtx.py	/^    NORM       = 3$/;"	v	class:RfPowerControlMode
+NORM	bhtx.py	/^    NORM = 0$/;"	v	class:RfPower
+OLD_ENVIRON	telnetlibCallback3.py	/^OLD_ENVIRON = bytes([36]) # Old - Environment variables$/;"	v
+OUTMRK	telnetlibCallback3.py	/^OUTMRK = bytes([27]) # output marking$/;"	v
+POWER	rfMute_offset.py	/^    POWER        = 0x24,$/;"	v	class:HdqCmds
+PRAGMA_HEARTBEAT	telnetlibCallback3.py	/^PRAGMA_HEARTBEAT = bytes([140]) # TELOPT PRAGMA HEARTBEAT$/;"	v
+PRAGMA_LOGON	telnetlibCallback3.py	/^PRAGMA_LOGON = bytes([138]) # TELOPT PRAGMA LOGON$/;"	v
+PRIMARY	bhtx.py	/^    PRIMARY = 0$/;"	v	class:CalTable
+PRIMARY_CARRIER	bhtx.py	/^PRIMARY_CARRIER = 1$/;"	v
+RCP	telnetlibCallback3.py	/^RCP = bytes([2]) # prepare to reconnect$/;"	v
+RCTE	telnetlibCallback3.py	/^RCTE = bytes([7]) # remote controlled transmission and echo$/;"	v
+RSP	telnetlibCallback3.py	/^RSP = bytes([43]) # Telnet Remote Serial Port$/;"	v
+RfPower	bhtx.py	/^class RfPower(Enum):$/;"	c
+RfPowerControlMode	bhtx.py	/^class RfPowerControlMode(Enum):$/;"	c
+RfVariant	bhtx.py	/^class RfVariant(Enum):$/;"	c
+SB	telnetlibCallback3.py	/^SB =  bytes([250])  # Subnegotiation Begin$/;"	v
+SE	telnetlibCallback3.py	/^SE  = bytes([240])  # Subnegotiation End$/;"	v
+SECONDARY	bhtx.py	/^    SECONDARY = 1$/;"	v	class:CalTable
+SECONDARY_CARRIER	bhtx.py	/^SECONDARY_CARRIER = 2$/;"	v
+SEND_URL	telnetlibCallback3.py	/^SEND_URL = bytes([48]) # SEND-URL$/;"	v
+SGA	telnetlibCallback3.py	/^SGA = bytes([3]) # suppress go ahead$/;"	v
+SNDLOC	telnetlibCallback3.py	/^SNDLOC = bytes([23]) # send location$/;"	v
+SSPI_LOGON	telnetlibCallback3.py	/^SSPI_LOGON = bytes([139]) # TELOPT SSPI LOGON$/;"	v
+STANDBY	bhtx.py	/^    STANDBY    = 1$/;"	v	class:RfPowerControlMode
+STATUS	telnetlibCallback3.py	/^STATUS = bytes([5]) # give status$/;"	v
+STD	bhtx.py	/^    STD = 0$/;"	v	class:ModemMode
+SUPDUP	telnetlibCallback3.py	/^SUPDUP = bytes([21]) # supdup protocol$/;"	v
+SUPDUPOUTPUT	telnetlibCallback3.py	/^SUPDUPOUTPUT = bytes([22]) # supdup output$/;"	v
+SUPPRESS_LOCAL_ECHO	telnetlibCallback3.py	/^SUPPRESS_LOCAL_ECHO = bytes([45]) # Telnet Suppress Local Echo$/;"	v
+TELNET_PORT	telnetlibCallback3.py	/^TELNET_PORT = 23$/;"	v
+TLS	telnetlibCallback3.py	/^TLS = bytes([46]) # Telnet Start TLS$/;"	v
+TM	telnetlibCallback3.py	/^TM = bytes([6]) # timing mark$/;"	v
+TN3270E	telnetlibCallback3.py	/^TN3270E = bytes([40]) # TN3270E$/;"	v
+TSPEED	telnetlibCallback3.py	/^TSPEED = bytes([32]) # terminal speed$/;"	v
+TTECP	rfMute_offset.py	/^    TTECP        = 0x26,$/;"	v	class:HdqCmds
+TTECP_ATRATE	rfMute_offset.py	/^    TTECP_ATRATE = 0x04,$/;"	v	class:HdqCmds
+TTYLOC	telnetlibCallback3.py	/^TTYLOC = bytes([28]) # terminal location number$/;"	v
+TTYPE	telnetlibCallback3.py	/^TTYPE = bytes([24]) # terminal type$/;"	v
+TUID	telnetlibCallback3.py	/^TUID = bytes([26]) # TACACS user identification$/;"	v
+Telnet	telnetlibCallback3.py	/^class Telnet:$/;"	c
+TxType	bhtx.py	/^class TxType(Enum):$/;"	c
+UNKNOWN	bhtx.py	/^    UNKNOWN     = -1$/;"	v	class:TxType
+UNKNOWN	bhtx.py	/^    UNKNOWN    = 10$/;"	v	class:RfPowerControlMode
+UNKNOWN	bhtx.py	/^    UNKNOWN = -1$/;"	v	class:RfVariant
+UNKNOWN	bhtx.py	/^    UNKNOWN = 2$/;"	v	class:ModemMode
+UNKNOWN	bhtx.py	/^    UNKNOWN = 3$/;"	v	class:RfPower
+VOLTAGE	rfMute_offset.py	/^    VOLTAGE      = 0x08,$/;"	v	class:HdqCmds
+VT3270REGIME	telnetlibCallback3.py	/^VT3270REGIME = bytes([29]) # 3270 regime$/;"	v
+WILL	telnetlibCallback3.py	/^WILL = bytes([251])$/;"	v
+WONT	telnetlibCallback3.py	/^WONT = bytes([252])$/;"	v
+X3PAD	telnetlibCallback3.py	/^X3PAD = bytes([30]) # X.3 PAD$/;"	v
+XASCII	telnetlibCallback3.py	/^XASCII = bytes([17]) # extended ascii character set$/;"	v
+XAUTH	telnetlibCallback3.py	/^XAUTH = bytes([41]) # XAUTH$/;"	v
+XDISPLOC	telnetlibCallback3.py	/^XDISPLOC = bytes([35]) # X Display Location$/;"	v
+_TelnetSelector	telnetlibCallback3.py	/^    _TelnetSelector = selectors.PollSelector$/;"	v
+_TelnetSelector	telnetlibCallback3.py	/^    _TelnetSelector = selectors.SelectSelector$/;"	v
+__all__	telnetlibCallback3.py	/^__all__ = ["Telnet"]$/;"	v
+__del__	cliconn.py	/^    def __del__(self):$/;"	m	class:CliConn	file:
+__del__	telnetlibCallback3.py	/^    def __del__(self):$/;"	m	class:Telnet	file:
+__init__	bhtx.py	/^    def __init__(self, hostname, port, baud, ir):$/;"	m	class:BhTx
+__init__	cliconn.py	/^    def __init__(self, hostname=None, port=None, baud=115200):$/;"	m	class:CliConn
+__init__	telnetlibCallback3.py	/^    def __init__(self, host=None, port=0,$/;"	m	class:Telnet
+__str__	bhtx.py	/^    def __str__(self):$/;"	m	class:ModemMode	file:
+__str__	bhtx.py	/^    def __str__(self):$/;"	m	class:RfPower	file:
+__str__	rfMute_offset.py	/^    def __str__(self):$/;"	m	class:HdqCmds	file:
+_thread	telnetlibCallback3.py	/^        import _thread$/;"	i
+_time	telnetlibCallback3.py	/^from time import monotonic as _time$/;"	i
+argparse	run_tests.py	/^import argparse$/;"	i
+argparse	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^import argparse$/;"	i
+argparse	test11_bhtx_ZigBeeDevicePowerCal.py	/^import argparse$/;"	i
+argparse	test1_bhtx_template.py	/^import argparse$/;"	i
+argparse	test2_bhtx_rf_cal_set.py	/^import argparse$/;"	i
+argparse	test3_bhtx_helpall_cli.py	/^import argparse$/;"	i
+argparse	test4_bhtx_command_telnet.py	/^import argparse$/;"	i
+argparse	test5_bhtx_command_repeat.py	/^import argparse$/;"	i
+argparse	test6_bhtx_command_log.py	/^import argparse$/;"	i
+argparse	test7_bhtx_bandlimit.py	/^import argparse$/;"	i
+argparse	test8_bhtx_FreqTableWriteToFlash.py	/^import argparse$/;"	i
+argparse	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^import argparse$/;"	i
+args	run_tests.py	/^    args = parser.parse_args()$/;"	v
+args	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^    args = parser.parse_args()$/;"	v
+args	test11_bhtx_ZigBeeDevicePowerCal.py	/^    args = parser.parse_args()$/;"	v
+args	test1_bhtx_template.py	/^    args = parser.parse_args()$/;"	v
+args	test2_bhtx_rf_cal_set.py	/^    args = parser.parse_args()$/;"	v
+args	test3_bhtx_helpall_cli.py	/^    args = parser.parse_args()$/;"	v
+args	test4_bhtx_command_telnet.py	/^    args = parser.parse_args()$/;"	v
+args	test5_bhtx_command_repeat.py	/^    args = parser.parse_args()$/;"	v
+args	test6_bhtx_command_log.py	/^    args = parser.parse_args()$/;"	v
+args	test7_bhtx_bandlimit.py	/^    args = parser.parse_args()$/;"	v
+args	test8_bhtx_FreqTableWriteToFlash.py	/^    args = parser.parse_args()$/;"	v
+args	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^    args = parser.parse_args()$/;"	v
+bhtx	run_tests.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	test1_bhtx_template.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	test3_bhtx_helpall_cli.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	test4_bhtx_command_telnet.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	test5_bhtx_command_repeat.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	test6_bhtx_command_log.py	/^    bhtx = BhTx.get_instance()$/;"	v
+bhtx	test_demo.py	/^    bhtx = None$/;"	v	class:test
+bhtx	test_rf.py	/^    bhtx = None$/;"	v	class:test
+binfile	test8_bhtx_FreqTableWriteToFlash.py	/^    binfile = open(args.file, 'rb')           # open the FreqTable file$/;"	v
+calTableTest	test_rf.py	/^    def calTableTest(self, table):$/;"	m	class:test
+cal_freqs	test_rf.py	/^    cal_freqs = {}$/;"	v	class:test
+cal_powers	test_rf.py	/^    cal_powers = [RfPower.LOW, RfPower.NORM, RfPower.HIGH]$/;"	v	class:test
+cli_commands_list	test5_bhtx_command_repeat.py	/^cli_commands_list = [$/;"	v
+cli_commands_list	test6_bhtx_command_log.py	/^cli_commands_list = [$/;"	v
+close	telnetlibCallback3.py	/^    def close(self):$/;"	m	class:Telnet
+cmd_tb	test3_bhtx_helpall_cli.py	/^         cmd_tb = row.split(' ', 1)           # split the response into two parts: command(cmd_tb[0]) and description(cmd_tb[1])$/;"	v
+cmds	rfMute_offset.py	/^    cmds = [ 'rfpow low', 'rfpow norm', 'rfpow hi' ]$/;"	v
+connect	bhtx.py	/^    def connect(cls, hostname=None, port=None, baud=115200, ir= True):$/;"	m	class:BhTx
+connect	cliconn.py	/^    def connect(self):  #Serial init and Connect to it$/;"	m	class:CliConn
+cscope_files_list	py_bhtx_python_cscope_files_filter.py	/^cscope_files_list = []$/;"	v
+csv	rfMute_offset.py	/^import csv$/;"	i
+csv	test2_bhtx_rf_cal_set.py	/^import csv$/;"	i
+csv	test3_bhtx_helpall_cli.py	/^import csv$/;"	i
+csv	test7_bhtx_bandlimit.py	/^import csv$/;"	i
+csv_headers	test3_bhtx_helpall_cli.py	/^    csv_headers = ['CLI Command','Description']$/;"	v
+data	rfMute_offset.py	/^                data = {}$/;"	v
+data	test8_bhtx_FreqTableWriteToFlash.py	/^        data = binfile.read(1)                  # get each byte from the FreqBand file$/;"	v
+del_array	py_bhtx_python_cscope_files_filter.py	/^del_array = [$/;"	v
+enum	rfMute_offset.py	/^import enum$/;"	i
+enum	test2_bhtx_rf_cal_set.py	/^import enum$/;"	i
+enum	test7_bhtx_bandlimit.py	/^import enum$/;"	i
+error_count	rfMute_offset.py	/^error_count = 0$/;"	v
+expect	cliconn.py	/^    def expect(self, lst, timeout=None):$/;"	m	class:CliConn
+expect	telnetlibCallback3.py	/^    def expect(self, list, timeout=None):$/;"	m	class:Telnet
+expect_serial	cliconn.py	/^    def expect_serial(self, lst, timeout=None):$/;"	m	class:CliConn
+expect_telnet	cliconn.py	/^    def expect_telnet(self, lst, timeout=None):$/;"	m	class:CliConn
+expectedPowerCtrlMode	test_rf.py	/^    def expectedPowerCtrlMode(self, txtype, power=RfPower.NORM, scEn=True, rfmute=False):$/;"	m	class:test
+fLog	test6_bhtx_command_log.py	/^    fLog = open(LOG_FILE_PATH, 'a')$/;"	v
+fLog	test6_bhtx_command_log.py	/^    fLog = open(LOG_FILE_PATH, 'w')$/;"	v
+f_csv	test3_bhtx_helpall_cli.py	/^      f_csv = csv.writer(csvfile)$/;"	v
+fieldnames	rfMute_offset.py	/^        fieldnames = ['cmd', 'pow', 'offset']$/;"	v
+file	test6_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+file_write	py_bhtx_python_cscope_files_filter.py	/^def file_write(content):$/;"	f
+filename	rfMute_offset.py	/^    filename = 'muteoffsets-{}.csv'.format(txtype)$/;"	v
+fileno	telnetlibCallback3.py	/^    def fileno(self):$/;"	m	class:Telnet
+files_list_append	py_bhtx_python_cscope_files_filter.py	/^def files_list_append(obj):$/;"	f
+fill_rawq	telnetlibCallback3.py	/^    def fill_rawq(self):$/;"	m	class:Telnet
+filter_cscope_files_path	py_bhtx_python_cscope_files_filter.py	/^filter_cscope_files_path = "C:\\\\Other_Code_Repo\\\\python_in_shure\\\\bhtx_python\\\\cscope.files"$/;"	v
+fpga_peek	bhtx.py	/^    def fpga_peek(self, addr):$/;"	m	class:BhTx
+getDefaultCal	test_rf.py	/^    def getDefaultCal(self, txtype, pwr, scEn):$/;"	m	class:test
+get_band	bhtx.py	/^    def get_band(self):$/;"	m	class:BhTx
+get_cal	bhtx.py	/^    def get_cal(self, table):$/;"	m	class:BhTx
+get_current_rf_cal	bhtx.py	/^    def get_current_rf_cal(self, carrier):$/;"	m	class:BhTx
+get_hdq_param	rfMute_offset.py	/^def get_hdq_param(tx, cmd):$/;"	f
+get_instance	bhtx.py	/^    def get_instance(cls):$/;"	m	class:BhTx
+get_modem	bhtx.py	/^    def get_modem(self):$/;"	m	class:BhTx
+get_power	bhtx.py	/^    def get_power(self):$/;"	m	class:BhTx
+get_power	rfMute_offset.py	/^def get_power(tx):$/;"	f
+get_rf_power_control_mode	test_rf.py	/^    def get_rf_power_control_mode(self):$/;"	m	class:test
+get_socket	telnetlibCallback3.py	/^    def get_socket(self):$/;"	m	class:Telnet
+get_type	bhtx.py	/^    def get_type(self):$/;"	m	class:BhTx
+get_variant	bhtx.py	/^    def get_variant(self):$/;"	m	class:BhTx
+help	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
+help	test11_bhtx_ZigBeeDevicePowerCal.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
+help	test4_bhtx_command_telnet.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
+help	test5_bhtx_command_repeat.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
+help	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^                        help='Specify that serial connection is NOT IR')$/;"	v
+import	test6_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+instance	bhtx.py	/^    instance = None$/;"	v	class:BhTx
+interact	telnetlibCallback3.py	/^    def interact(self):$/;"	m	class:Telnet
+isCalValid	test_rf.py	/^    def isCalValid(self, txtype):  # Check if Calibration table is valid, data could be read$/;"	m	class:test
+isInArray	py_bhtx_python_cscope_files_filter.py	/^def isInArray (array, line):$/;"	f
+is_asic_enabled	test_rf.py	/^    def is_asic_enabled(self, carrier):  # check if the primary or secondary RF ASIC is enabled through FPAG peek$/;"	m	class:test
+is_serial	cliconn.py	/^    def is_serial(self):$/;"	m	class:CliConn
+listener	telnetlibCallback3.py	/^    def listener(self):$/;"	m	class:Telnet
+lists	test3_bhtx_helpall_cli.py	/^      lists = bhtx.send_cmd("help all")       # send_cmd return value is [success, lines]$/;"	v
+loader	run_tests.py	/^    loader = unittest.defaultTestLoader$/;"	v
+msg	telnetlibCallback3.py	/^    def msg(self, msg, *args):$/;"	m	class:Telnet
+mt_interact	telnetlibCallback3.py	/^    def mt_interact(self):$/;"	m	class:Telnet
+mute_power	rfMute_offset.py	/^    mute_power = get_power(tx)  # the power consumption in rfmute state$/;"	v
+numofSector	test8_bhtx_FreqTableWriteToFlash.py	/^    numofSector = int(size \/ ExternalFlashSectorSize) + 1    # calculate how many sectors does FreqBand file occupies in external flash$/;"	v
+open	telnetlibCallback3.py	/^    def open(self, host, port=0, timeout=socket._GLOBAL_DEFAULT_TIMEOUT):$/;"	m	class:Telnet
+os	py_bhtx_python_cscope_files_filter.py	/^import os$/;"	i
+os	run_tests.py	/^import os$/;"	i
+os	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^import os$/;"	i
+os	test11_bhtx_ZigBeeDevicePowerCal.py	/^import os$/;"	i
+os	test1_bhtx_template.py	/^import os$/;"	i
+os	test3_bhtx_helpall_cli.py	/^import os$/;"	i
+os	test4_bhtx_command_telnet.py	/^import os$/;"	i
+os	test5_bhtx_command_repeat.py	/^import os$/;"	i
+os	test6_bhtx_command_log.py	/^import os$/;"	i
+os	test8_bhtx_FreqTableWriteToFlash.py	/^import os$/;"	i
+os	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^import os$/;"	i
+p	rfMute_offset.py	/^                p = get_power(tx)  # the power consumption in different power state, e.g. low, norm, hi$/;"	v
+parse_cal_line	bhtx.py	/^    def parse_cal_line(self, line):$/;"	m	class:BhTx
+parser	run_tests.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test11_bhtx_ZigBeeDevicePowerCal.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test1_bhtx_template.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test2_bhtx_rf_cal_set.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test3_bhtx_helpall_cli.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test4_bhtx_command_telnet.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test5_bhtx_command_repeat.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test6_bhtx_command_log.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test7_bhtx_bandlimit.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+parser	test8_bhtx_FreqTableWriteToFlash.py	/^    parser = argparse.ArgumentParser(description='Run BHTX tests')$/;"	v
+parser	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^    parser = argparse.ArgumentParser(description='Run BHTX integration tests')$/;"	v
+path	test6_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+process_rawq	telnetlibCallback3.py	/^    def process_rawq(self):$/;"	m	class:Telnet
+rawq_getchar	telnetlibCallback3.py	/^    def rawq_getchar(self):$/;"	m	class:Telnet
+re	bhtx.py	/^import re$/;"	i
+re	cliconn.py	/^import re$/;"	i
+re	telnetlibCallback3.py	/^                if not re: import re$/;"	i
+re	test_rf.py	/^import re$/;"	i
+read_all	telnetlibCallback3.py	/^    def read_all(self):$/;"	m	class:Telnet
+read_eager	telnetlibCallback3.py	/^    def read_eager(self):$/;"	m	class:Telnet
+read_lazy	telnetlibCallback3.py	/^    def read_lazy(self):$/;"	m	class:Telnet
+read_sb_data	telnetlibCallback3.py	/^    def read_sb_data(self):$/;"	m	class:Telnet
+read_some	telnetlibCallback3.py	/^    def read_some(self):$/;"	m	class:Telnet
+read_until	telnetlibCallback3.py	/^    def read_until(self, match, timeout=None):$/;"	m	class:Telnet
+read_very_eager	telnetlibCallback3.py	/^    def read_very_eager(self):$/;"	m	class:Telnet
+read_very_lazy	telnetlibCallback3.py	/^    def read_very_lazy(self):$/;"	m	class:Telnet
+reader	test2_bhtx_rf_cal_set.py	/^       reader = csv.reader(csvfile)$/;"	v
+reader	test7_bhtx_bandlimit.py	/^       reader = csv.reader(csvfile)$/;"	v
+result	run_tests.py	/^    result = runner.run(tests)$/;"	v
+row	test2_bhtx_rf_cal_set.py	/^          row = rows$/;"	v
+row	test7_bhtx_bandlimit.py	/^          row = rows$/;"	v
+runner	run_tests.py	/^    runner = unittest.TextTestRunner(stream=os.sys.stdout, buffer=True, verbosity=2)$/;"	v
+search_dir	py_bhtx_python_cscope_files_filter.py	/^def search_dir(dir_path):$/;"	f
+selectors	telnetlibCallback3.py	/^import selectors$/;"	i
+send	cliconn.py	/^    def send(self, cmd, newline='\\r'):$/;"	m	class:CliConn
+send_cmd	bhtx.py	/^    def send_cmd(self, cmd, timeout=None, expect_resp=True):$/;"	m	class:BhTx
+send_cmd	rfMute_offset.py	/^def send_cmd(tx, cmd, expect_resp=True):$/;"	f
+send_cmd_log	bhtx.py	/^    def send_cmd_log(self, cmd, timeout=None, expect_resp=True, expect_record=True):$/;"	m	class:BhTx
+send_serial	cliconn.py	/^    def send_serial(self, cmd, newline='\\r'):$/;"	m	class:CliConn
+send_telnet	cliconn.py	/^    def send_telnet(self, cmd, newline='\\r'):$/;"	m	class:CliConn
+serial	cliconn.py	/^import serial$/;"	i
+setUp	test_rf.py	/^    def setUp(self):$/;"	m	class:test
+setUpClass	test_demo.py	/^    def setUpClass(cls):$/;"	m	class:test
+setUpClass	test_rf.py	/^    def setUpClass(cls):$/;"	m	class:test
+set_callback	telnetlibCallback3.py	/^    def set_callback(self, callback):$/;"	m	class:Telnet
+set_debuglevel	telnetlibCallback3.py	/^    def set_debuglevel(self, debuglevel):$/;"	m	class:Telnet
+set_freq	bhtx.py	/^    def set_freq(self, carrier, freq):$/;"	m	class:BhTx
+set_modem	bhtx.py	/^    def set_modem(self, modem):$/;"	m	class:BhTx
+set_option_negotiation_callback	telnetlibCallback3.py	/^    def set_option_negotiation_callback(self, callback):$/;"	m	class:Telnet
+set_power	bhtx.py	/^    def set_power(self, power):$/;"	m	class:BhTx
+set_rfcar2	bhtx.py	/^    def set_rfcar2(self, enable):$/;"	m	class:BhTx
+size	test8_bhtx_FreqTableWriteToFlash.py	/^    size = os.path.getsize(args.file)         # get the FreqTable file size$/;"	v
+sock_avail	telnetlibCallback3.py	/^    def sock_avail(self):$/;"	m	class:Telnet
+socket	telnetlibCallback3.py	/^import socket$/;"	i
+source_cscope_files_path	py_bhtx_python_cscope_files_filter.py	/^source_cscope_files_path = "C:\\\\Other_Code_Repo\\\\python_in_shure\\\\bhtx_python\\\\cscope_source_test.files"$/;"	v
+state	rfMute_offset.py	/^        state = [ 'rfcar2 on', 'rfcar2 off' ]$/;"	v
+state	rfMute_offset.py	/^    state = ['rfcar2 off']  # For transmitter except FD HH, the state is only "rfcar2 off"$/;"	v
+struct	test8_bhtx_FreqTableWriteToFlash.py	/^import struct$/;"	i
+sys	cliconn.py	/^import sys$/;"	i
+sys	py_bhtx_python_cscope_files_filter.py	/^import sys$/;"	i
+sys	rfMute_offset.py	/^import sys$/;"	i
+sys	telnetlibCallback3.py	/^import sys$/;"	i
+sys	test2_bhtx_rf_cal_set.py	/^import sys$/;"	i
+sys	test7_bhtx_bandlimit.py	/^import sys$/;"	i
+telnetlib	cliconn.py	/^import telnetlibCallback3 as telnetlib$/;"	i
+test	telnetlibCallback3.py	/^def test():$/;"	f
+test	test_demo.py	/^class test(unittest.TestCase):$/;"	c
+test	test_rf.py	/^class test(unittest.TestCase): # included into the unit test list$/;"	c
+testAdjustedCal	test_rf.py	/^    def testAdjustedCal(self):  # test case 4, adjusted calibration data test, only apply to high 20mW$/;"	m	class:test
+testDefaultCal	test_rf.py	/^    def testDefaultCal(self):  # test case 3, it will be skipped if the calibration table is valid$/;"	m	class:test
+testDualCarrierCal	test_rf.py	/^    def testDualCarrierCal(self): # test case 2, it will be skipped by AD3$/;"	m	class:test
+testHdPowerLimit	test_rf.py	/^    def testHdPowerLimit(self):$/;"	m	class:test
+testMute	test_rf.py	/^    def testMute(self):$/;"	m	class:test
+testSingleCarrierCal	test_rf.py	/^    def testSingleCarrierCal(self):  # test case 1$/;"	m	class:test
+testTxRfVariant	test_demo.py	/^    def testTxRfVariant(self): # example : test case 2$/;"	m	class:test
+testTxtype	test_demo.py	/^    def testTxtype(self):  # example: test case 1$/;"	m	class:test
+tests	run_tests.py	/^    tests = loader.discover(start_dir=os.path.dirname(__file__))$/;"	v
+the	test6_bhtx_command_log.py	/^from bhtx import LOG_FILE_PATH   # import the LOG file path$/;"	i
+theNULL	telnetlibCallback3.py	/^theNULL = bytes([0])$/;"	v
+time	cliconn.py	/^import time$/;"	i
+time	rfMute_offset.py	/^import time$/;"	i
+time	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^import time$/;"	i
+time	test11_bhtx_ZigBeeDevicePowerCal.py	/^import time$/;"	i
+time	test2_bhtx_rf_cal_set.py	/^import time$/;"	i
+time	test3_bhtx_helpall_cli.py	/^import time$/;"	i
+time	test4_bhtx_command_telnet.py	/^import time$/;"	i
+time	test5_bhtx_command_repeat.py	/^import time$/;"	i
+time	test6_bhtx_command_log.py	/^import time$/;"	i
+time	test7_bhtx_bandlimit.py	/^import time$/;"	i
+time	test8_bhtx_FreqTableWriteToFlash.py	/^import time$/;"	i
+time	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^import time$/;"	i
+tx	rfMute_offset.py	/^    tx = BhTx.get_instance()$/;"	v
+tx	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^    tx = BhTx.get_instance()$/;"	v
+tx	test11_bhtx_ZigBeeDevicePowerCal.py	/^    tx = BhTx.get_instance()$/;"	v
+tx	test2_bhtx_rf_cal_set.py	/^    tx = BhTx.get_instance()$/;"	v
+tx	test7_bhtx_bandlimit.py	/^    tx = BhTx.get_instance()$/;"	v
+tx	test8_bhtx_FreqTableWriteToFlash.py	/^    tx = BhTx.get_instance()$/;"	v
+tx	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^    tx = BhTx.get_instance()$/;"	v
+txtype	rfMute_offset.py	/^    txtype = tx.get_type()$/;"	v
+unittest	run_tests.py	/^import unittest$/;"	i
+unittest	test1_bhtx_template.py	/^import unittest$/;"	i
+unittest	test_demo.py	/^import unittest$/;"	i
+unittest	test_rf.py	/^import unittest$/;"	i
+unlock	bhtx.py	/^    def unlock(self):$/;"	m	class:BhTx
+value	test8_bhtx_FreqTableWriteToFlash.py	/^        value = struct.unpack('B',data)         # convert to integer$/;"	v
+write	telnetlibCallback3.py	/^    def write(self, buffer):$/;"	m	class:Telnet
+writer	rfMute_offset.py	/^        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)$/;"	v
+zbfinepwr_Coarselow	test11_bhtx_ZigBeeDevicePowerCal.py	/^    zbfinepwr_Coarselow = '32'$/;"	v
+zbfinepwr_Coarsemid	test11_bhtx_ZigBeeDevicePowerCal.py	/^    zbfinepwr_Coarsemid = '34'$/;"	v
+zbpwr_Coarselow	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^    zbpwr_Coarselow = '16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16'$/;"	v
+zbpwr_Coarselow	test11_bhtx_ZigBeeDevicePowerCal.py	/^    zbpwr_Coarselow = '15'$/;"	v
+zbpwr_Coarsemid	test10_bhtx_ZigBeeChannelCoarsePowerCal.py	/^    zbpwr_Coarsemid = '18,18,18,18,18,18,18,18,18,18,18,18,18,18,18,18'$/;"	v
+zbpwr_Coarsemid	test11_bhtx_ZigBeeDevicePowerCal.py	/^    zbpwr_Coarsemid = '17'$/;"	v
+zbpwr_low	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^    zbpwr_low = '38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38'$/;"	v
+zbpwr_mid	test9_bhtx_ZigBeeChannelFinePowerCal.py	/^    zbpwr_mid = '39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39'$/;"	v
