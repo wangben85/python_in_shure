@@ -28,6 +28,9 @@ This repository contains some python scripts used during my work in Shure
 9.remove_comments_blanklines
   Remove all the source fils(*.c, *.cpp, etc.) comments and blanklines before summit a software copyright
 
+10.random_math_add_sub
+  do math add or sub calculation randomly
+
 # Note
 This repository has another copy in gitree 
 url = https://gitee.com/wangben85/python_in_shure.git
