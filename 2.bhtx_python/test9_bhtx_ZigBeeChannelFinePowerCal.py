@@ -16,7 +16,7 @@ if __name__ == "__main__":
     # @todo Arg parsing here could use some improvement...
     parser = argparse.ArgumentParser(description='Run BHTX integration tests')
     # Set default host is 192.168.1.102
-    parser.add_argument('-n', '--hostname',default='192.168.1.102', help='Hostname for CLI connection')
+    parser.add_argument('-n', '--hostname',default='192.168.1.104', help='Hostname for CLI connection')
     # Set default COM=8024
     parser.add_argument('-p', '--port', default='8024', help='Port for CLI connection')
     # Set default baudrate=115200
@@ -39,11 +39,22 @@ if __name__ == "__main__":
     tx.send_cmd("ls")   # verify the privilege mode switch successfully
 
     # 16 channels, fine power calibration value range is 32 ~47
-    #zbpwr_low = '47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47'
-    zbpwr_low = '38,38,38,38,38,38,38,38,38,38,38,38,38,38,38,38'
+    zbpwr_low = '40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,41'   # prototype
 
-    #zbpwr_mid = '46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46'
-    zbpwr_mid = '39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39'
+    zbpwr_mid = '37,37,37,37,37,37,37,41,41,41,41,41,41,41,41,41'   # prototype
+
+ 
+    print("We can disable the ShowLink network in the beginning");  
+    ret = tx.send_cmd("zigbee")    # get the respnse of ZigBee command 
+    status = ret[1][0]             # get the ZigBee status
+    if ( status == 'on'):
+      print("ZigBee is ON")
+      print("Disable ZigBee First")
+      tx.send_cmd("zigbee off")    # set the ZigBee Off
+      time.sleep(1)                # delay 1 second
+    else:
+      print("ZigBee is OFF")
+ 
 
     print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     print('First, make sure to set the ZigBee power mode to LOW !')
@@ -71,3 +82,15 @@ if __name__ == "__main__":
     tx.send_cmd("zbchfinepwr crc")               # save them to EEPROM
     time.sleep(1)                                # delay 1 seconds
     tx.send_cmd("zbchfinepwr")                   # get the current fine power calibration data after setting
+
+
+    #check the set result
+    #mid first
+    tx.send_cmd("zbpwrmode low")                 # set ZigBee power mode to low
+    tx.send_cmd("zbpwrmode")                     # get the current ZigBee power mode
+    tx.send_cmd("zbchfinepwr")                       # get the current Coarse power calibration data at current power mode
+    tx.send_cmd("zbpwrmode mid")                 # set ZigBee power mode to mid
+    tx.send_cmd("zbpwrmode")                     # get the current ZigBee power mode
+    tx.send_cmd("zbchfinepwr")                       # get the current Coarse power calibration data at current power mode
+    time.sleep(1)                                # delay 1 seconds
+    tx.send_cmd("reboot", expect_resp=False)     # after all the FreqBand file, reboot the device
