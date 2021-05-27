@@ -77,7 +77,7 @@ class BhTx(object):
         return cls.instance
 
     @classmethod
-    def connect(cls, hostname=None, port=None, baud=115200, ir= True):
+    def connect(cls, hostname=None, port=None, baud=115200, ir=True):
         if cls.instance is not None:
             del cls.instance
 

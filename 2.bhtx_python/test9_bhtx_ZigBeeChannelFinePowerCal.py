@@ -39,9 +39,9 @@ if __name__ == "__main__":
     tx.send_cmd("ls")   # verify the privilege mode switch successfully
 
     # 16 channels, fine power calibration value range is 32 ~47
-    zbpwr_low = '40,40,40,40,40,40,40,40,40,40,40,40,40,40,40,41'   # prototype
+    zbpwr_low = '41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41'   # prototype
 
-    zbpwr_mid = '37,37,37,37,37,37,37,41,41,41,41,41,41,41,41,41'   # prototype
+    zbpwr_mid = '39,39,39,39,39,41,41,41,41,41,41,41,41,41,41,40'   # prototype
 
  
     print("We can disable the ShowLink network in the beginning");  

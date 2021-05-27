@@ -10,19 +10,18 @@ import argparse
 import csv
 
 if __name__ == "__main__":
-
     # @todo Arg parsing here could use some improvement...
-    parser = argparse.ArgumentParser(description='Run BHTX integration tests')
-    parser.add_argument('-n','--hostname', help='Hostname for CLI connection')
-    # Set default COM=6
-    parser.add_argument('-p','--port', default = 'COM6', help='Port for CLI connection')
-    # Set default baudrate=115200
-    parser.add_argument('-b','--baud', default = 115200, help='Baud for CLI connection')
+    parser = argparse.ArgumentParser(description='Run Black hawk integration tests')
+    # set default host
+    parser.add_argument('-n', '--hostname', default = '192.168.1.101', help='Hostname for CLI connection')
+    # Set default COM=
+    parser.add_argument('-p', '--port', default='8024', help='Port for CLI connection')
+    # Set default baud rate=115200
+    parser.add_argument('-b', '--baud', default=115200, help='Baud for CLI connection')
     # Set default IR = True
-    parser.add_argument('--noir', dest='ir', action='store_const', const=False, default=True, help='Specify that serial connection is NOT IR')
-
-    parser.add_argument('-f','--file', default = './AD3_Supported_CLI/AD3_CLI_Command_Lists_All.csv', help='AD3 all the CLI Commands List')
-
+    parser.add_argument('--noir', dest='ir', action='store_const', const=False, default=True,
+                        help='Specify that serial connection is NOT IR')
+    parser.add_argument('-f', '--file', default='./ZigBee/ZigBee.csv', help='Specify test result output data file')
     args = parser.parse_args()
 
     # Establish connection to transmitter
@@ -45,11 +44,11 @@ if __name__ == "__main__":
       f_csv = csv.writer(csvfile)
       f_csv.writerow(csv_headers)             # write header first
       lists = bhtx.send_cmd("help all")       # send_cmd return value is [success, lines]
-      #print(lists[1])                        # print all the CLI commands
+      print('print lists[1]')
+      print(lists[1])                        # print all the CLI commands
       for row in lists[1]:                    # only care about lists[1] because which is the CLI response string ,not the boolean of success or not
-         #print(row)                          # print command lists and description
+         print(row)                          # print command lists and description
          cmd_tb = row.split(' ', 1)           # split the response into two parts: command(cmd_tb[0]) and description(cmd_tb[1])
          cmd_tb[1] = cmd_tb[1].lstrip()       # remove the description part's space in the beginning
          print(cmd_tb)
-         f_csv.writerow(cmd_tb)               # write to the csv file
-
+         #f_csv.writerow(cmd_tb)               # write to the csv file
