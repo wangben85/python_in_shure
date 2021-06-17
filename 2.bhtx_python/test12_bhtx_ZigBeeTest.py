@@ -503,7 +503,8 @@ if __name__ == "__main__":
     # @todo Arg parsing here could use some improvement...
     parser = argparse.ArgumentParser(description='Run Black hawk integration tests')
     # set default host
-    parser.add_argument('-n', '--hostname', default='192.168.1.101', help='Hostname for CLI connection')
+    #parser.add_argument('-n', '--hostname', default='192.168.1.101', help='Hostname for CLI connection')
+    parser.add_argument('-n', '--hostname', help='Hostname for CLI connection')
     # Set default COM
     parser.add_argument('-p', '--port', default='8024', help='Port for CLI connection')
     # Set default baud rate
