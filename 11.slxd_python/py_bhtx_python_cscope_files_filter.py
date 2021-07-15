@@ -2,8 +2,8 @@
 import os
 import sys
 
-source_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\2.bhtx_python\\cscope_source_test.files"
-filter_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\2.bhtx_python\\cscope.files"
+source_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\11.slxd_python\\cscope_source_test.files"
+filter_cscope_files_path = "C:\\Other_Code_Repo\\python_in_shure\\11.slxd_python\\cscope.files"
 cscope_files_list = []
 
 # the unexpected files to be removed from the list

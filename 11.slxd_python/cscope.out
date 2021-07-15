@@ -1,0 +1,9875 @@
+cscope 15 C:\Other_Code_Repo\python_in_shure\11.slxd_python"               0000041872
+	@C:\Other_Code_Repo\python_in_shure\11.slxd_python\bhtx.py
+
+1 
+äom
+ 
+şicÚn
+ 
+impÜt
+ 
+CliCÚn
+
+
+2 
+äom
+ 
+impÜt
+ 
+Enum
+
+
+3 
+impÜt
+ 
+»
+
+
+6 
+şass
+ 
+	$TxTy³
+(
+Enum
+):
+
+7 
+BASIC_BP
+ = 1
+
+8 
+ENHANCED_BP
+ = 2
+
+9 
+BASIC_PLUGON
+ = 3
+
+10 
+BASIC_HH
+ = 4
+
+11 
+ENHANCED_HH
+ = 6
+
+12 
+FD_HH
+ = 7
+
+13 
+MICRO_BP
+ = 8
+
+14 
+UNKNOWN
+ = -1
+
+16 
+şass
+ 
+	$RfV¬ŸÁ
+(
+Enum
+):
+
+17 
+A
+ = 0
+
+18 
+B
+ = 1
+
+19 
+C
+ = 2
+
+20 
+UNKNOWN
+ = -1
+
+22 
+şass
+ 
+	$C®TabË
+(
+Enum
+):
+
+23 
+PRIMARY
+ = 0
+
+24 
+SECONDARY
+ = 1
+
+25 
+COMBINED
+ = 2
+
+27 
+şass
+ 
+	$RfPow”CÚŒŞMode
+(
+Enum
+):
+
+28 
+MUTE
+ = 0
+
+29 
+STANDBY
+ = 1
+
+30 
+LOW
+ = 2
+
+31 
+NORM
+ = 3
+
+32 
+HIGH
+ = 4
+
+33 
+CC_MUTE
+ = 5 #CC_MODES 
+¬e
+ 
+Úly
+ 
+u£d
+ 
+FD_HH
+ 
+Œªsm™‹r
+
+
+34 
+CC_STANDBY
+ = 6
+
+35 
+CC_LOW
+ = 7
+
+36 
+CC_NORM
+ = 8
+
+37 
+CC_HIGH
+ = 9
+
+38 
+UNKNOWN
+ = 10
+
+40 
+şass
+ 
+	$RfPow”
+(
+Enum
+):
+
+41 
+LOW
+ = 2
+
+42 
+NORM
+ = 0
+
+43 
+HIGH
+ = 1
+
+44 
+UNKNOWN
+ = 3
+
+46 
+def
+ 
+	$__¡r__
+(
+£lf
+):
+
+47  {2:'low', 0:'nÜm', 1:'hi', 3:'unknown'
+	}
+}[
+£lf
+.
+v®ue
+]
+
+49 
+şass
+ 
+	$ModemMode
+(
+Enum
+):
+
+50 
+STD
+ = 0
+
+51 
+HD
+ = 1
+
+52 
+UNKNOWN
+ = 2
+
+54 
+def
+ 
+	$__¡r__
+(
+£lf
+):
+
+55  {0:'¡d', 1:'hd', 2:'UNKNOWN'
+	}
+}[
+£lf
+.
+v®ue
+]
+
+57 
+PRIMARY_CARRIER
+ = 1
+
+58 
+SECONDARY_CARRIER
+ = 2
+
+60 
+LOG_FILE_PATH
+ = 'Cli_Log_Fe.txt' #™ 
+is
+ 
+the
+ 
+CLI
+ 
+commªd
+ 
+LOG
+ 
+fe
+ 
+·th
+ 
+Çme
+
+
+62 
+şass
+ 
+	$BhTx
+(
+objeù
+):
+
+64 
+DEFAULT_TIMEOUT
+ = 3.0
+
+65 
+š¡ªû
+ = 
+NÚe
+
+
+67 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ho¡Çme
+, 
+pÜt
+, 
+baud
+, 
+œ
+):
+
+68 
+£lf
+.
+œ
+ = ir
+
+69 
+£lf
+.
+şi
+ = 
+	$CliCÚn
+(
+ho¡Çme
+, 
+pÜt
+, 
+baud
+)
+
+70 
+£lf
+.
+şi
+.
+	`cÚÃù
+()
+
+72 @
+şassm‘hod
+
+
+73 
+def
+ 
+	$g‘_š¡ªû
+(
+şs
+):
+
+74 
+şs
+.
+š¡ªû
+ 
+is
+ 
+NÚe
+:
+
+75 
+¿i£
+ 
+	`Exû±iÚ
+('Instance must be created with "connect"')
+
+77  
+şs
+.
+š¡ªû
+
+
+79 @
+şassm‘hod
+
+
+80 
+def
+ 
+	$cÚÃù
+(
+şs
+, 
+ho¡Çme
+=
+NÚe
+, 
+pÜt
+=NÚe, 
+baud
+=115200, 
+œ
+=
+True
+):
+
+81 
+şs
+.
+š¡ªû
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+82 
+d–
+ 
+şs
+.
+š¡ªû
+
+
+84 #şs.
+š¡ªû
+ = 
+	`şs
+(
+ho¡Çme
+, 
+pÜt
+, 
+baud
+, 
+œ
+)
+
+85 #They 
+¬e
+ 
+the
+ 
+§me
+
+
+86 
+şs
+.
+š¡ªû
+ = 
+	$BhTx
+(
+ho¡Çme
+, 
+pÜt
+, 
+baud
+, 
+œ
+)
+
+87 
+şs
+.
+š¡ªû
+.
+	$uÆock
+()
+
+89 
+def
+ 
+	$uÆock
+(
+£lf
+):
+
+90 
+£lf
+.
+	`£nd_cmd
+("su dev dev"):
+
+91 
+	`´št
+("Transmitter unlocked")
+
+93 
+def
+ 
+	$£nd_cmd
+(
+£lf
+, 
+cmd
+, 
+timeout
+=
+NÚe
+, 
+ex³ù_»¥
+=
+True
+):
+
+95 
+S’d
+ 
+CLI
+ 
+commªd
+ 
+w™h
+ 
+¥ecif›d
+ 
+timeout
+.
+
+97 
+A
+ 
+sucûssful
+ 
+commªd
+ 
+wl
+ 
+»suÉ
+ 
+š
+ 
+a
+ 
+´om±
+ 
+w™h
+ 
+no
+
+
+98 [
+Faed
+] 
+mes§ge
+ 
+­³¬šg
+.
+
+100 
+R‘uºs
+ 
+·œ
+ 
+wh”e
+ 
+fœ¡
+ 
+–em’t
+ 
+is
+ 
+boŞ—n
+ 
+of
+ 
+commªd
+
+
+101 
+sucûss
+ 
+ªd
+ 
+£cÚd
+ 
+–em’t
+ 
+is
+ 
+»¥Ú£
+ 
+‹xt
+.
+
+103 
+timeout
+ 
+is
+ 
+NÚe
+:
+
+104 
+timeout
+ = 
+£lf
+.
+DEFAULT_TIMEOUT
+
+
+106 
+	`´št
+("CLI> " + 
+cmd
+è#´šˆ
+out
+ 
+the
+ 
+CLI
+ 
+commªd
+ 
+to
+ 
+be
+ 
+£Á
+
+
+108 
+£lf
+.
+şi
+.
+	$£nd
+(
+cmd
+)
+
+110 #Wa™ 
+commªd
+ 
+»¥Ú£
+ 
+by
+ 
+wa™šg
+ 
+´om±
+. 
+If
+ [
+Faed
+] 
+š
+
+
+111 #th
+»¥Ú£
+ 
+th’
+ 
+the
+ 
+commªd
+ 
+çed
+
+
+112 
+ex³ù_»¥
+:
+
+113 
+»¥
+ = 
+£lf
+.
+şi
+.
+	`ex³ù
+(['CLI> '], 
+timeout
+)
+
+114 
+sucûss
+ = ((
+»¥
+[0] !ğ-1è
+ªd
+
+
+115 (
+NÚe
+ =ğ
+»
+.
+	`£¬ch
+('\[Faed\]', 
+»¥
+[2],„e.
+MULTILINE
+)))
+
+117 #IR 
+dÚgË
+ 
+echos
+ 
+cmd
+ 
+back
+, 
+so
+ 
+¡r
+ 
+™
+ 
+äom
+ 
+»¥Ú£
+
+
+118 #FÜ 
+some
+ 
+»asÚ
+, 
+we
+'re havingo do‡ doublerim...
+
+119 
+£lf
+.
+şi
+.
+	$is_£rŸl
+():
+
+120 
+»¥
+[2] = 
+»
+.
+	`sub
+('^\s*{}\s*'.
+	`fÜm©
+(
+cmd
+), '',„esp[2])
+
+121 
+£lf
+.
+œ
+:
+
+122 
+»¥
+[2] = 
+»
+.
+	`sub
+('^\s*{}\s*'.
+	`fÜm©
+(
+cmd
+), '',„esp[2])
+
+124 #S¶™ 
+Ú
+ 
+Ãwlšes
+ 
+ªd
+ 
+»move
+ 
+Ï¡
+ 
+‹rmš©šg
+ 
+´om±
+
+
+125 
+lšes
+ = 
+»¥
+[2].
+	$¥l™lšes
+()
+
+126 
+lšes
+ =†ines[:-1]
+
+127 
+	$Ën
+(
+lšes
+):
+
+128 
+	`´št
+("\n".
+	$još
+(
+lšes
+))
+
+130 
+sucûss
+ = 
+True
+
+
+131 
+lšes
+ = ['']
+
+133  [
+sucûss
+, 
+lšes
+]
+
+135 
+def
+ 
+	$£nd_cmd_log
+(
+£lf
+, 
+cmd
+, 
+timeout
+=
+NÚe
+, 
+ex³ù_»¥
+=
+True
+, 
+ex³ù_»cÜd
+=True):
+
+137 
+S’d
+ 
+CLI
+ 
+commªd
+ 
+w™h
+ 
+¥ecif›d
+ 
+timeout
+ 
+ªd
+ 
+»cÜd
+ 
+the
+ 
+ãedback
+ 
+što
+ 
+log
+ 
+fe
+.
+
+139 
+A
+ 
+sucûssful
+ 
+commªd
+ 
+wl
+ 
+»suÉ
+ 
+š
+ 
+a
+ 
+´om±
+ 
+w™h
+ 
+no
+
+
+140 [
+Faed
+] 
+mes§ge
+ 
+­³¬šg
+.
+
+142 
+R‘uºs
+ 
+·œ
+ 
+wh”e
+ 
+fœ¡
+ 
+–em’t
+ 
+is
+ 
+boŞ—n
+ 
+of
+ 
+commªd
+ 
+sucûss
+ 
+ªd
+ 
+£cÚd
+ƒËm’ˆi 
+»¥Ú£
+ 
+‹xt
+.
+
+144 
+timeout
+ 
+is
+ 
+NÚe
+:
+
+145 
+timeout
+ = 
+£lf
+.
+DEFAULT_TIMEOUT
+
+
+147 
+	`´št
+("CLI> " + 
+cmd
+è#´šˆ
+out
+ 
+the
+ 
+CLI
+ 
+commªd
+ 
+to
+ 
+be
+ 
+£Á
+
+
+149 
+£lf
+.
+şi
+.
+	$£nd
+(
+cmd
+)
+
+151 #Wa™ 
+commªd
+ 
+»¥Ú£
+ 
+by
+ 
+wa™šg
+ 
+´om±
+. 
+If
+ [
+Faed
+] 
+š
+
+
+152 #th
+»¥Ú£
+ 
+th’
+ 
+the
+ 
+commªd
+ 
+çed
+
+
+153 
+ex³ù_»¥
+:
+
+154 
+»¥
+ = 
+£lf
+.
+şi
+.
+	`ex³ù
+(['CLI> '], 
+timeout
+)
+
+155 
+sucûss
+ = ((
+»¥
+[0] !ğ-1è
+ªd
+
+
+156 (
+NÚe
+ =ğ
+»
+.
+	`£¬ch
+('\[Faed\]', 
+»¥
+[2],„e.
+MULTILINE
+)))
+
+158 #IR 
+dÚgË
+ 
+echos
+ 
+cmd
+ 
+back
+, 
+so
+ 
+¡r
+ 
+™
+ 
+äom
+ 
+»¥Ú£
+
+
+159 #FÜ 
+some
+ 
+»asÚ
+, 
+we
+'re havingo do‡ doublerim...
+
+160 
+£lf
+.
+şi
+.
+	$is_£rŸl
+():
+
+161 
+»¥
+[2] = 
+»
+.
+	`sub
+('^\s*{}\s*'.
+	`fÜm©
+(
+cmd
+), '',„esp[2])
+
+162 
+£lf
+.
+œ
+:
+
+163 
+»¥
+[2] = 
+»
+.
+	`sub
+('^\s*{}\s*'.
+	`fÜm©
+(
+cmd
+), '',„esp[2])
+
+165 #S¶™ 
+Ú
+ 
+Ãwlšes
+ 
+ªd
+ 
+»move
+ 
+Ï¡
+ 
+‹rmš©šg
+ 
+´om±
+
+
+166 
+lšes
+ = 
+»¥
+[2].
+	$¥l™lšes
+()
+
+167 
+lšes
+ =†ines[:-1]
+
+168 
+	$Ën
+(
+lšes
+):
+
+169 
+	`´št
+("\n".
+	$još
+(
+lšes
+))
+
+171 
+sucûss
+ = 
+True
+
+
+172 
+lšes
+ = ['']
+
+174 #ià
+ex³ù_»cÜd
+ = 
+Œue
+, 
+m—ns
+ 
+we
+ 
+Ãed
+ 
+to
+ 
+»cÜd
+ 
+the
+ 
+CLI
+ 
+commªd
+ 
+ãedback
+, 
+wr™e
+ 
+them
+Ø
+Log
+ 
+fe
+
+
+175 
+ex³ù_»cÜd
+:
+
+176 
+fLog
+ = 
+	`İ’
+(
+LOG_FILE_PATH
+, 'a+'è#'
+a
++' means it will overwrite original file
+
+177 
+fLog
+.
+	$wr™e
+(
+cmd
+è#wr™
+commªd
+ 
+to
+ 
+Log
+ 
+fe
+ 
+fœ¡
+
+
+178 
+fLog
+.
+	`wr™e
+('\n')
+
+179 
+fLog
+.
+	`wr™e
+(' '.
+	$još
+(
+lšes
+)è#wr™
+commªd
+ 
+»¥Ú£
+ 
+to
+ 
+Log
+ 
+fe
+ 
+Ï‹r
+
+
+180 
+fLog
+.
+	`wr™e
+('\n')
+
+181 
+fLog
+.
+	`wr™e
+('\n')
+
+182 
+fLog
+.
+	$şo£
+()
+
+184  [
+sucûss
+, 
+lšes
+]
+
+186 
+def
+ 
+	$£t_äeq
+(
+£lf
+, 
+ÿ¼›r
+, 
+äeq
+):
+
+188 
+S‘
+ 
+äequ’cy
+ 
+vŸ
+ 
+Îäeq
+, 
+so
+ 
+™
+'s‚ot impacted by band„eqs
+
+190  
+£lf
+.
+	`£nd_cmd
+("Îäeq {} {:0.3f}".
+	`fÜm©
+(
+ÿ¼›r
+, 
+äeq
+ / 1000.0))
+
+192 
+def
+ 
+	$£t_pow”
+(
+£lf
+, 
+pow”
+):
+
+194 
+S‘
+ 
+pow”
+ 
+tx
+…ower.
+
+196  
+£lf
+.
+	`£nd_cmd
+("råow {}".
+	$fÜm©
+(
+pow”
+))
+
+198 
+def
+ 
+	$g‘_pow”
+(
+£lf
+):
+
+200 
+R‘uº
+ 
+Œªsm™‹r
+ 
+rf
+ 
+ouut
+ 
+pow”
+ 
+mode
+
+
+202 
+»t
+ = 
+RfPow”
+.
+UNKNOWN
+
+
+203 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+('rfpow')
+
+204 
+»¥
+:
+
+205 
+»t
+ = 
+»¥
+[1][0] #working
+
+206  
+»t
+
+
+208 
+def
+ 
+	$£t_rfÿr2
+(
+£lf
+, 
+’abË
+):
+
+210 
+S‘
+ 
+£cÚd¬y
+ 
+RF
+ 
+ÿ¼›r
+ 
+’abË
+
+
+212  
+£lf
+.
+	`£nd_cmd
+("rfÿr2 {}".
+	`fÜm©
+("Ú" 
+’abË
+ "off"))
+
+214 
+def
+ 
+	$g‘_ty³
+(
+£lf
+):
+
+216 
+R‘uº
+ 
+Œªsm™‹r
+ 
+ty³
+
+
+218 
+»t
+ = 
+TxTy³
+.
+UNKNOWN
+
+
+219 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+('txtype')
+
+220 
+»¥
+:
+
+221 
+»t
+ = 
+	`TxTy³
+((
+»¥
+[1][0].
+	`¥l™
+(' ')[0])) #working
+
+222 #»ˆğ
+»¥
+[1][0].
+	`¥l™
+(' ')[0] #working
+
+223  
+»t
+
+
+225 
+def
+ 
+	$g‘_bªd
+(
+£lf
+):
+
+227 
+R‘uº
+ 
+Œªsm™‹r
+ 
+ty³
+
+
+229 
+»t
+ = ""
+
+230 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+('band')
+
+231 
+»¥
+:
+
+232 
+»t
+ = 
+»¥
+[1][0].
+	`¥l™
+(' ')[0]
+
+233  
+»t
+
+
+235 
+def
+ 
+	$g‘_v¬ŸÁ
+(
+£lf
+):
+
+237 
+R‘uº
+ 
+Œªsm™‹r
+ 
+v¬ŸÁ
+
+
+239 
+»t
+ = 
+RfV¬ŸÁ
+.
+UNKNOWN
+
+
+240 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+('rfvariant')
+
+241 
+»¥
+:
+
+242 
+»t
+ = 
+RfV¬ŸÁ
+[
+»¥
+[1][0].
+	`¥l™
+(' ')[0]]
+
+243  
+»t
+
+
+245 
+def
+ 
+	$£t_modem
+(
+£lf
+, 
+modem
+):
+
+247 
+S‘
+ 
+Œªsm™‹r
+ 
+modem
+ 
+mode
+
+
+249  
+£lf
+.
+	`£nd_cmd
+("modem {}".
+	$fÜm©
+(
+modem
+))
+
+251 
+def
+ 
+	$g‘_modem
+(
+£lf
+):
+
+253 
+R‘uº
+ 
+Œªsm™‹r
+ 
+modem
+ 
+mode
+
+
+255 
+»t
+ = 
+ModemMode
+.
+UNKNOWN
+
+
+256 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+('modem')
+
+257 
+»¥
+:
+
+258 #»ˆğ
+ModemMode
+[
+»¥
+[1][0]]
+
+259 
+»t
+ = 
+»¥
+[1][0]
+
+260  
+»t
+
+
+262 
+def
+ 
+	$·r£_ÿl_lše
+(
+£lf
+, 
+lše
+):
+
+264 
+P¬£
+ 
+lše
+ 
+äom
+ 
+ÿlib¿tiÚ
+ 
+bË
+
+
+266 
+·t
+ = '\d+:\s+(?P<lbl>\w+)?\s+(?P<values>.*)'
+
+268 
+pwr
+ = 
+RfPow”
+.
+UNKNOWN
+
+
+269 
+ÿlv®s
+ = {
+	}
+}
+
+271 
+m
+ = 
+»
+.
+	$m©ch
+(
+·t
+, 
+lše
+)
+
+272 
+m
+:
+
+273 
+»_diù
+ = 
+m
+.
+	$groupdiù
+()
+
+274 
+lbl
+ = 
+»_diù
+['lbl']
+
+275 
+lbl
+ =ğ'low': 
+pwr
+ = 
+RfPow”
+.
+LOW
+
+
+276 
+–if
+ 
+lbl
+ =ğ'nÜm': 
+pwr
+ = 
+RfPow”
+.
+NORM
+
+
+277 
+–if
+ 
+lbl
+ =ğ'hi': 
+pwr
+ = 
+RfPow”
+.
+HIGH
+
+
+278 
+pwr
+ !ğ
+RfPow”
+.
+UNKNOWN
+:
+
+279 
+fidx
+, 
+·œ
+ 
+š
+ 
+	`’um”©e
+(
+»_diù
+['v®ues'].
+	`¥l™
+(' ')):
+
+280 
+ÿl_v®
+ = [(
+sÿË
+, 16èsÿË 
+š
+ 
+·œ
+.
+	`¥l™
+(',')]
+
+281 
+ÿlv®s
+[
+fidx
+] = 
+ÿl_v®
+
+
+283  [
+pwr
+, 
+ÿlv®s
+]
+
+285 
+def
+ 
+	$g‘_ÿl
+(
+£lf
+, 
+bË
+):
+
+287 
+R‘uº
+ 
+ÿlib¿tiÚ
+ 
+¥ecif›d
+ 
+bË
+
+
+289 
+cmd
+ = ''
+
+290 
+bË
+ =ğ
+C®TabË
+.
+COMBINED
+:
+
+291 
+cmd
+ = 'scrfcal'
+
+292 
+–if
+ 
+bË
+ =ğ
+C®TabË
+.
+PRIMARY
+:
+
+293 #–ià
+bË
+ == 0:
+
+294 
+cmd
+ = 'rfcal 1'
+
+295 
+–if
+ 
+bË
+ =ğ
+C®TabË
+.
+SECONDARY
+:
+
+296 
+cmd
+ = 'rfcal 2'
+
+298 
+ÿl
+ = {
+	}
+}
+
+299 
+»¥
+ = 
+£lf
+.
+	$£nd_cmd
+(
+cmd
+)
+
+300 
+»¥
+:
+
+301 
+lšes
+ = 
+»¥
+[1][2:]
+
+302 
+lše
+ 
+š
+ 
+lšes
+:
+
+303 
+»t
+ = 
+£lf
+.
+	$·r£_ÿl_lše
+(
+lše
+)
+
+304 
+ÿl
+[
+»t
+[0]] =„et[1]
+
+306  
+ÿl
+
+
+308 
+def
+ 
+	$g‘_cu¼’t_rf_ÿl
+(
+£lf
+, 
+ÿ¼›r
+):
+
+310 
+R‘uº
+ 
+cu¼’t
+ 
+rf
+ 
+ÿlib¿tiÚ
+ 
+¥ecif›d
+ 
+ÿ¼›r
+ 
+as
+ 
+·œ
+ 
+of
+ 
+š‹g”
+
+
+311 
+	`sÿËs
+ (
+asic
+, 
+åga
+).
+
+313 
+ÿl
+ = []
+
+314 
+dev
+ 
+š
+ ['asic', 'fpga']:
+
+315 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+("rfsÿË {} {}".
+	$fÜm©
+(
+dev
+, 
+ÿ¼›r
+))
+
+316 
+»¥
+:
+
+317 
+ÿl
+.
+	`­³nd
+((
+»¥
+[1][0], 16))
+
+318  
+ÿl
+
+
+320 
+def
+ 
+	$åga_³ek
+(
+£lf
+, 
+addr
+):
+
+322 
+R‘uº
+ 
+åga
+ 
+cÚ‹Ás
+
+
+324 
+»t
+ = 0
+
+325 
+»¥
+ = 
+£lf
+.
+	`£nd_cmd
+("åg­“k 0x{:02X}".
+	$fÜm©
+(
+addr
+))
+
+326 
+»¥
+:
+
+327 
+»t
+ = (
+»¥
+[1][0].
+	`¥l™
+(' ')[1], 16)
+
+328  
+»t
+
+
+330 #CÏs 
+š™
+ 
+®so
+ 
+wÜks
+ 
+b–ow
+
+
+332 
+	`BhTx
+(
+NÚe
+,'COM6',115200,
+True
+)
+
+333 
+BhTx
+.
+	`cÚÃù
+(
+NÚe
+, 'COM6', 115200, 
+True
+)
+
+334 
+bhtx
+ = 
+BhTx
+.
+	$g‘_š¡ªû
+()
+
+335 
+bhtx
+.
+	`£nd_cmd
+("verfpga")
+
+338 ##############
+Ov”®
+ 
+commªds
+ 
+‹¡
+####################
+
+339 
+‹¡bh
+ = 
+	`BhTx
+(
+NÚe
+,'COM6',115200,
+True
+)
+
+340 #‹¡bh.
+	`£nd_cmd
+("ls")
+
+341 
+‹¡bh
+.
+	$uÆock
+()
+
+342 #‹¡bh.
+	`£nd_cmd
+("ls")
+
+343 #CLI 
+commªds
+ 
+‹¡
+
+
+344 
+‹¡bh
+.
+	$£t_äeq
+(1,480000è#£ˆ
+the
+ 
+ÿ¼›r
+ 1 
+RF
+ 
+äequ’cy
+ 
+to
+ 480
+Mhz
+
+
+345 
+‹¡bh
+.
+	`£t_pow”
+('hi'è#£ˆ
+RF
+ 
+pow”
+ 
+to
+ 
+hi
+ 
+Ëv–
+
+
+346 
+‹¡bh
+.
+	$g‘_ty³
+(è#g‘ 
+the
+ 
+Tx
+ 
+ty³
+
+
+347 
+‹¡bh
+.
+	$g‘_bªd
+(è#g‘ 
+the
+ 
+Tx
+ 
+bªd
+
+
+348 
+‹¡bh
+.
+	$g‘_v¬ŸÁ
+(è#g‘ 
+the
+ 
+Tx
+ 
+RF
+ 
+v¬ŸÁ
+:
+
+349 
+‹¡bh
+.
+	`£t_pow”
+('nÜm'è#£ˆ
+RF
+ 
+pow”
+ 
+to
+ 
+nÜm
+ 
+Ëv–
+
+
+350 
+‹¡bh
+.
+	$g‘_ÿl
+(
+C®TabË
+.
+PRIMARY
+è#lßd 
+the
+ 
+ÿlib¿tiÚ
+ 
+v®ue
+
+
+351 
+‹¡bh
+.
+	$g‘_cu¼’t_rf_ÿl
+(1)
+
+352 
+‹¡bh
+.
+	`åga_³ek
+(0x0)
+
+355 ##########
+Modem
+ 
+‹¡
+
+
+356 
+‹¡bh
+ = 
+	`BhTx
+(
+NÚe
+,'COM6',115200,
+True
+)
+
+357 
+‹¡bh
+.
+	$uÆock
+()
+
+358 
+‹¡bh
+.
+	$g‘_modem
+(è#g‘ 
+the
+ 
+RF
+ 
+modem
+ 
+mode
+ , 
+STD
+ 
+Ü
+ 
+HD
+
+
+359 
+‹¡bh
+.
+	$£t_modem
+(
+ModemMode
+.
+HD
+è#£ˆ
+the
+ 
+RF
+ 
+modem
+ 
+mode
+ , 
+STD
+ 
+Ü
+ HD
+
+360 
+‹¡bh
+.
+	$g‘_modem
+(è#g‘ 
+the
+ 
+RF
+ 
+modem
+ 
+mode
+ , 
+STD
+ 
+Ü
+ 
+HD
+
+
+361 
+‹¡bh
+.
+	$£t_modem
+(
+ModemMode
+.
+STD
+è#£ˆ
+the
+ 
+RF
+ 
+modem
+ 
+mode
+ , STD 
+Ü
+ 
+HD
+
+
+362 
+‹¡bh
+.
+	$g‘_modem
+(è#g‘ 
+the
+ 
+RF
+ 
+modem
+ 
+mode
+ , 
+STD
+ 
+Ü
+ 
+HD
+
+
+365 ##########
+Råow”
+ 
+‹¡
+
+
+366 
+‹¡bh
+ = 
+	`BhTx
+(
+NÚe
+,'COM6',115200,
+True
+)
+
+367 
+‹¡bh
+.
+	$uÆock
+()
+
+368 
+‹¡bh
+.
+	`£nd_cmd
+("oledvcc on 255")
+
+369 
+‹¡bh
+.
+	$£t_pow”
+(
+RfPow”
+.
+NORM
+è#g‘ 
+the
+ 
+RF
+ 
+pow”
+ 
+mode
+ , 
+low
+ ,
+nÜm
+ 
+Ü
+ 
+high
+
+
+370 
+‹¡bh
+.
+	$g‘_pow”
+(è#g‘ 
+the
+ 
+RF
+ 
+pow”
+ 
+mode
+ , 
+low
+ ,
+nÜm
+ 
+Ü
+ 
+high
+
+
+371 
+‹¡bh
+.
+	$£t_pow”
+(
+RfPow”
+.
+HIGH
+è#g‘ 
+the
+ 
+RF
+ 
+pow”
+ 
+mode
+ , 
+low
+ ,
+nÜm
+ 
+Ü
+ 
+high
+
+
+372 
+‹¡bh
+.
+	$g‘_pow”
+(è#g‘ 
+the
+ 
+RF
+ 
+pow”
+ 
+mode
+ , 
+low
+ ,
+nÜm
+ 
+Ü
+ 
+high
+
+
+373 
+‹¡bh
+.
+	$£t_pow”
+(
+RfPow”
+.
+LOW
+è#g‘ 
+the
+ 
+RF
+ 
+pow”
+ 
+mode
+ , 
+low
+ ,
+nÜm
+ 
+Ü
+ 
+high
+
+
+374 
+‹¡bh
+.
+	$g‘_pow”
+(è#g‘ 
+the
+ 
+RF
+ 
+pow”
+ 
+mode
+ , 
+low
+ ,
+nÜm
+ 
+Ü
+ 
+high
+
+
+	@C:\Other_Code_Repo\python_in_shure\11.slxd_python\cliconn.py
+
+1 
+impÜt
+ 
+time
+
+
+2 
+impÜt
+ 
+sys
+
+
+3 
+impÜt
+ 
+£rŸl
+
+
+4 
+impÜt
+ 
+»
+
+
+5 
+impÜt
+ 
+‹Ê‘libC®lback3
+ 
+as
+ 
+‹Ê‘lib
+
+
+7 
+şass
+ 
+	$CliCÚn
+(
+objeù
+):
+
+9 
+DEFAULT_TIMEOUT
+ = 3.0
+
+11 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ho¡Çme
+=
+NÚe
+, 
+pÜt
+=NÚe, 
+baud
+=115200):
+
+12 
+£lf
+.
+ho¡Çme
+ = hostname
+
+13 
+£lf
+.
+pÜt
+ =…ort
+
+14 
+£lf
+.
+baud
+ = baud
+
+15 
+£lf
+.
+buf
+ = 
+b
+''
+
+16 
+£lf
+.
+£r
+ = 
+NÚe
+
+
+17 
+£lf
+.
+Š
+ = 
+NÚe
+
+
+19 
+def
+ 
+	$__d–__
+(
+£lf
+):
+
+20 
+£lf
+.
+£r
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+21 
+	`´št
+("close serial…ort")
+
+22 
+£lf
+.
+£r
+.
+	$şo£
+()
+
+24 
+def
+ 
+	$is_£rŸl
+(
+£lf
+):
+
+25  
+£lf
+.
+ho¡Çme
+ 
+is
+ 
+NÚe
+
+
+27 
+def
+ 
+	$cÚÃù
+(
+£lf
+): #S”ŸÈ
+š™
+ 
+ªd
+ 
+CÚÃù
+ 
+to
+ 
+™
+
+
+28 
+to
+ = 
+£lf
+.
+DEFAULT_TIMEOUT
+
+
+29 
+£lf
+.
+ho¡Çme
+ 
+is
+ 
+NÚe
+: #PhyscŸÈ
+S”Ÿl
+
+
+30 
+£lf
+.
+£r
+ = 
+£rŸl
+.
+	$S”Ÿl
+(
+£lf
+.
+pÜt
+,£lf.
+baud
+, 
+by‹size
+=
+£rŸl
+.
+EIGHTBITS
+,
+
+31 
+·r™y
+=
+£rŸl
+.
+PARITY_NONE
+,
+
+32 
+¡İb™s
+=
+£rŸl
+.
+STOPBITS_ONE
+,
+
+33 
+timeout
+=
+to
+)
+
+34 : #T–Ãˆ
+S”Ÿl
+
+
+35 
+£lf
+.
+Š
+ = 
+‹Ê‘lib
+.
+	$T–Ãt
+(
+£lf
+.
+ho¡Çme
+, s–f.
+pÜt
+, 
+timeout
+=
+to
+)
+
+36 
+£lf
+.
+Š
+.
+	`»ad_uÁ
+(
+b
+"ogš: ", 
+timeout
+=
+to
+)
+
+37 
+£lf
+.
+Š
+.
+	`wr™e
+('bÏckhawk'.
+	`’code
+('ascii'è+ 
+b
+"\r\n")
+
+38 
+£lf
+.
+Š
+.
+	`»ad_uÁ
+(
+b
+"asswÜd: ", 
+timeout
+=
+to
+)
+
+39 
+£lf
+.
+Š
+.
+	`wr™e
+('bÏckhawk'.
+	`’code
+('ascii'è+ 
+b
+"\r\n")
+
+40 
+£lf
+.
+Š
+.
+	`»ad_uÁ
+(
+b
+"CLI> ", 
+timeout
+=
+to
+)
+
+42 
+Çme
+ = 
+£lf
+.
+pÜt
+ £lf.
+ho¡Çme
+ 
+is
+ 
+NÚe
+ self.hostname
+
+43 
+	`´št
+("CÚÃùed @ {}".
+	$fÜm©
+(
+Çme
+))
+
+45 
+def
+ 
+	`£nd
+(
+£lf
+, 
+cmd
+, 
+Ãwlše
+='\r'):
+
+46 
+£lf
+.
+ho¡Çme
+ 
+is
+ 
+NÚe
+:
+
+47 
+£lf
+.
+	$£nd_£rŸl
+(
+cmd
+,
+Ãwlše
+)
+
+49 
+£lf
+.
+	$£nd_‹Ê‘
+(
+cmd
+,
+Ãwlše
+)
+
+51 
+def
+ 
+	`£nd_£rŸl
+(
+£lf
+, 
+cmd
+, 
+Ãwlše
+='\r'):
+
+52 
+cmd
+ +ğ
+Ãwlše
+
+
+53 
+£lf
+.
+£r
+.
+	`wr™e
+(
+cmd
+.
+	`’code
+('ascii'))
+
+55 
+def
+ 
+	`£nd_‹Ê‘
+(
+£lf
+, 
+cmd
+, 
+Ãwlše
+='\r'):
+
+56 
+cmd
+ +ğ
+Ãwlše
+
+
+57 
+£lf
+.
+Š
+.
+	`wr™e
+(
+cmd
+.
+	`’code
+('ascii'))
+
+59 
+def
+ 
+	$ex³ù
+(
+£lf
+, 
+l¡
+, 
+timeout
+=
+NÚe
+):
+
+61 
+	$isš¡ªû
+(
+l¡
+, 
+¡r
+):
+
+62 
+l¡
+ = 
+	$li¡
+(
+l¡
+)
+
+64 
+timeout
+ 
+is
+ 
+NÚe
+:
+
+65 
+timeout
+ = 
+£lf
+.
+DEFAULT_TIMEOUT
+
+
+67 
+£lf
+.
+ho¡Çme
+ 
+is
+ 
+NÚe
+:
+
+68 
+»t
+ = 
+	`li¡
+(
+£lf
+.
+	$ex³ù_£rŸl
+(
+l¡
+,
+timeout
+))
+
+70 
+»t
+ = 
+	`li¡
+(
+£lf
+.
+	$ex³ù_‹Ê‘
+(
+l¡
+,
+timeout
+))
+
+72 
+»t
+[2] =„‘[2].
+	`decode
+('ascii')
+
+73  
+»t
+
+
+75 
+def
+ 
+	$ex³ù_‹Ê‘
+(
+£lf
+, 
+l¡
+, 
+timeout
+=
+NÚe
+):
+
+76 
+timeout
+ 
+is
+ 
+NÚe
+:
+
+77 
+timeout
+ = 
+£lf
+.
+DEFAULT_TIMEOUT
+
+
+79 
+l¡
+ = [
+s
+.
+	`’code
+('ascii'è 
+š
+†st]
+
+80  
+£lf
+.
+Š
+.
+	$ex³ù
+(
+l¡
+, 
+timeout
+)
+
+82 
+def
+ 
+	$ex³ù_£rŸl
+(
+£lf
+, 
+l¡
+, 
+timeout
+=
+NÚe
+):
+
+83 
+timeout
+ 
+is
+ 
+NÚe
+:
+
+84 
+timeout
+ = 
+£lf
+.
+DEFAULT_TIMEOUT
+
+
+86 #R—d 
+uÁ
+ 
+we
+ 
+m©ch
+ 
+ex³ùed
+ 
+¡ršg
+ 
+Ü
+ 
+g‘
+ 
+timeout
+
+
+87 
+d—dlše
+ = 
+time
+.
+	`time
+(è+ 
+timeout
+
+
+88 
+True
+:
+
+89 
+Œy
+:
+
+90 
+buf
+ = 
+£lf
+.
+£r
+.
+	$»ad
+()
+
+91 
+exû±
+:
+
+92 
+·ss
+
+
+94 
+£lf
+.
+buf
+ += buf
+
+96 #Try 
+to
+ 
+fšd
+ 
+·‰”n
+
+
+97 
+i
+, 
+·t
+ 
+š
+ 
+	$’um”©e
+(
+l¡
+):
+
+98 
+·t
+ =…©.
+	`’code
+('ascii')
+
+99 
+m
+ = 
+»
+.
+	$£¬ch
+(
+·t
+, 
+£lf
+.
+buf
+, 
+»
+.
+MULTILINE
+)
+
+100 
+m
+:
+
+101 
+»t
+ = (
+i
+, 
+m
+, 
+£lf
+.
+buf
+[:m.
+	`’d
+()]è#™ 
+is
+ 
+the
+ 
+CLI
+ 
+commªd
+  
+v®ue
+ 
+as
+he  value
+
+102 #»t[0], 
+»t
+[1],„et[2]
+
+103 
+£lf
+.
+buf
+ = 
+b
+''
+
+104  
+»t
+
+
+106 
+time
+.
+	`time
+(è> 
+d—dlše
+:
+
+107 
+¿i£
+ 
+	`Exû±iÚ
+("Readimeout!")
+
+108 #»tuº (-1, 
+NÚe
+, 
+£lf
+.
+buf
+[:])
+
+110 
+£lf
+.
+buf
+ = 
+b
+''
+
+111 
+¿i£
+ 
+	`Exû±iÚ
+("Unexpected failure!")
+
+112 #»tuº (-1, 
+NÚe
+, '')
+
+	@C:\Other_Code_Repo\python_in_shure\11.slxd_python\py_bhtx_python_cscope_files_filter.py
+
+1 #’codšg: 
+utf
+-8
+
+2 
+impÜt
+ 
+os
+
+
+3 
+impÜt
+ 
+sys
+
+
+5 
+	gsourû_cscİe_fes_·th
+ = "C:\\Other_Code_Repo\\python_in_shure\\11.slxd_python\\cscope_source_test.files"
+
+6 
+f‹r_cscİe_fes_·th
+ = "C:\\Other_Code_Repo\\python_in_shure\\11.slxd_python\\cscope.files"
+
+7 
+cscİe_fes_li¡
+ = []
+
+9 #th
+uÃx³ùed
+ 
+fes
+ 
+to
+ 
+be
+ 
+»moved
+ 
+äom
+ 
+the
+ 
+li¡
+
+
+10 
+d–_¬¿y
+ = [
+
+19 #check 
+™ems
+ 
+š
+ 
+¬¿y
+ 
+exi¡
+ iÀ
+lše
+
+
+20 
+def
+ 
+	$isInA¼ay
+ (
+¬¿y
+, 
+lše
+):
+
+21 
+™em
+ 
+š
+ 
+¬¿y
+:
+
+22 
+™em
+ 
+š
+ 
+lše
+:
+
+23  
+True
+
+
+24  
+F®£
+
+
+26 
+def
+ 
+	$fes_li¡_­³nd
+(
+obj
+):
+
+28 
+	$’dsw™h
+(è
+defše
+ 
+the
+ 
+suffix
+ 
+fes
+ 
+to
+ 
+be
+ 
+fšd
+, 
+š
+ 
+this
+ 
+´ojeù
+ 
+fŞd”
+ 
+™
+ 
+is
+ 
+lookšg
+ th.
+py
+ 
+PythÚ
+ 
+sourû
+ files
+
+30 
+obj
+.
+	`’dsw™h
+(".py"):
+
+31 
+	$´št
+(
+obj
+)
+
+32 
+cscİe_fes_li¡
+.
+	`­³nd
+(
+obj
+ + '\n')
+
+35 
+def
+ 
+	$£¬ch_dœ
+(
+dœ_·th
+):
+
+36 
+dœ_fes
+ = 
+os
+.
+	$li¡dœ
+(
+dœ_·th
+è#li¡ 
+®l
+ 
+the
+ 
+fes
+ 
+ªd
+ 
+fŞd”s
+ 
+of
+ 
+cu¼’t
+ 
+fŞd”
+
+
+37 
+fe
+ 
+š
+ 
+dœ_fes
+:
+
+38 
+fe_·th
+ = 
+os
+.
+·th
+.
+	$još
+(
+dœ_·th
+, 
+fe
+è#absŞu‹ 
+·th
+ 
+of
+ 
+the
+ file
+
+39 
+os
+.
+·th
+.
+	$isfe
+(
+fe_·th
+): #ià
+™
+ 
+is
+ 
+the
+ 
+fe
+
+
+40 
+	$fes_li¡_­³nd
+(
+fe_·th
+)
+
+41 
+–if
+ 
+os
+.
+·th
+.
+	$isdœ
+(
+fe_·th
+): #ià
+™
+ 
+is
+ 
+the
+ 
+fŞd”
+
+
+42 
+	$£¬ch_dœ
+(
+fe_·th
+è#ÿÎ 
+™£lf
+
+
+44 
+def
+ 
+	$fe_wr™e
+(
+cÚ‹Á
+):
+
+45 
+w™h
+ 
+	`İ’
+(
+sourû_cscİe_fes_·th
+, 'w'è
+as
+ 
+å
+:
+
+46 
+å
+.
+	$wr™e
+(
+cÚ‹Á
+)
+
+48 
+__Çme__
+ == '__main__':
+
+49 
+dœ_·th
+ = 
+sys
+.
+·th
+[0] #current sys…ath
+
+50 
+	$£¬ch_dœ
+(
+dœ_·th
+è#£¬ch 
+dœ
+
+
+51 
+cÚ‹Á
+ = ''.
+	$još
+(
+cscİe_fes_li¡
+è#cÚv”ˆ
+li¡
+ 
+to
+ 
+¡r
+ 
+fe
+ 
+wr™e
+
+
+52 
+	$fe_wr™e
+(
+cÚ‹Á
+)
+
+53 
+âame
+ = 
+sourû_cscİe_fes_·th
+
+
+54 
+ff‹r
+ = 
+f‹r_cscİe_fes_·th
+
+
+55 
+w™h
+ 
+	`İ’
+(
+âame
+, 'r'è
+as
+ 
+f
+:
+
+56 
+w™h
+ 
+	`İ’
+(
+ff‹r
+, 'w'è
+as
+ 
+g
+:
+
+57 
+lše
+ 
+š
+ 
+f
+.
+	$»adlšes
+(): #»ad 
+—ch
+ 
+lše
+ 
+äom
+ 
+the
+ 
+šput
+ 
+fe
+
+
+58 
+nÙ
+ 
+	$isInA¼ay
+(
+d–_¬¿y
+, 
+lše
+):
+
+59 
+g
+.
+	$wr™e
+(
+lše
+)
+
+60 
+os
+.
+	`sy¡em
+("cscope -Rb")
+
+61 
+os
+.
+	`sy¡em
+("ctags -R *")
+
+	@C:\Other_Code_Repo\python_in_shure\11.slxd_python\telnetlibCallback3.py
+
+1 
+	gr
+"""TELNET client class.
+
+3 
+Ba£d
+ 
+Ú
+ 
+	gRFC
+ 854: 
+TELNET
+ 
+PrÙocŞ
+ 
+S³cifiÿtiÚ
+, 
+by
+ 
+	gJ
+. 
+Po¡–
+ 
+ªd
+
+
+4 
+	gJ
+. 
+ReynŞds
+
+
+6 
+	gExam¶e
+:
+
+8 >>> 
+äom
+ 
+‹Ê‘lib
+ 
+impÜt
+ 
+T–Ãt
+
+
+9 >>> 
+Š
+ = 
+T–Ãt
+('www.pythÚ.Üg', 79è#cÚÃù 
+to
+ 
+fšg”
+ 
+	gpÜt
+
+
+10 >>> 
+	gŠ
+.
+wr™e
+(
+b
+'guido\r\n')
+
+11 >>> 
+´št
+(
+Š
+.
+	$»ad_®l
+())
+
+12 
+Logš
+ 
+Name
+ 
+TTY
+ 
+IdË
+ 
+Wh’
+ 
+Wh”e
+
+
+13 
+guido
+ 
+Guido
+ 
+vª
+ 
+Rossum
+ 
+±s
+/2 <
+Dec
+ 2 11:10> 
+¢ag
+.
+úri
+.
+»¡Ú
+..
+
+17 
+NÙe
+ 
+th©
+ 
+	$»ad_®l
+(è
+wÚ
+'t„ead untilƒof -- it just„eads some data
+
+18 -- 
+but
+ 
+™
+ 
+gu¬ª‹es
+ 
+to
+ 
+»ad
+ 
+©
+ 
+Ëa¡
+ 
+Úe
+ 
+by‹
+ 
+uÆess
+ 
+EOF
+ 
+is
+ 
+h™
+.
+
+20 
+It
+ 
+is
+ 
+possibË
+ 
+to
+ 
+·ss
+ 
+a
+ 
+T–Ãt
+ 
+objeù
+Ø¨
+£ËùÜ
+ 
+š
+ 
+Üd”
+Ø
+wa™
+ 
+uÁ
+
+
+21 
+mÜe
+ 
+d©a
+ 
+is
+ 
+avaabË
+. 
+NÙe
+ 
+th©
+ 
+š
+ 
+this
+ , 
+	$»ad_—g”
+(è
+may
+  
+b
+''
+
+22 
+ev’
+ 
+th”e
+ 
+was
+ 
+d©a
+ 
+Ú
+ 
+the
+ 
+sock‘
+, 
+beÿu£
+h
+´ÙocŞ
+ 
+ÃgÙŸtiÚ
+ 
+may
+ 
+have
+
+
+23 
+—‹n
+ 
+the
+ 
+d©a
+. 
+This
+ 
+is
+ 
+why
+ 
+EOFE¼Ü
+ i 
+Ãeded
+ 
+š
+ 
+some
+ 
+ÿ£s
+ 
+to
+ 
+di¡šguish
+
+
+24 
+b‘w“n
+ "nØd©a" 
+ªd
+ "cÚÃùiÚ clo£d" (
+sšû
+ 
+the
+ 
+sock‘
+ 
+®so
+ 
+­³¬s
+ 
+»ady
+
+
+25 
+»adšg
+ 
+wh’
+ 
+™
+ 
+is
+ 
+şo£d
+).
+
+27 
+To
+ do:
+
+28 - 
+İtiÚ
+ 
+ÃgÙŸtiÚ
+
+
+29 - 
+timeout
+ 
+should
+ 
+be
+ 
+šŒšsic
+ 
+to
+ 
+the
+ 
+cÚÃùiÚ
+ 
+objeù
+ 
+š¡—d
+ 
+of
+ 
+ª
+
+
+30 
+İtiÚ
+ 
+Ú
+ 
+Úe
+ 
+of
+ 
+the
+ 
+»ad
+ 
+ÿÎs
+ 
+Úly
+
+
+35 #ImpÜ‹d 
+moduËs
+
+
+36 
+impÜt
+ 
+sys
+
+
+37 
+impÜt
+ 
+sock‘
+
+
+38 
+impÜt
+ 
+£ËùÜs
+
+
+39 
+äom
+ 
+time
+ 
+impÜt
+ 
+mÚÙÚic
+ 
+as
+ 
+_time
+
+
+41 
+__®l__
+ = ["Telnet"]
+
+43 #TuÇbË 
+·¿m‘”s
+
+
+44 
+DEBUGLEVEL
+ = 0
+
+46 #T–Ãˆ
+´ÙocŞ
+ 
+deçuÉs
+
+
+47 
+TELNET_PORT
+ = 23
+
+49 #T–Ãˆ
+´ÙocŞ
+ 
+	`ch¬aù”s
+ (
+dÚ
+'t change)
+
+50 
+IAC
+ = 
+	$by‹s
+([255]è#"
+IÁ”´‘
+ 
+As
+ 
+Commªd
+"
+
+51 
+DONT
+ = 
+	$by‹s
+([254])
+
+52 
+DO
+ = 
+	$by‹s
+([253])
+
+53 
+WONT
+ = 
+	$by‹s
+([252])
+
+54 
+WILL
+ = 
+	$by‹s
+([251])
+
+55 
+theNULL
+ = 
+	$by‹s
+([0])
+
+57 
+SE
+ = 
+	$by‹s
+([240]è#SubÃgÙŸtiÚ 
+End
+
+
+58 
+NOP
+ = 
+	$by‹s
+([241]è#NØ
+O³¿tiÚ
+
+
+59 
+DM
+ = 
+	$by‹s
+([242]è#D©¨
+M¬k
+
+
+60 
+BRK
+ = 
+	$by‹s
+([243]) #Break
+
+61 
+IP
+ = 
+	$by‹s
+([244]è#IÁ”ru± 
+´oûss
+
+
+62 
+AO
+ = 
+	$by‹s
+([245]è#AbÜˆ
+ouut
+
+
+63 
+AYT
+ = 
+	$by‹s
+([246]è#A» 
+You
+ 
+Th”e
+
+
+64 
+EC
+ = 
+	$by‹s
+([247]è#E¿£ 
+Ch¬aù”
+
+
+65 
+EL
+ = 
+	$by‹s
+([248]è#E¿£ 
+Lše
+
+
+66 
+GA
+ = 
+	$by‹s
+([249]è#GØ
+Ah—d
+
+
+67 
+SB
+ = 
+	$by‹s
+([250]è#SubÃgÙŸtiÚ 
+Begš
+
+
+70 #T–Ãˆ
+´ÙocŞ
+ 
+İtiÚs
+ 
+	`code
+ (
+dÚ
+'t change)
+
+71 #The£ 
+Úes
+ 
+®l
+ 
+come
+ 
+äom
+ 
+¬·
+/
+‹Ê‘
+.
+h
+
+
+72 
+BINARY
+ = 
+	$by‹s
+([0]è#8-
+b™
+ 
+d©a
+ 
+·th
+
+
+73 
+ECHO
+ = 
+	$by‹s
+([1]) #echo
+
+74 
+RCP
+ = 
+	$by‹s
+([2]è#´•¬
+to
+ 
+»cÚÃù
+
+
+75 
+SGA
+ = 
+	$by‹s
+([3]è#suµ»s 
+go
+ 
+ah—d
+
+
+76 
+NAMS
+ = 
+	$by‹s
+([4]è#­´oxim©
+mes§ge
+ 
+size
+
+
+77 
+STATUS
+ = 
+	$by‹s
+([5]è#giv
+¡©us
+
+
+78 
+TM
+ = 
+	$by‹s
+([6]è#timšg 
+m¬k
+
+
+79 
+RCTE
+ = 
+	$by‹s
+([7]è#»mÙ
+cÚŒŞËd
+ 
+ŒªsmissiÚ
+ 
+ªd
+ 
+echo
+
+
+80 
+NAOL
+ = 
+	$by‹s
+([8]è#ÃgÙŸ‹ 
+about
+ 
+ouut
+ 
+lše
+ 
+width
+
+
+81 
+NAOP
+ = 
+	$by‹s
+([9]è#ÃgÙŸ‹ 
+about
+ 
+ouut
+ 
+·ge
+ 
+size
+
+
+82 
+NAOCRD
+ = 
+	$by‹s
+([10]è#ÃgÙŸ‹ 
+about
+ 
+CR
+ 
+di¥os™iÚ
+
+
+83 
+NAOHTS
+ = 
+	$by‹s
+([11]è#ÃgÙŸ‹ 
+about
+ 
+hÜizÚl
+ 
+b¡İs
+
+
+84 
+NAOHTD
+ = 
+	$by‹s
+([12]è#ÃgÙŸ‹ 
+about
+ 
+hÜizÚl
+ 
+b
+ 
+di¥os™iÚ
+
+
+85 
+NAOFFD
+ = 
+	$by‹s
+([13]è#ÃgÙŸ‹ 
+about
+ 
+fÜmãed
+ 
+di¥os™iÚ
+
+
+86 
+NAOVTS
+ = 
+	$by‹s
+([14]è#ÃgÙŸ‹ 
+about
+ 
+v”tiÿl
+ 
+b
+ 
+¡İs
+
+
+87 
+NAOVTD
+ = 
+	$by‹s
+([15]è#ÃgÙŸ‹ 
+about
+ 
+v”tiÿl
+ 
+b
+ 
+di¥os™iÚ
+
+
+88 
+NAOLFD
+ = 
+	$by‹s
+([16]è#ÃgÙŸ‹ 
+about
+ 
+ouut
+ 
+LF
+ 
+di¥os™iÚ
+
+
+89 
+XASCII
+ = 
+	$by‹s
+([17]è#ex‹nded 
+ascii
+ 
+ch¬aù”
+ 
+£t
+
+
+90 
+LOGOUT
+ = 
+	$by‹s
+([18]è#fÜû 
+logout
+
+
+91 
+BM
+ = 
+	$by‹s
+([19]è#by‹ 
+maüo
+
+
+92 
+DET
+ = 
+	$by‹s
+([20]è#d©¨
+’Œy
+ 
+‹rmš®
+
+
+93 
+SUPDUP
+ = 
+	$by‹s
+([21]è#supdu°
+´ÙocŞ
+
+
+94 
+SUPDUPOUTPUT
+ = 
+	$by‹s
+([22]è#supdu°
+ouut
+
+
+95 
+SNDLOC
+ = 
+	$by‹s
+([23]è#£nd 
+loÿtiÚ
+
+
+96 
+TTYPE
+ = 
+	$by‹s
+([24]è#‹rmš® 
+ty³
+
+
+97 
+EOR
+ = 
+	$by‹s
+([25]è#’d 
+Ü
+ 
+»cÜd
+
+
+98 
+TUID
+ = 
+	$by‹s
+([26]è#TACACS 
+u£r
+ 
+id’tifiÿtiÚ
+
+
+99 
+OUTMRK
+ = 
+	$by‹s
+([27]è#ouuˆ
+m¬kšg
+
+
+100 
+TTYLOC
+ = 
+	$by‹s
+([28]è#‹rmš® 
+loÿtiÚ
+ 
+numb”
+
+
+101 
+VT3270REGIME
+ = 
+	$by‹s
+([29]è#3270 
+»gime
+
+
+102 
+X3PAD
+ = 
+	$by‹s
+([30]è#X.3 
+PAD
+
+
+103 
+NAWS
+ = 
+	$by‹s
+([31]è#wšdow 
+size
+
+
+104 
+TSPEED
+ = 
+	$by‹s
+([32]è#‹rmš® 
+¥“d
+
+
+105 
+LFLOW
+ = 
+	$by‹s
+([33]è#»mÙ
+æow
+ 
+cÚŒŞ
+
+
+106 
+LINEMODE
+ = 
+	$by‹s
+([34]è#Lšemod
+İtiÚ
+
+
+107 
+XDISPLOC
+ = 
+	$by‹s
+([35]è#X 
+Di¥Ïy
+ 
+LoÿtiÚ
+
+
+108 
+OLD_ENVIRON
+ = 
+	$by‹s
+([36]è#Old - 
+EnvœÚm’t
+ 
+v¬ŸbËs
+
+
+109 
+AUTHENTICATION
+ = 
+	$by‹s
+([37]) #Authenticate
+
+110 
+ENCRYPT
+ = 
+	$by‹s
+([38]è#Enüy±iÚ 
+İtiÚ
+
+
+111 
+NEW_ENVIRON
+ = 
+	$by‹s
+([39]è#New - 
+EnvœÚm’t
+ 
+v¬ŸbËs
+
+
+112 #th
+fŞlowšg
+ 
+Úes
+ 
+come
+ 
+äom
+
+
+114 #UnfÜtuÇ‹ly, 
+th©
+ 
+docum’t
+ 
+dÛs
+ 
+nÙ
+ 
+assign
+ 
+id’tif›rs
+
+
+115 #tØ
+®l
+ 
+of
+ 
+them
+, 
+so
+ 
+we
+ 
+¬e
+ 
+makšg
+hem 
+up
+
+
+116 
+TN3270E
+ = 
+	$by‹s
+([40]) #TN3270E
+
+117 
+XAUTH
+ = 
+	$by‹s
+([41]) #XAUTH
+
+118 
+CHARSET
+ = 
+	$by‹s
+([42]) #CHARSET
+
+119 
+RSP
+ = 
+	$by‹s
+([43]è#T–Ãˆ
+RemÙe
+ 
+S”Ÿl
+ 
+PÜt
+
+
+120 
+COM_PORT_OPTION
+ = 
+	$by‹s
+([44]è#Com 
+PÜt
+ 
+CÚŒŞ
+ 
+O±iÚ
+
+
+121 
+SUPPRESS_LOCAL_ECHO
+ = 
+	$by‹s
+([45]è#T–Ãˆ
+Suµ»ss
+ 
+Loÿl
+ 
+Echo
+
+
+122 
+TLS
+ = 
+	$by‹s
+([46]è#T–Ãˆ
+S¹
+ 
+TLS
+
+
+123 
+KERMIT
+ = 
+	$by‹s
+([47]) #KERMIT
+
+124 
+SEND_URL
+ = 
+	$by‹s
+([48]è#SEND-
+URL
+
+
+125 
+FORWARD_X
+ = 
+	$by‹s
+([49]) #FORWARD_X
+
+126 
+PRAGMA_LOGON
+ = 
+	$by‹s
+([138]è#TELOPT 
+PRAGMA
+ 
+LOGON
+
+
+127 
+SSPI_LOGON
+ = 
+	$by‹s
+([139]è#TELOPT 
+SSPI
+ 
+LOGON
+
+
+128 
+PRAGMA_HEARTBEAT
+ = 
+	$by‹s
+([140]è#TELOPT 
+PRAGMA
+ 
+HEARTBEAT
+
+
+129 
+EXOPL
+ = 
+	$by‹s
+([255]è#Ex‹nded-
+O±iÚs
+-
+Li¡
+
+
+130 
+NOOPT
+ = 
+	$by‹s
+([0])
+
+133 #pŞl/
+£Ëù
+ 
+have
+ 
+the
+ 
+advªge
+ 
+of
+ 
+nÙ
+ 
+»quœšg
+ 
+ªy
+ 
+exŒa
+ 
+fe
+ 
+desütÜ
+,
+
+134 #cÚŒ¬y 
+to
+ 
+•Şl
+/
+	`kqueue
+ (
+®so
+, 
+they
+ 
+»quœe
+ 
+a
+ 
+sšgË
+ 
+sysÿÎ
+).
+
+135 
+	`ha§‰r
+(
+£ËùÜs
+, 'PollSelector'):
+
+136 
+_T–ÃtS–eùÜ
+ = 
+£ËùÜs
+.
+PŞlS–eùÜ
+
+
+138 
+_T–ÃtS–eùÜ
+ = 
+£ËùÜs
+.
+S–eùS–eùÜ
+
+
+141 
+şass
+ 
+T–Ãt
+:
+
+145 
+An
+ 
+š¡ªû
+ 
+of
+ 
+this
+ 
+şass
+ 
+»´e£Ás
+ 
+a
+ 
+cÚÃùiÚ
+ 
+to
+‡ 
+‹Ê‘
+
+
+146 
+£rv”
+. 
+The
+ 
+š¡ªû
+ 
+is
+ 
+š™ŸÎy
+ 
+nÙ
+ 
+cÚÃùed
+; 
+the
+ 
+	$İ’
+()
+
+147 
+m‘hod
+ 
+mu¡
+ 
+be
+ 
+u£d
+ 
+to
+ 
+e¡ablish
+ 
+a
+ 
+cÚÃùiÚ
+. 
+AÉ”Çtiv–y
+, 
+the
+
+
+148 
+ho¡
+ 
+Çme
+ 
+ªd
+ 
+İtiÚ®
+ 
+pÜt
+ 
+numb”
+ 
+ÿn
+ 
+be
+ 
+·s£d
+ 
+to
+ 
+the
+
+
+149 
+cÚ¡ruùÜ
+, 
+too
+.
+
+151 
+DÚ
+'tryo„eopen‡n‡lready connected instance.
+
+153 
+This
+ 
+şass
+ 
+has
+ 
+mªy
+ 
+»ad_
+*(è
+m‘hods
+. 
+NÙe
+ 
+th©
+ 
+some
+ 
+of
+ 
+them
+
+
+154 
+¿i£
+ 
+EOFE¼Ü
+ 
+wh’
+ 
+the
+ 
+’d
+ 
+of
+h
+cÚÃùiÚ
+ 
+is
+ 
+»ad
+, 
+beÿu£
+
+
+155 
+they
+ 
+ÿn
+  
+ª
+ 
+em±y
+ 
+¡ršg
+ 
+Ùh”
+ 
+»asÚs
+. 
+S“
+ 
+the
+
+
+156 
+šdividu®
+ 
+doc
+ 
+¡ršgs
+.
+
+158 
+	$»ad_uÁ
+(
+ex³ùed
+, [
+timeout
+])
+
+159 
+R—d
+ 
+uÁ
+ 
+the
+ 
+ex³ùed
+ 
+¡ršg
+ 
+has
+ 
+b“n
+ 
+£’
+, 
+Ü
+ 
+a
+ 
+timeout
+ 
+is
+
+
+160 
+	`h™
+ ( 
+is
+ 
+no
+ 
+timeout
+); 
+may
+ 
+block
+.
+
+162 
+	$»ad_®l
+()
+
+163 
+R—d
+ 
+®l
+ 
+d©a
+ 
+uÁ
+ 
+EOF
+; 
+may
+ 
+block
+.
+
+165 
+	$»ad_some
+()
+
+166 
+R—d
+ 
+©
+ 
+Ëa¡
+ 
+Úe
+ 
+by‹
+ 
+Ü
+ 
+EOF
+; 
+may
+ 
+block
+.
+
+168 
+	$»ad_v”y_—g”
+()
+
+169 
+R—d
+ 
+®l
+ 
+d©a
+ 
+avaabË
+ 
+®»ady
+ 
+queued
+ 
+Ü
+ 
+Ú
+ 
+the
+ 
+sock‘
+,
+
+170 
+w™hout
+ 
+blockšg
+.
+
+172 
+	$»ad_—g”
+()
+
+173 
+R—d
+ 
+e™h”
+ 
+d©a
+ 
+®»ady
+ 
+queued
+ 
+Ü
+ 
+some
+ d©¨
+avaabË
+ 
+Ú
+ 
+the
+
+
+174 
+sock‘
+, 
+w™hout
+ 
+blockšg
+.
+
+176 
+	$»ad_Ïzy
+()
+
+177 
+R—d
+ 
+®l
+ 
+d©a
+ 
+š
+ 
+the
+ 
+¿w
+ 
+	`queue
+ (
+´oûssšg
+ 
+™
+ 
+fœ¡
+), 
+w™hout
+
+
+178 
+došg
+ 
+ªy
+ 
+sock‘
+ 
+I
+/
+O
+.
+
+180 
+	$»ad_v”y_Ïzy
+()
+
+181 
+R—ds
+ 
+®l
+ 
+d©a
+ 
+š
+ 
+the
+ 
+cooked
+ 
+queue
+, 
+w™hout
+ 
+došg
+ 
+ªy
+ 
+sock‘
+
+
+182 
+I
+/
+O
+.
+
+184 
+	$»ad_sb_d©a
+()
+
+185 
+R—ds
+ 
+avaabË
+ 
+d©a
+ 
+b‘w“n
+ 
+SB
+ ... 
+SE
+ 
+£qu’û
+. 
+DÚ
+'t block.
+
+187 
+	$£t_İtiÚ_ÃgÙŸtiÚ_ÿÎback
+(
+ÿÎback
+)
+
+188 
+Each
+ 
+time
+ 
+a
+ 
+‹Ê‘
+ 
+İtiÚ
+ 
+is
+ 
+»ad
+ 
+Ú
+ 
+the
+ 
+šput
+ 
+æow
+, 
+this
+ 
+ÿÎback
+
+
+189 (
+£t
+è
+is
+ 
+ÿÎed
+ 
+w™h
+ 
+the
+ 
+fŞlowšg
+ 
+·¿m‘”s
+ :
+
+190 
+	$ÿÎback
+(
+‹Ê‘
+ 
+sock‘
+, 
+commªd
+, 
+İtiÚ
+)
+
+191 
+İtiÚ
+ 
+wl
+ 
+be
+ 
+	$chr
+(0è
+wh’
+ 
+th”e
+ 
+is
+ 
+no
+ 
+İtiÚ
+.
+
+192 
+No
+ 
+Ùh”
+ 
+aùiÚ
+ 
+is
+ 
+dÚe
+ 
+aá”w¬ds
+ 
+by
+ 
+‹Ê‘lib
+.
+
+196 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ho¡
+=
+NÚe
+, 
+pÜt
+=0,
+
+197 
+timeout
+=
+sock‘
+.
+_GLOBAL_DEFAULT_TIMEOUT
+):
+
+200 
+Wh’
+ 
+ÿÎed
+ 
+w™hout
+ 
+¬gum’ts
+, 
+ü—‹
+ 
+ª
+ 
+uncÚÃùed
+ 
+š¡ªû
+.
+
+201 
+W™h
+ 
+a
+ 
+ho¡Çme
+ 
+¬gum’t
+, 
+™
+ 
+cÚÃùs
+ 
+the
+ 
+š¡ªû
+; 
+pÜt
+ 
+numb”
+
+
+202 
+ªd
+ 
+timeout
+ 
+¬e
+ 
+İtiÚ®
+.
+
+204 
+£lf
+.
+debugËv–
+ = 
+DEBUGLEVEL
+
+
+205 
+£lf
+.
+ho¡
+ = host
+
+206 
+£lf
+.
+pÜt
+ =…ort
+
+207 
+£lf
+.
+timeout
+ =imeout
+
+208 
+£lf
+.
+sock
+ = 
+NÚe
+
+
+209 
+£lf
+.
+¿wq
+ = 
+b
+''
+
+210 
+£lf
+.
+œawq
+ = 0
+
+211 
+£lf
+.
+cookedq
+ = 
+b
+''
+
+212 
+£lf
+.
+eof
+ = 0
+
+213 
+£lf
+.
+Ÿc£q
+ = 
+b
+'' #Bufã¸
+IAC
+ 
+£qu’û
+.
+
+214 
+£lf
+.
+sb
+ = 0 #æag 
+SB
+ 
+ªd
+ 
+SE
+ 
+£qu’û
+.
+
+215 
+£lf
+.
+sbd©aq
+ = 
+b
+''
+
+216 
+£lf
+.
+İtiÚ_ÿÎback
+ = 
+NÚe
+
+
+217 
+£lf
+.
+ÿÎback
+ = 
+NÚe
+
+
+218 
+ho¡
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+219 
+£lf
+.
+	$İ’
+(
+ho¡
+, 
+pÜt
+, 
+timeout
+)
+
+221 
+def
+ 
+	$İ’
+(
+£lf
+, 
+ho¡
+, 
+pÜt
+=0, 
+timeout
+=
+sock‘
+.
+_GLOBAL_DEFAULT_TIMEOUT
+):
+
+224 
+The
+ 
+İtiÚ®
+ 
+£cÚd
+ 
+¬gum’t
+ 
+is
+ 
+the
+ 
+pÜt
+ 
+numb”
+, 
+which
+
+
+225 
+deçuÉs
+ 
+to
+ 
+the
+ 
+¡ªd¬d
+ 
+‹Ê‘
+ 
+	`pÜt
+ (23).
+
+227 
+DÚ
+'tryo„eopen‡n‡lready connected instance.
+
+229 
+£lf
+.
+eof
+ = 0
+
+230 
+nÙ
+ 
+pÜt
+:
+
+231 
+pÜt
+ = 
+TELNET_PORT
+
+
+232 
+£lf
+.
+ho¡
+ = host
+
+233 
+£lf
+.
+pÜt
+ =…ort
+
+234 
+£lf
+.
+timeout
+ =imeout
+
+235 
+£lf
+.
+sock
+ = 
+sock‘
+.
+	`ü—‹_cÚÃùiÚ
+((
+ho¡
+, 
+pÜt
+), 
+timeout
+)
+
+237 
+def
+ 
+	$__d–__
+(
+£lf
+):
+
+239 
+£lf
+.
+	$şo£
+()
+
+241 
+def
+ 
+	$msg
+(
+£lf
+, 
+msg
+, *
+¬gs
+):
+
+244 
+If
+ 
+exŒa
+ 
+¬gum’ts
+ 
+¬e
+ 
+´e£Á
+, 
+they
+‡» 
+sub¡™u‹d
+ 
+š
+ 
+the
+
+
+245 
+mes§ge
+ 
+usšg
+ 
+the
+ 
+¡ªd¬d
+ 
+¡ršg
+ 
+fÜm©tšg
+ 
+İ”©Ü
+.
+
+248 
+£lf
+.
+debugËv–
+ > 0:
+
+249 
+	`´št
+('T–Ãt(%s,%s):' % (
+£lf
+.
+ho¡
+, s–f.
+pÜt
+), 
+’d
+=' ')
+
+250 
+¬gs
+:
+
+251 
+	`´št
+(
+msg
+ % 
+¬gs
+)
+
+253 
+	$´št
+(
+msg
+)
+
+255 
+def
+ 
+	$£t_debugËv–
+(
+£lf
+, 
+debugËv–
+):
+
+258 
+The
+ 
+high”
+ 
+™
+ 
+is
+, 
+the
+ 
+mÜe
+ 
+debug
+ 
+ouut
+ 
+you
+ 
+	`g‘
+ (
+Ú
+ 
+sys
+.
+¡dout
+).
+
+261 
+£lf
+.
+debugËv–
+ = debuglevel
+
+263 
+def
+ 
+	$şo£
+(
+£lf
+):
+
+265 
+sock
+ = 
+£lf
+.sock
+
+266 
+£lf
+.
+sock
+ = 
+NÚe
+
+
+267 
+£lf
+.
+eof
+ = 
+True
+
+
+268 
+£lf
+.
+Ÿc£q
+ = 
+b
+''
+
+269 
+£lf
+.
+sb
+ = 0
+
+270 
+sock
+:
+
+271 
+sock
+.
+	$şo£
+()
+
+273 
+def
+ 
+	$g‘_sock‘
+(
+£lf
+):
+
+275  
+£lf
+.
+sock
+
+
+277 
+def
+ 
+	$f’o
+(
+£lf
+):
+
+279  
+£lf
+.
+sock
+.
+	$f’o
+()
+
+281 
+def
+ 
+	$wr™e
+(
+£lf
+, 
+bufãr
+):
+
+284 
+Cª
+ 
+block
+ 
+the
+ 
+cÚÃùiÚ
+ 
+is
+ 
+blocked
+. 
+May
+ 
+¿i£
+
+
+285 
+OSE¼Ü
+ 
+the
+ 
+cÚÃùiÚ
+ 
+is
+ 
+şo£d
+.
+
+288 
+IAC
+ 
+š
+ 
+bufãr
+:
+
+289 
+bufãr
+ = bufãr.
+	`»¶aû
+(
+IAC
+, IAC+IAC)
+
+290 
+£lf
+.
+	`msg
+("£nd %r", 
+bufãr
+)
+
+291 
+£lf
+.
+sock
+.
+	$£nd®l
+(
+bufãr
+)
+
+293 
+def
+ 
+	$»ad_uÁ
+(
+£lf
+, 
+m©ch
+, 
+timeout
+=
+NÚe
+):
+
+296 
+Wh’
+ 
+no
+ 
+m©ch
+ 
+is
+ 
+found
+,  
+wh©ev”
+ i 
+avaabË
+ 
+š¡—d
+,
+
+297 
+possibly
+ 
+the
+ 
+em±y
+ 
+¡ršg
+. 
+Rai£
+ 
+EOFE¼Ü
+ th
+cÚÃùiÚ
+
+
+298 
+is
+ 
+şo£d
+ 
+ªd
+ 
+no
+ 
+cooked
+ 
+d©a
+ i 
+avaabË
+.
+
+301 
+n
+ = 
+	$Ën
+(
+m©ch
+)
+
+302 
+£lf
+.
+	$´oûss_¿wq
+()
+
+303 
+i
+ = 
+£lf
+.
+cookedq
+.
+	$fšd
+(
+m©ch
+)
+
+304 
+i
+ >= 0:
+
+305 
+i
+ = i+
+n
+
+
+306 
+buf
+ = 
+£lf
+.
+cookedq
+[:
+i
+]
+
+307 
+£lf
+.
+cookedq
+ = s–f.cookedq[
+i
+:]
+
+308  
+buf
+
+
+309 
+timeout
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+310 
+d—dlše
+ = 
+	`_time
+(è+ 
+timeout
+
+
+311 
+w™h
+ 
+	$_T–ÃtS–eùÜ
+(è
+as
+ 
+£ËùÜ
+:
+
+312 
+£ËùÜ
+.(
+£lf
+, 
+£ËùÜs
+.
+EVENT_READ
+)
+
+313 
+nÙ
+ 
+£lf
+.
+eof
+:
+
+314 
+£ËùÜ
+.
+	$£Ëù
+(
+timeout
+):
+
+315 
+i
+ = 
+	`max
+(0, 
+	`Ën
+(
+£lf
+.
+cookedq
+)-
+n
+)
+
+316 
+£lf
+.
+	$fl_¿wq
+()
+
+317 
+£lf
+.
+	$´oûss_¿wq
+()
+
+318 
+i
+ = 
+£lf
+.
+cookedq
+.
+	$fšd
+(
+m©ch
+, 
+i
+)
+
+319 
+i
+ >= 0:
+
+320 
+i
+ = i+
+n
+
+
+321 
+buf
+ = 
+£lf
+.
+cookedq
+[:
+i
+]
+
+322 
+£lf
+.
+cookedq
+ = s–f.cookedq[
+i
+:]
+
+323  
+buf
+
+
+324 
+timeout
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+325 
+timeout
+ = 
+d—dlše
+ - 
+	$_time
+()
+
+326 
+timeout
+ < 0:
+
+328  
+£lf
+.
+	$»ad_v”y_Ïzy
+()
+
+330 
+def
+ 
+	$»ad_®l
+(
+£lf
+):
+
+332 
+£lf
+.
+	$´oûss_¿wq
+()
+
+333 
+nÙ
+ 
+£lf
+.
+eof
+:
+
+334 
+£lf
+.
+	$fl_¿wq
+()
+
+335 
+£lf
+.
+	$´oûss_¿wq
+()
+
+336 
+buf
+ = 
+£lf
+.
+cookedq
+
+
+337 
+£lf
+.
+cookedq
+ = 
+b
+''
+
+338  
+buf
+
+
+340 
+def
+ 
+	$»ad_some
+(
+£lf
+):
+
+343 
+R‘uº
+ 
+b
+'' 
+EOF
+ 
+is
+ 
+h™
+. 
+Block
+ 
+no
+ 
+d©a
+ i 
+immedŸ‹ly
+
+
+344 
+avaabË
+.
+
+347 
+£lf
+.
+	$´oûss_¿wq
+()
+
+348 
+nÙ
+ 
+£lf
+.
+cookedq
+ 
+ªd
+‚Ù s–f.
+eof
+:
+
+349 
+£lf
+.
+	$fl_¿wq
+()
+
+350 
+£lf
+.
+	$´oûss_¿wq
+()
+
+351 
+buf
+ = 
+£lf
+.
+cookedq
+
+
+352 
+£lf
+.
+cookedq
+ = 
+b
+''
+
+353  
+buf
+
+
+355 
+def
+ 
+	$»ad_v”y_—g”
+(
+£lf
+):
+
+358 
+Rai£
+ 
+EOFE¼Ü
+ 
+cÚÃùiÚ
+ 
+şo£d
+ 
+ªd
+ 
+no
+ 
+cooked
+ 
+d©a
+
+
+359 
+avaabË
+. 
+R‘uº
+ 
+b
+'' 
+no
+ 
+cooked
+ 
+d©a
+‡vaabË 
+Ùh”wi£
+.
+
+360 
+DÚ
+'t block unless inhe midst of‡n IAC sequence.
+
+363 
+£lf
+.
+	$´oûss_¿wq
+()
+
+364 
+nÙ
+ 
+£lf
+.
+eof
+ 
+ªd
+ s–f.
+	$sock_ava
+():
+
+365 
+£lf
+.
+	$fl_¿wq
+()
+
+366 
+£lf
+.
+	$´oûss_¿wq
+()
+
+367  
+£lf
+.
+	$»ad_v”y_Ïzy
+()
+
+369 
+def
+ 
+	$»ad_—g”
+(
+£lf
+):
+
+372 
+Rai£
+ 
+EOFE¼Ü
+ 
+cÚÃùiÚ
+ 
+şo£d
+ 
+ªd
+ 
+no
+ 
+cooked
+ 
+d©a
+
+
+373 
+avaabË
+. 
+R‘uº
+ 
+b
+'' 
+no
+ 
+cooked
+ 
+d©a
+‡vaabË 
+Ùh”wi£
+.
+
+374 
+DÚ
+'t block unless inhe midst of‡n IAC sequence.
+
+377 
+£lf
+.
+	$´oûss_¿wq
+()
+
+378 
+nÙ
+ 
+£lf
+.
+cookedq
+ 
+ªd
+‚Ù s–f.
+eof
+‡nd s–f.
+	$sock_ava
+():
+
+379 
+£lf
+.
+	$fl_¿wq
+()
+
+380 
+£lf
+.
+	$´oûss_¿wq
+()
+
+381  
+£lf
+.
+	$»ad_v”y_Ïzy
+()
+
+383 
+def
+ 
+	$»ad_Ïzy
+(
+£lf
+):
+
+386 
+Rai£
+ 
+EOFE¼Ü
+ 
+cÚÃùiÚ
+ 
+şo£d
+ 
+ªd
+ 
+no
+ 
+d©a
+ 
+avaabË
+.
+
+387 
+R‘uº
+ 
+b
+'' 
+no
+ 
+cooked
+ 
+d©a
+ 
+avaabË
+ 
+Ùh”wi£
+. 
+DÚ
+'t block
+
+388 
+uÆess
+ 
+š
+ 
+the
+ 
+mid¡
+ 
+of
+ 
+ª
+ 
+IAC
+ 
+£qu’û
+.
+
+391 
+£lf
+.
+	$´oûss_¿wq
+()
+
+392  
+£lf
+.
+	$»ad_v”y_Ïzy
+()
+
+394 
+def
+ 
+	$»ad_v”y_Ïzy
+(
+£lf
+):
+
+397 
+Rai£
+ 
+EOFE¼Ü
+ 
+cÚÃùiÚ
+ 
+şo£d
+ 
+ªd
+ 
+no
+ 
+d©a
+ 
+avaabË
+.
+
+398 
+R‘uº
+ 
+b
+'' 
+no
+ 
+cooked
+ 
+d©a
+ 
+avaabË
+ 
+Ùh”wi£
+. 
+DÚ
+'t block.
+
+401 
+buf
+ = 
+£lf
+.
+cookedq
+
+
+402 
+£lf
+.
+cookedq
+ = 
+b
+''
+
+403 
+nÙ
+ 
+buf
+ 
+ªd
+ 
+£lf
+.
+eof
+‡nd‚Ù s–f.
+¿wq
+:
+
+404 
+¿i£
+ 
+	`EOFE¼Ü
+('telnet connection closed')
+
+405  
+buf
+
+
+407 
+def
+ 
+	$»ad_sb_d©a
+(
+£lf
+):
+
+410 
+R‘uº
+ 
+b
+'' 
+no
+ 
+SB
+ ... 
+SE
+ 
+avaabË
+. 
+Should
+ 
+Úly
+ 
+be
+ 
+ÿÎed
+
+
+411 
+aá”
+ 
+£ešg
+ 
+a
+ 
+SB
+ 
+Ü
+ 
+SE
+ 
+commªd
+. 
+Wh’
+‡ 
+Ãw
+ SB commªd 
+is
+
+
+412 
+found
+, 
+Şd
+ 
+uÄ—d
+ 
+SB
+ 
+d©a
+ 
+wl
+ 
+be
+ 
+disÿrded
+. 
+DÚ
+'t block.
+
+415 
+buf
+ = 
+£lf
+.
+sbd©aq
+
+
+416 
+£lf
+.
+sbd©aq
+ = 
+b
+''
+
+417  
+buf
+
+
+419 
+def
+ 
+	$£t_İtiÚ_ÃgÙŸtiÚ_ÿÎback
+(
+£lf
+, 
+ÿÎback
+):
+
+421 
+£lf
+.
+İtiÚ_ÿÎback
+ = 
+ÿÎback
+
+
+423 
+def
+ 
+	$´oûss_¿wq
+(
+£lf
+):
+
+426 
+S‘
+ 
+£lf
+.
+eof
+ 
+wh’
+ 
+cÚÃùiÚ
+ 
+is
+ 
+şo£d
+. 
+DÚ
+'t block unless in
+
+427 
+the
+ 
+mid¡
+ 
+of
+ 
+ª
+ 
+IAC
+ 
+£qu’û
+.
+
+430 
+buf
+ = [
+b
+'', b'']
+
+431 
+Œy
+:
+
+432 
+£lf
+.
+¿wq
+:
+
+433 
+c
+ = 
+£lf
+.
+	$¿wq_g‘ch¬
+()
+
+434 
+nÙ
+ 
+£lf
+.
+Ÿc£q
+:
+
+435 
+c
+ =ğ
+theNULL
+:
+
+437 
+c
+ =ğ
+b
+"\021":
+
+439 
+c
+ !ğ
+IAC
+:
+
+440 
+buf
+[
+£lf
+.
+sb
+] = buf[£lf.sb] + 
+c
+
+
+443 
+£lf
+.
+Ÿc£q
+ +ğ
+c
+
+
+444 
+–if
+ 
+	`Ën
+(
+£lf
+.
+Ÿc£q
+) == 1:
+
+445 #'
+IAC
+: IAC 
+CMD
+ [
+OPTION
+ 
+Úly
+ 
+WILL
+/
+WONT
+/
+DO
+/
+DONT
+]'
+
+446 
+c
+ 
+	$š
+ (
+DO
+, 
+DONT
+, 
+WILL
+, 
+WONT
+):
+
+447 
+£lf
+.
+Ÿc£q
+ +ğ
+c
+
+
+450 
+£lf
+.
+Ÿc£q
+ = 
+b
+''
+
+451 
+c
+ =ğ
+IAC
+:
+
+452 
+buf
+[
+£lf
+.
+sb
+] = buf[£lf.sb] + 
+c
+
+
+454 
+c
+ =ğ
+SB
+: #SB ... 
+SE
+ 
+¡¬t
+.
+
+455 
+£lf
+.
+sb
+ = 1
+
+456 
+£lf
+.
+sbd©aq
+ = 
+b
+''
+
+457 
+–if
+ 
+c
+ =ğ
+SE
+:
+
+458 
+£lf
+.
+sb
+ = 0
+
+459 
+£lf
+.
+sbd©aq
+ = s–f.sbd©aq + 
+buf
+[1]
+
+460 
+buf
+[1] = 
+b
+''
+
+461 
+£lf
+.
+İtiÚ_ÿÎback
+:
+
+462 #C®lback 
+is
+ 
+suµo£d
+ 
+to
+ 
+look
+ 
+što
+
+
+463 #th
+sbd©aq
+
+
+464 
+£lf
+.
+	$İtiÚ_ÿÎback
+(
+£lf
+.
+sock
+, 
+c
+, 
+NOOPT
+)
+
+466 #W
+ÿn
+'t offer‡utomatic…rocessing of
+
+467 #subİtiÚs. 
+AÏs
+, 
+we
+ 
+should
+ 
+nÙ
+ 
+g‘
+ 
+ªy
+
+
+468 #uÆes 
+we
+ 
+did
+ 
+a
+ 
+WILL
+/
+DO
+ 
+befÜe
+.
+
+469 
+£lf
+.
+	`msg
+('IAC %d‚Ù„ecognized' % 
+	$Üd
+(
+c
+))
+
+470 
+–if
+ 
+	`Ën
+(
+£lf
+.
+Ÿc£q
+) == 2:
+
+471 
+cmd
+ = 
+£lf
+.
+Ÿc£q
+[1:2]
+
+472 
+£lf
+.
+Ÿc£q
+ = 
+b
+''
+
+473 
+İt
+ = 
+c
+
+
+474 
+cmd
+ 
+	$š
+ (
+DO
+, 
+DONT
+):
+
+475 
+£lf
+.
+	`msg
+('IAC %s %d',
+
+476 
+cmd
+ =ğ
+DO
+ 
+ªd
+ 'DO' 
+Ü
+ 'DONT', 
+	$Üd
+(
+İt
+))
+
+477 
+£lf
+.
+İtiÚ_ÿÎback
+:
+
+478 
+£lf
+.
+	$İtiÚ_ÿÎback
+(
+£lf
+.
+sock
+, 
+cmd
+, 
+İt
+)
+
+480 
+£lf
+.
+sock
+.
+	`£nd®l
+(
+IAC
+ + 
+WONT
+ + 
+İt
+)
+
+481 
+–if
+ 
+cmd
+ 
+	$š
+ (
+WILL
+, 
+WONT
+):
+
+482 
+£lf
+.
+	`msg
+('IAC %s %d',
+
+483 
+cmd
+ =ğ
+WILL
+ 
+ªd
+ 'WILL' 
+Ü
+ 'WONT', 
+	$Üd
+(
+İt
+))
+
+484 
+£lf
+.
+İtiÚ_ÿÎback
+:
+
+485 
+£lf
+.
+	$İtiÚ_ÿÎback
+(
+£lf
+.
+sock
+, 
+cmd
+, 
+İt
+)
+
+487 
+£lf
+.
+sock
+.
+	`£nd®l
+(
+IAC
+ + 
+DONT
+ + 
+İt
+)
+
+488 
+exû±
+ 
+EOFE¼Ü
+: #¿i£d 
+by
+ 
+£lf
+.
+	$¿wq_g‘ch¬
+()
+
+489 
+£lf
+.
+Ÿc£q
+ = 
+b
+'' #Re£ˆ
+Ú
+ 
+EOF
+
+
+490 
+£lf
+.
+sb
+ = 0
+
+491 
+·ss
+
+
+492 
+£lf
+.
+cookedq
+ = s–f.cookedq + 
+buf
+[0]
+
+493 
+£lf
+.
+sbd©aq
+ = s–f.sbd©aq + 
+buf
+[1]
+
+494 
+£lf
+.
+ÿÎback
+:
+
+495 
+£lf
+.
+	$ÿÎback
+(
+buf
+[0])
+
+497 
+def
+ 
+	$¿wq_g‘ch¬
+(
+£lf
+):
+
+500 
+Block
+ 
+no
+ 
+d©a
+ 
+is
+ 
+immedŸ‹ly
+ 
+avaabË
+. 
+Rai£
+ 
+EOFE¼Ü
+
+
+501 
+wh’
+ 
+cÚÃùiÚ
+ 
+is
+ 
+şo£d
+.
+
+504 
+nÙ
+ 
+£lf
+.
+¿wq
+:
+
+505 
+£lf
+.
+	$fl_¿wq
+()
+
+506 
+£lf
+.
+eof
+:
+
+507 
+¿i£
+ 
+EOFE¼Ü
+
+
+508 
+c
+ = 
+£lf
+.
+¿wq
+[£lf.
+œawq
+:self.irawq+1]
+
+509 
+£lf
+.
+œawq
+ = self.irawq + 1
+
+510 
+£lf
+.
+œawq
+ >ğ
+	$Ën
+(
+£lf
+.
+¿wq
+):
+
+511 
+£lf
+.
+¿wq
+ = 
+b
+''
+
+512 
+£lf
+.
+œawq
+ = 0
+
+513  
+c
+
+
+515 
+def
+ 
+	$fl_¿wq
+(
+£lf
+):
+
+518 
+Block
+ 
+no
+ 
+d©a
+ 
+is
+ 
+immedŸ‹ly
+ 
+avaabË
+. 
+S‘
+ 
+£lf
+.
+eof
+ 
+wh’
+
+
+519 
+cÚÃùiÚ
+ 
+is
+ 
+şo£d
+.
+
+522 
+£lf
+.
+œawq
+ >ğ
+	$Ën
+(
+£lf
+.
+¿wq
+):
+
+523 
+£lf
+.
+¿wq
+ = 
+b
+''
+
+524 
+£lf
+.
+œawq
+ = 0
+
+525 #Th
+bufãr
+ 
+size
+ 
+should
+ 
+be
+ 
+çœly
+ 
+sm®l
+ 
+so
+ 
+as
+ 
+to
+ 
+avoid
+ 
+quad¿tic
+
+
+526 #behaviÜ 
+š
+ 
+	`´oûss_¿wq
+(è
+above
+
+
+527 
+buf
+ = 
+£lf
+.
+sock
+.
+	$»cv
+(50)
+
+528 
+£lf
+.
+	`msg
+("»cv %r", 
+buf
+)
+
+529 
+£lf
+.
+eof
+ = (
+nÙ
+ 
+buf
+)
+
+530 
+£lf
+.
+¿wq
+ = s–f.¿wq + 
+buf
+
+
+532 
+def
+ 
+	$sock_ava
+(
+£lf
+):
+
+534 
+w™h
+ 
+	$_T–ÃtS–eùÜ
+(è
+as
+ 
+£ËùÜ
+:
+
+535 
+£ËùÜ
+.(
+£lf
+, 
+£ËùÜs
+.
+EVENT_READ
+)
+
+536  
+	`boŞ
+(
+£ËùÜ
+.
+	$£Ëù
+(0))
+
+538 
+def
+ 
+	$š‹¿ù
+(
+£lf
+):
+
+540 
+sys
+.
+¶©fÜm
+ == "win32":
+
+541 
+£lf
+.
+	$mt_š‹¿ù
+()
+
+543 
+w™h
+ 
+	$_T–ÃtS–eùÜ
+(è
+as
+ 
+£ËùÜ
+:
+
+544 
+£ËùÜ
+.(
+£lf
+, 
+£ËùÜs
+.
+EVENT_READ
+)
+
+545 
+£ËùÜ
+.(
+sys
+.
+¡dš
+, 
+£ËùÜs
+.
+EVENT_READ
+)
+
+547 
+True
+:
+
+548 
+key
+, 
+ev’ts
+ 
+š
+ 
+£ËùÜ
+.
+	$£Ëù
+():
+
+549 
+key
+.
+feobj
+ 
+is
+ 
+£lf
+:
+
+550 
+Œy
+:
+
+551 
+‹xt
+ = 
+£lf
+.
+	$»ad_—g”
+()
+
+552 
+exû±
+ 
+EOFE¼Ü
+:
+
+553 
+	`´št
+('*** Connection closed by„emote host ***')
+
+555 
+‹xt
+:
+
+556 
+sys
+.
+¡dout
+.
+	`wr™e
+(
+‹xt
+.
+	`decode
+('ascii'))
+
+557 
+sys
+.
+¡dout
+.
+	$æush
+()
+
+558 
+–if
+ 
+key
+.
+feobj
+ 
+is
+ 
+sys
+.
+¡dš
+:
+
+559 
+lše
+ = 
+sys
+.
+¡dš
+.
+	`»adlše
+().
+	`’code
+('ascii')
+
+560 
+nÙ
+ 
+lše
+:
+
+562 
+£lf
+.
+	$wr™e
+(
+lše
+)
+
+564 
+def
+ 
+	$mt_š‹¿ù
+(
+£lf
+):
+
+566 
+impÜt
+ 
+_th»ad
+
+
+567 
+_th»ad
+.
+	`¡¬t_Ãw_th»ad
+(
+£lf
+.
+li¡’”
+, ())
+
+569 
+lše
+ = 
+sys
+.
+¡dš
+.
+	$»adlše
+()
+
+570 
+nÙ
+ 
+lše
+:
+
+572 
+£lf
+.
+	`wr™e
+(
+lše
+.
+	`’code
+('ascii'))
+
+574 
+def
+ 
+	$li¡’”
+(
+£lf
+):
+
+577 
+Œy
+:
+
+578 
+d©a
+ = 
+£lf
+.
+	$»ad_—g”
+()
+
+579 
+exû±
+ 
+EOFE¼Ü
+:
+
+580 
+	`´št
+('*** Connection closed by„emote host ***')
+
+582 
+d©a
+:
+
+583 
+sys
+.
+¡dout
+.
+	`wr™e
+(
+d©a
+.
+	`decode
+('ascii'))
+
+585 
+sys
+.
+¡dout
+.
+	$æush
+()
+
+587 
+def
+ 
+	$ex³ù
+(
+£lf
+, 
+li¡
+, 
+timeout
+=
+NÚe
+):
+
+590 
+The
+ 
+fœ¡
+ 
+¬gum’t
+ 
+is
+ 
+a
+ 
+li¡
+ 
+of
+ 
+»guÏr
+ 
+ex´essiÚs
+, 
+e™h”
+
+
+591 
+	$comped
+ (
+»
+.
+RegexObjeù
+ 
+š¡ªûs
+è
+Ü
+ 
+	`uncomped
+ (
+¡ršgs
+).
+
+592 
+The
+ 
+İtiÚ®
+ 
+£cÚd
+ 
+¬gum’t
+ 
+is
+ 
+a
+ 
+timeout
+, 
+š
+ 
+£cÚds
+; 
+
+593 
+is
+ 
+no
+ 
+timeout
+.
+
+595 
+R‘uº
+ 
+a
+ 
+tu¶e
+ 
+of
+ 
+th»e
+ 
+™ems
+: 
+the
+ 
+šdex
+ 
+š
+h
+li¡
+ ofhe
+
+596 
+fœ¡
+ 
+»guÏr
+ 
+ex´essiÚ
+ 
+th©
+ 
+m©ches
+; 
+the
+ 
+m©ch
+ 
+objeù
+
+
+597 
+»tuºed
+; 
+ªd
+ 
+the
+ 
+‹xt
+ 
+»ad
+ 
+up
+ 
+tl
+‡nd 
+šşudšg
+h
+m©ch
+.
+
+599 
+If
+ 
+EOF
+ 
+is
+ 
+»ad
+ 
+ªd
+ 
+no
+ 
+‹xt
+ 
+was
+„—d, 
+¿i£
+ 
+EOFE¼Ü
+.
+
+600 
+Oth”wi£
+, 
+wh’
+ 
+nÙhšg
+ 
+m©ches
+,  (-1, 
+NÚe
+, 
+‹xt
+è
+wh”e
+
+
+601 
+‹xt
+ 
+is
+ 
+the
+exˆ
+»ûived
+ 
+so
+ 
+	`çr
+ (
+may
+ 
+be
+h
+em±y
+ 
+¡ršg
+ 
+a
+
+
+602 
+timeout
+ 
+h­³Ãd
+).
+
+604 
+If
+ 
+a
+ 
+»guÏr
+ 
+ex´essiÚ
+ 
+’ds
+ 
+w™h
+‡ 
+g»edy
+ 
+	`m©ch
+ (
+e
+.
+g
+. '.*')
+
+605 
+Ü
+ 
+mÜe
+ 
+thª
+ 
+Úe
+ 
+ex´essiÚ
+ 
+ÿn
+ 
+m©ch
+ 
+the
+ 
+§me
+ 
+šput
+,he
+
+606 
+»suÉs
+ 
+¬e
+ 
+und‘”mši¡ic
+, 
+ªd
+ 
+may
+ 
+d•’d
+ 
+Ú
+ 
+the
+ 
+I
+/
+O
+ 
+timšg
+.
+
+609 
+»
+ = 
+NÚe
+
+
+610 
+li¡
+ =†ist[:]
+
+611 
+šdiûs
+ = 
+	`¿nge
+(
+	$Ën
+(
+li¡
+))
+
+612 
+i
+ 
+š
+ 
+šdiûs
+:
+
+613 
+nÙ
+ 
+	`ha§‰r
+(
+li¡
+[
+i
+], "search"):
+
+614 
+nÙ
+ 
+»
+: 
+impÜt
+„e
+
+615 
+li¡
+[
+i
+] = 
+»
+.
+	$compe
+(
+li¡
+[
+i
+])
+
+616 
+timeout
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+617 
+d—dlše
+ = 
+	`_time
+(è+ 
+timeout
+
+
+618 
+w™h
+ 
+	$_T–ÃtS–eùÜ
+(è
+as
+ 
+£ËùÜ
+:
+
+619 
+£ËùÜ
+.(
+£lf
+, 
+£ËùÜs
+.
+EVENT_READ
+)
+
+620 
+nÙ
+ 
+£lf
+.
+eof
+:
+
+621 
+£lf
+.
+	$´oûss_¿wq
+()
+
+622 
+i
+ 
+š
+ 
+šdiûs
+:
+
+623 
+m
+ = 
+li¡
+[
+i
+].
+	$£¬ch
+(
+£lf
+.
+cookedq
+)
+
+624 
+m
+:
+
+625 
+e
+ = 
+m
+.
+	$’d
+()
+
+626 
+‹xt
+ = 
+£lf
+.
+cookedq
+[:
+e
+]
+
+627 
+£lf
+.
+cookedq
+ = s–f.cookedq[
+e
+:]
+
+628  (
+i
+, 
+m
+, 
+‹xt
+)
+
+629 
+timeout
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+630 
+»ady
+ = 
+£ËùÜ
+.
+	$£Ëù
+(
+timeout
+)
+
+631 
+timeout
+ = 
+d—dlše
+ - 
+	$_time
+()
+
+632 
+nÙ
+ 
+»ady
+:
+
+633 
+timeout
+ < 0:
+
+637 
+£lf
+.
+	$fl_¿wq
+()
+
+638 
+‹xt
+ = 
+£lf
+.
+	$»ad_v”y_Ïzy
+()
+
+639 
+nÙ
+ 
+‹xt
+ 
+ªd
+ 
+£lf
+.
+eof
+:
+
+640 
+¿i£
+ 
+EOFE¼Ü
+
+
+641  (-1, 
+NÚe
+, 
+‹xt
+)
+
+644 
+def
+ 
+	$£t_ÿÎback
+(
+£lf
+, 
+ÿÎback
+):
+
+647 
+£lf
+.
+ÿÎback
+ = callback
+
+650 
+def
+ 
+	$‹¡
+():
+
+653 
+U§ge
+: 
+pythÚ
+ 
+‹Ê‘lib
+.
+py
+ [-
+d
+] ... [
+ho¡
+ [
+pÜt
+]]
+
+655 
+DeçuÉ
+ 
+ho¡
+ 
+is
+ 
+loÿlho¡
+;  
+pÜt
+ is 23.
+
+658 
+debugËv–
+ = 0
+
+659 
+sys
+.
+¬gv
+[1:] 
+ªd
+ sys.argv[1] == '-d':
+
+660 
+debugËv–
+ = debuglevel+1
+
+661 
+d–
+ 
+sys
+.
+¬gv
+[1]
+
+662 
+ho¡
+ = 'localhost'
+
+663 
+sys
+.
+¬gv
+[1:]:
+
+664 
+ho¡
+ = 
+sys
+.
+¬gv
+[1]
+
+665 
+pÜt
+ = 0
+
+666 
+sys
+.
+¬gv
+[2:]:
+
+667 
+pÜt¡r
+ = 
+sys
+.
+¬gv
+[2]
+
+668 
+Œy
+:
+
+669 
+pÜt
+ = (
+pÜt¡r
+)
+
+670 
+exû±
+ 
+V®ueE¼Ü
+:
+
+671 
+pÜt
+ = 
+sock‘
+.
+	`g‘£rvbyÇme
+(
+pÜt¡r
+, 'tcp')
+
+672 
+Š
+ = 
+	$T–Ãt
+()
+
+673 
+Š
+.
+	$£t_debugËv–
+(
+debugËv–
+)
+
+674 
+Š
+.
+	$İ’
+(
+ho¡
+, 
+pÜt
+, 
+timeout
+=0.5)
+
+675 
+Š
+.
+	$š‹¿ù
+()
+
+676 
+Š
+.
+	$şo£
+()
+
+678 #TØ
+run
+ 
+the
+ 
+exam¶e
+ 
+‹¡
+ 
+Ú
+ 
+bÏckhawk
+
+
+679 #pythÚ .\
+‹Ê‘libC®lback3
+.
+py
+ -
+d
+ 192.168.1.103 8024
+
+680 
+__Çme__
+ == '__main__':
+
+681 
+	`‹¡
+()
+
+	@C:\Other_Code_Repo\python_in_shure\11.slxd_python\test1_bhtx_template.py
+
+2 
+This
+ 
+is
+ 
+the
+ 
+AD3
+ 
+pythÚ
+ 
+süt
+ 
+‹¡
+ 
+‹m¶©e
+
+
+3 
+pythÚ
+ 
+	gb’_‹¡_bhtx
+.
+	gpy
+ -
+p
+ 
+	gcom6
+ #u£ 
+the
+ 
+IR
+ 
+£rŸl
+ 
+pÜt
+
+
+4 
+pythÚ
+ 
+	gb’_‹¡_bhtx
+.
+	gpy
+ -
+	gn
+ 192.168.1.101 -
+	gp
+ 8024 #u£ 
+the
+ 
+	g‹Ê‘
+ 8024 
+pÜt
+ 
+ov”
+ 
+AD4Q
+ 
+	gun™
+
+
+6 
+impÜt
+ 
+un™‹¡
+
+
+7 
+impÜt
+ 
+os
+
+
+8 
+äom
+ 
+bhtx
+ 
+impÜt
+ 
+BhTx
+
+
+9 
+impÜt
+ 
+¬g·r£
+
+
+11 
+	g__Çme__
+ == "__main__":
+
+13 #@
+todo
+ 
+Arg
+ 
+·rsšg
+ 
+h”e
+ 
+could
+ 
+u£
+ 
+some
+ 
+im´ovem’t
+...
+
+14 
+·r£r
+ = 
+¬g·r£
+.
+Argum’tP¬£r
+(
+desütiÚ
+='Run BHTX integrationests')
+
+15 #S‘  
+ho¡
+ 
+is
+ 192.168.1.102
+
+16 
+·r£r
+.
+add_¬gum’t
+('-n', '--ho¡Çme',='192.168.1.102', 
+h–p
+='Hostname for CLI connection')
+
+17 #S‘  
+COM
+=8024
+
+18 
+·r£r
+.
+add_¬gum’t
+('-p', '--pÜt', ='8024', 
+h–p
+='Port for CLI connection')
+
+19 #S‘  
+baud¿‹
+=115200
+
+20 
+·r£r
+.
+add_¬gum’t
+('-b', '--baud', =115200, 
+h–p
+='Baud for CLI connection')
+
+21 #S‘  
+IR
+ = 
+True
+
+
+22 
+·r£r
+.
+add_¬gum’t
+('--noœ', 
+de¡
+='œ', 
+aùiÚ
+='¡Üe_cÚ¡', cÚ¡=
+F®£
+, =
+True
+,
+
+23 
+h–p
+='Specifyhat serial connection is NOT IR')
+
+24 
+¬gs
+ = 
+·r£r
+.
+	$·r£_¬gs
+()
+
+26 #E¡ablish 
+cÚÃùiÚ
+ 
+to
+ 
+Œªsm™‹r
+
+
+27 #CLI 
+commªd
+ 
+lše
+ 
+to
+ 
+šput
+ 
+the
+ 
+·¿m‘”s
+
+
+28 #e.
+g
+ 
+pythÚ
+ 
+b’_‹¡_bhtx
+.
+py
+ -
+p
+ 
+com6
+ #u£ 
+the
+ 
+IR
+ 
+£rŸl
+ 
+pÜt
+
+
+29 #e.
+g
+. 
+pythÚ
+ 
+b’_‹¡_bhtx
+.
+py
+ -
+n
+ 192.168.1.101 -
+p
+ 8024 #u£ 
+the
+ 
+‹Ê‘
+ 8024 
+pÜt
+ 
+ov”
+ 
+AD4Q
+ 
+un™
+
+
+30 #nÙe: 
+No
+ 
+šput
+, 
+ho¡Çme
+ = 
+NÚe
+, 
+baud
+ = 115200
+
+31 
+BhTx
+.
+	$cÚÃù
+(
+¬gs
+.
+ho¡Çme
+,‡rgs.
+pÜt
+,‡rgs.
+baud
+,‡rgs.
+œ
+)
+
+33 #Pršˆ
+sy¡em
+ 
+šfo
+ 
+this
+ 
+‹¡
+ 
+run
+
+
+34 
+bhtx
+ = 
+BhTx
+.
+	$g‘_š¡ªû
+()
+
+35 
+bhtx
+.
+	`£nd_cmd
+("verapp")
+
+36 
+bhtx
+.
+	`£nd_cmd
+("verband")
+
+	@C:\Other_Code_Repo\python_in_shure\11.slxd_python\test8_bhtx_FreqTableWriteToFlash.py
+
+2 
+This
+ 
+‹¡
+ 
+is
+ 
+to
+ 
+´og¿m
+ 
+F»qTabË
+ 
+fe
+Ø
+ex‹º®
+ 
+æash
+ 
+w™h
+ 
+pythÚ
+ 
+süt
+
+
+4 
+	gNÙe
+: 
+If
+ 
+we
+ 
+¬e
+ 
+usšg
+ 
+this
+ 
+süt
+ 
+š
+ 
+high
+ 
+lßdšg
+ 
+deviû
+(
+e
+.
+g
+. 
+ADX3
+ 
+w™h
+ 
+ShowLšk
+è, 
+BefÜe
+ 
+run
+hi 
+	gsüt
+,
+
+5 
+ShowLšk
+ 
+Ãeds
+ 
+to
+ 
+be
+ 
+di§bËd
+ 
+	gfœ¡
+
+
+7 
+impÜt
+ 
+time
+
+
+8 
+impÜt
+ 
+¬g·r£
+
+
+9 
+impÜt
+ 
+os
+
+
+10 
+impÜt
+ 
+
+11 
+äom
+ 
+bhtx
+ 
+impÜt
+ *
+
+13 
+	g__Çme__
+ == "__main__":
+
+14 
+·r£r
+ = 
+¬g·r£
+.
+Argum’tP¬£r
+(
+desütiÚ
+='Run BHTXests')
+
+15 
+·r£r
+.
+add_¬gum’t
+('-n', '--ho¡Çme', 
+h–p
+='Hostname for CLI connection')
+
+16 #S‘  
+COM
+=5
+
+17 
+·r£r
+.
+add_¬gum’t
+('-p', '--pÜt', ='COM9', 
+h–p
+='Port for CLI connection')
+
+18 #S‘  
+baud¿‹
+=115200
+
+19 
+·r£r
+.
+add_¬gum’t
+('-b', '--baud', =115200, 
+h–p
+='Baud for CLI connection')
+
+20 #S‘  
+IR
+ = 
+True
+
+
+21 
+·r£r
+.
+add_¬gum’t
+('--noœ', 
+de¡
+='œ', 
+aùiÚ
+='¡Üe_cÚ¡', cÚ¡=
+F®£
+, =
+True
+)
+
+23 #S³cify 
+the
+ 
+F»qTabË
+ 
+fe
+ 
+Çme
+
+
+24 #e.
+g
+. ./
+F»qTabË
+/
+BH_F»qTabË_0_2_0_17
+.
+bš
+ 
+is
+ 
+bªd
+ 
+TabË
+ 
+fe
+ 
+v”siÚ
+ BH_FreqTable_0_2_0_17
+
+25 #e.
+g
+. ./
+F»qTabË
+/
+BH_F»qTabË_0_2_0_16
+.
+bš
+ 
+is
+ 
+bªd
+ 
+TabË
+ 
+fe
+ 
+v”siÚ
+ BH_FreqTable_0_2_0_16
+
+26 
+·r£r
+.
+add_¬gum’t
+('-f', '--file', ='./FreqTable/BH_FreqTable_0_2_0_19.bin')
+
+28 
+¬gs
+ = 
+·r£r
+.
+	$·r£_¬gs
+()
+
+30 #E¡ablish 
+cÚÃùiÚ
+ 
+to
+ 
+Œªsm™‹r
+
+
+31 #CLI 
+commªd
+ 
+lše
+ 
+to
+ 
+šput
+ 
+the
+ 
+·¿m‘”s
+
+
+32 
+BhTx
+.
+	$cÚÃù
+(
+¬gs
+.
+ho¡Çme
+,‡rgs.
+pÜt
+,‡rgs.
+baud
+,‡rgs.
+œ
+)
+
+34 
+tx
+ = 
+BhTx
+.
+	$g‘_š¡ªû
+()
+
+36 
+tx
+.
+	$uÆock
+(è#sw™ch 
+to
+ 
+dev
+ 
+´ivege
+ 
+mode
+
+
+38 #Ex‹º®FÏshS¹Add¸ğ0x00280000 #debgu 
+Úly
+ , 
+Backup
+ 
+FPGA
+ 
+image
+ 
+loÿtiÚ
+ 
+¡¬t
+ 
+addr
+ 
+š
+ 
+ex‹º®
+ 
+æash
+
+
+39 
+Ex‹º®FÏshSeùÜSize
+ = 4 * 1024 #ex‹º® 
+æash
+ 
+£ùÜ
+ 
+size
+ 
+is
+ 4
+K
+ 
+By‹s
+
+
+40 
+Ex‹º®FÏshS¹Addr
+ = 0x00100000 #F»qBªd 
+fe
+ 
+loÿtiÚ
+ 
+¡¬t
+ 
+addr
+ 
+š
+ 
+ex‹º®
+ 
+æash
+
+
+41 
+FÏshAddrIndex
+ = 
+Ex‹º®FÏshS¹Addr
+ #Add»s 
+šdex
+ 
+¡¬ts
+ 
+äom
+ ExternalFlashStartAddr
+
+43 
+	`´št
+("If„unhis script on ADX3, make surehe ShowLink‚etwork is disable");
+
+44 
+»t
+ = 
+tx
+.
+	`£nd_cmd
+("zigb“"è#g‘ 
+the
+ 
+»¥n£
+ 
+of
+ 
+ZigB“
+ 
+commªd
+
+
+45 
+¡©us
+ = 
+»t
+[1][0] #g‘ 
+the
+ 
+ZigB“
+ status
+
+46 iàĞ
+¡©us
+ == 'on'):
+
+47 
+	`´št
+("ZigBee is ON")
+
+48 
+	`´št
+("Disable ZigBee First")
+
+49 
+tx
+.
+	`£nd_cmd
+("zigb“ off"è#£ˆ
+the
+ 
+ZigB“
+ 
+Off
+
+
+50 
+time
+.
+	$¦“p
+(1è#d–ay 1 
+£cÚd
+
+
+52 
+	`´št
+("ZigBee is OFF")
+
+54 #debug 
+pu½o£
+
+
+55 #³ek 
+the
+  
+v®ue
+ 
+š
+ 
+æash
+
+
+56 
+tx
+.
+	`£nd_cmd
+("æashpuk0x{:x} 16".
+	$fÜm©
+(
+Ex‹º®FÏshS¹Addr
+))
+
+57 #”a£ 
+æash
+
+
+58 
+tx
+.
+	`£nd_cmd
+("æash”a£ 0x{:x}".
+	$fÜm©
+(
+Ex‹º®FÏshS¹Addr
+))
+
+59 #³ek 
+æash
+ 
+aá”
+ 
+”a£
+
+
+60 
+tx
+.
+	`£nd_cmd
+("æashpuk0x{:x} 16".
+	$fÜm©
+(
+Ex‹º®FÏshS¹Addr
+))
+
+63 
+bšfe
+ = 
+	`İ’
+(
+¬gs
+.
+fe
+, 'rb'è#İ’ 
+the
+ 
+F»qTabË
+ file
+
+64 
+size
+ = 
+os
+.
+·th
+.
+	$g‘size
+(
+¬gs
+.
+fe
+è#g‘ 
+the
+ 
+F»qTabË
+ f
+size
+
+
+65 
+	`´št
+("F»qBªd bšfsizi {}".
+	$fÜm©
+(
+size
+)è#´šˆ
+the
+ 
+F»qTabË
+ 
+fe
+ size
+
+67 
+numofSeùÜ
+ = (
+size
+ / 
+Ex‹º®FÏshSeùÜSize
+è+ 1 #ÿlcuÏ‹ 
+how
+ 
+mªy
+ 
+£ùÜs
+ 
+dÛs
+ 
+F»qBªd
+ 
+fe
+ 
+occup›s
+ 
+š
+ 
+ex‹º®
+ 
+æash
+
+
+68 
+	`´št
+("£ùÜ‚umb” i {}".
+	$fÜm©
+(
+numofSeùÜ
+)è#´šˆ
+the
+ 
+£ùÜ
+ 
+numb”s
+
+
+69 
+j
+ 
+š
+ 
+	$¿nge
+(
+numofSeùÜ
+):
+
+70 
+tx
+.
+	`£nd_cmd
+("æash”a£ 0x{:x}".
+	$fÜm©
+(
+Ex‹º®FÏshS¹Addr
+)è#”a£ 
+®l
+ 
+£ùÜs
+ 
+the
+ 
+F»qBªd
+ 
+fe
+ 
+occup›s
+
+
+71 
+Ex‹º®FÏshS¹Addr
+ = Ex‹º®FÏshS¹Add¸+ 
+Ex‹º®FÏshSeùÜSize
+
+
+73 
+i
+ 
+š
+ 
+	$¿nge
+(
+size
+):
+
+74 
+d©a
+ = 
+bšfe
+.
+	$»ad
+(1è#g‘ 
+—ch
+ 
+by‹
+ 
+äom
+ 
+the
+ 
+F»qBªd
+ 
+fe
+
+
+75 
+v®ue
+ = .
+	`uÅack
+('B',
+d©a
+è#cÚv”ˆ
+to
+ 
+š‹g”
+
+
+76 #´št(
+v®ue
+[0]è#cÚv”ˆ
+to
+ 
+hex
+ 
+ªd
+ 
+´št
+
+
+77 #´št(
+	`¡r
+(
+v®ue
+[0])è#cÚv”ˆ
+to
+ 
+¡ršg
+ 
+ªd
+ 
+´št
+
+
+78 
+tx
+.
+	`£nd_cmd
+("æashpok0x{:x} {}".
+	`fÜm©
+(
+FÏshAddrIndex
+, 
+	$¡r
+(
+v®ue
+[0])))
+
+79 
+FÏshAddrIndex
+ = FÏshAddrIndex + 1 #Add»s 
+šdex
+ 
+šü—m’ts
+
+
+81 
+tx
+.
+	`£nd_cmd
+("»boÙ", 
+ex³ù_»¥
+=
+F®£
+è#aá” 
+®l
+ 
+the
+ 
+F»qBªd
+ 
+fe
+, 
+»boÙ
+h
+deviû
+
+
+	@
+1
+.
+0
+6
+438
+C:\Other_Code_Repo\python_in_shure\11.slxd_python\bhtx.py
+C:\Other_Code_Repo\python_in_shure\11.slxd_python\cliconn.py
+C:\Other_Code_Repo\python_in_shure\11.slxd_python\py_bhtx_python_cscope_files_filter.py
+C:\Other_Code_Repo\python_in_shure\11.slxd_python\telnetlibCallback3.py
+C:\Other_Code_Repo\python_in_shure\11.slxd_python\test1_bhtx_template.py
+C:\Other_Code_Repo\python_in_shure\11.slxd_python\test8_bhtx_FreqTableWriteToFlash.py
