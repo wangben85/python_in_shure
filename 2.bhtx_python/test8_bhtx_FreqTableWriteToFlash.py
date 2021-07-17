@@ -12,9 +12,15 @@ from bhtx import *
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run BHTX tests')
-    parser.add_argument('-n', '--hostname', help='Hostname for CLI connection')
+    # Set default host is 192.168.1.102
+    parser.add_argument('-n', '--hostname',default='192.168.1.100', help='Hostname for CLI connection')
+
+    #parser.add_argument('-n', '--hostname', help='Hostname for CLI connection')
+     # Set default COM=8024
+    parser.add_argument('-p', '--port', default='8024', help='Port for CLI connection')
+
     # Set default COM=5
-    parser.add_argument('-p', '--port', default='COM9', help='Port for CLI connection')
+    #parser.add_argument('-p', '--port', default='COM9', help='Port for CLI connection')
     # Set default baudrate=115200
     parser.add_argument('-b', '--baud', default=115200, help='Baud for CLI connection')
     # Set default IR = True
@@ -23,7 +29,7 @@ if __name__ == "__main__":
     # Specify the FreqTable file name
     # e.g. ./FreqTable/BH_FreqTable_0_2_0_17.bin is band Table file version BH_FreqTable_0_2_0_17
     # e.g. ./FreqTable/BH_FreqTable_0_2_0_16.bin is band Table file version BH_FreqTable_0_2_0_16
-    parser.add_argument('-f', '--file', default='./FreqTable/BH_FreqTable_0_2_0_19.bin')
+    parser.add_argument('-f', '--file', default='./FreqTable/BH_FreqTable_0_2_0_17.bin')
 
     args = parser.parse_args()
 

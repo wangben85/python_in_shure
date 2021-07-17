@@ -1,8 +1,8 @@
 """
 This test is to program FreqTable file to external flash with python script
 
-Note: If we are using this script in high loading device(e.g. ADX3 with ShowLink) , Before run this script,
-      ShowLink needs to be disabled first
+Note: If we are using this script on high loading device Before run this script,
+      FPGA interrupt and battery polling needs to be disabled first
 """
 import time
 import argparse
@@ -27,9 +27,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
    
     # Specify the FreqTable file name
-    # e.g. ./FreqTable/BH_FreqTable_0_2_0_17.bin is band Table file version BH_FreqTable_0_2_0_17
-    # e.g. ./FreqTable/BH_FreqTable_0_2_0_16.bin is band Table file version BH_FreqTable_0_2_0_16
-    parser.add_argument('-f', '--file', default='./FreqTable/SLXD_FTable0_0_1_11.bin')
+    #parser.add_argument('-f', '--file', default='./FreqTable/SLXD_FTable0_0_1_11.bin')
+    #parser.add_argument('-f', '--file', default='./FreqTable/SLXD_FTable0_0_1_12.bin')
+    parser.add_argument('-f', '--file', default='./FreqTable/SLXD_FTable.bin')
 
     args = parser.parse_args()
 
@@ -41,30 +41,16 @@ if __name__ == "__main__":
 
     tx.unlock()  # switch to dev privilege mode
 
-    #ExternalFlashStartAddr = 0x00280000    # debgu only , Backup FPGA image location start addr in external flash
+    #ExternalFlashStartAddr = 0x00280000    # debug only , Backup FPGA image location start addr in external flash
     ExternalFlashSectorSize = 4 * 1024     # external flash sector size is 4K Bytes
-    ExternalFlashStartAddr  = 0x00100000   # FreqBand file location start addr in external flash
+    ExternalFlashStartAddr  = 0x00160000   # FreqBand file location start addr in external flash
     FlashAddrIndex = ExternalFlashStartAddr   # Address index starts from ExternalFlashStartAddr
     
-    print("If run this script on ADX3, make sure the ShowLink network is disable");  
-    ret = tx.send_cmd("zigbee")    # get the respnse of ZigBee command 
-    status = ret[1][0]             # get the ZigBee status
-    if ( status == 'on'):
-      print("ZigBee is ON")
-      print("Disable ZigBee First")
-      tx.send_cmd("zigbee off")    # set the ZigBee Off
-      time.sleep(1)                # delay 1 second
-    else:
-      print("ZigBee is OFF")
-    
-    #debug purpose
-    #peek the default value in flash
-    tx.send_cmd("flashpuke 0x{:x} 16".format(ExternalFlashStartAddr))
-    #erase flash
-    tx.send_cmd("flasherase 0x{:x}".format(ExternalFlashStartAddr))
-    #peek flash after erase
-    tx.send_cmd("flashpuke 0x{:x} 16".format(ExternalFlashStartAddr))
-
+    4print("If run this script on SLXD, make sure to stop the FPGA and batt polling");  
+    ret = tx.send_cmd("stoppolling on")    # stop the fpga interrupt polling 
+    time.sleep(1)                          # delay 1 second
+    ret = tx.send_cmd("battpoll off")      # stop the batterypolling 
+    time.sleep(1)                          # delay 1 second
 
     binfile = open(args.file, 'rb')           # open the FreqTable file
     size = os.path.getsize(args.file)         # get the FreqTable file size
@@ -74,15 +60,17 @@ if __name__ == "__main__":
     print("sector number is {}".format(numofSector))         # print the sector numbers
     for j in range(numofSector):
         tx.send_cmd("flasherase 0x{:x}".format(ExternalFlashStartAddr))    # erase all sectors the FreqBand file occupies
+        time.sleep(1)                                                      # delay 1 second
         ExternalFlashStartAddr = ExternalFlashStartAddr + ExternalFlashSectorSize
 
     for i in range(size):
-        data = binfile.read(1)                  # get each byte from the FreqBand file
-        value = struct.unpack('B',data)         # convert to integer
+        data = binfile.read(1)                   # get each byte from the FreqBand file
+        value = struct.unpack('B',data)          # convert to integer
             #print(value[0])                     # convert to hex and print
             #print(str(value[0]))                # convert to string and print
         tx.send_cmd("flashpoke 0x{:x} {}".format(FlashAddrIndex, str(value[0])))
-        FlashAddrIndex = FlashAddrIndex + 1     # Address index increaments
+        FlashAddrIndex = FlashAddrIndex + 1      # Address index increaments
 
-    tx.send_cmd("reboot", expect_resp=False)    # after all the FreqBand file, reboot the device
+    time.sleep(3)                                # delay 3 second
+    tx.send_cmd("reset", expect_resp=False)      # after all the FreqBand file, reboot the device
 
